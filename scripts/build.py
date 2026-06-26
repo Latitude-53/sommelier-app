@@ -1768,10 +1768,33 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
   .dish-card .count { font-size: 11px; color: var(--text-mute); }
   @media (min-width: 640px) { main { padding: 24px; } .brand h1 { font-size: 19px; } }
 
-/* Google Translate widget — скрываем баннер */
+/* Google Translate — полностью скрываем баннер и брендинг */
+iframe.goog-te-banner-frame { display: none !important; }
 .goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0px !important; }
-.goog-te-gadget { font-size: 0 !important; }
+body { top: 0 !important; position: static !important; }
+.goog-tooltip, .goog-tooltip:hover { display: none !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+/* Скрываем "Технологии Google" */
+.goog-logo-link, .goog-te-gadget span:last-child, .goog-te-gadget > span { display: none !important; }
+.goog-te-gadget { font-size: 0 !important; line-height: 0 !important; }
+/* Стилизуем select */
+#google_translate_element .goog-te-gadget .goog-te-combo {
+  background: var(--bg-2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--gold-dim) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  outline: none !important;
+  margin-top: 2px !important;
+  width: 140px !important;
+}
+#google_translate_element .goog-te-gadget .goog-te-combo option {
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
 .goog-te-gadget .goog-te-combo { font-size: 11px; background: var(--card); color: var(--text-dim); border: 1px solid var(--border); border-radius: 8px; padding: 4px 6px; font-family: inherit; }
 
 /* Google Translate dropdown in settings */
@@ -1807,9 +1830,8 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'ru',
     includedLanguages: 'en,es,fr,de,it,pt,ja,zh-CN',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
     autoDisplay: false
-  }, 'google_translate_element');
+  }, 'gt_init_container');
   // Restore saved language
   try {
     const savedLang = localStorage.getItem('gt_lang');
@@ -1837,10 +1859,33 @@ function googleTranslateElementInit() {
   <div style="margin-top:32px;width:32px;height:32px;border:2px solid var(--gold-dim);border-top-color:var(--gold);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
 </div>
 <style>@keyframes spin { to { transform: rotate(360deg); } }
-/* Google Translate widget — скрываем баннер */
+/* Google Translate — полностью скрываем баннер и брендинг */
+iframe.goog-te-banner-frame { display: none !important; }
 .goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0px !important; }
-.goog-te-gadget { font-size: 0 !important; }
+body { top: 0 !important; position: static !important; }
+.goog-tooltip, .goog-tooltip:hover { display: none !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+/* Скрываем "Технологии Google" */
+.goog-logo-link, .goog-te-gadget span:last-child, .goog-te-gadget > span { display: none !important; }
+.goog-te-gadget { font-size: 0 !important; line-height: 0 !important; }
+/* Стилизуем select */
+#google_translate_element .goog-te-gadget .goog-te-combo {
+  background: var(--bg-2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--gold-dim) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  outline: none !important;
+  margin-top: 2px !important;
+  width: 140px !important;
+}
+#google_translate_element .goog-te-gadget .goog-te-combo option {
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
 .goog-te-gadget .goog-te-combo { font-size: 11px; background: var(--card); color: var(--text-dim); border: 1px solid var(--border); border-radius: 8px; padding: 4px 6px; font-family: inherit; }
 
 /* Google Translate dropdown in settings */
@@ -1958,6 +2003,7 @@ body { top: 0px !important; }
 </div>
 
 <div class="toast" id="toast"></div>
+<div id="gt_init_container" style="position:fixed;top:0;right:0;width:1px;height:1px;overflow:hidden;opacity:0.01;pointer-events:none;z-index:-1;"></div>
 
 <script>
 // ============== DATA INJECTED FROM PYTHON ==============
@@ -5077,6 +5123,15 @@ function saveSettings() {
 
 function openSettings() {
   haptic('light');
+  // Move GT widget from hidden init container to settings
+  setTimeout(() => {
+    const src = document.getElementById('gt_init_container');
+    const dst = document.getElementById('google_translate_element');
+    if (src && dst && src.children.length > 0) {
+      dst.innerHTML = '';
+      while (src.children.length > 0) dst.appendChild(src.children[0]);
+    }
+  }, 50);
 
   const btn = document.getElementById('settings-btn');
   if (btn) { btn.style.transform = 'rotate(120deg)'; setTimeout(() => btn.style.transform = '', 300); }
@@ -5117,9 +5172,16 @@ function openSettings() {
       <div class="settings-row">
         <div>
           <div class="settings-label">🌐 Translate</div>
-          <div class="settings-hint">Google Translate • auto-saves</div>
+          <div class="settings-hint">Google Translate • 8 languages</div>
         </div>
-        <div id="google_translate_element"><span style="font-size:11px;color:var(--text-mute);">Loading...</span></div>
+        <div id="google_translate_element"></div>
+      </div>
+      <div class="settings-row" style="border-bottom:none;">
+        <div>
+          <div class="settings-label" style="color:var(--text-mute);">↩ Reset translation</div>
+          <div class="settings-hint">Back to Russian</div>
+        </div>
+        <button class="compare-clear-btn" onclick="resetTranslation()" style="border:1px solid var(--border);background:var(--card);color:var(--text-dim);padding:8px 14px;border-radius:8px;font-size:12px;cursor:pointer;font-family:inherit;position:static;transform:none;width:auto;height:auto;">Reset</button>
       </div>
     </div>
     <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">\Done</button>
@@ -5152,7 +5214,30 @@ function openSettings() {
   });
 }
 
+function resetTranslation() {
+  // Сбросить Google Translate на русский
+  try {
+    localStorage.removeItem('gt_lang');
+    // Установить select в пустое значение ( = оригинальный язык)
+    const select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = '';
+      select.dispatchEvent(new Event('change'));
+    }
+    // Перезагрузить страницу для полной очистки
+    setTimeout(() => location.reload(), 300);
+  } catch(e) {
+    location.reload();
+  }
+}
+
 function closeSettings() {
+  // Move GT widget back to hidden container
+  const src = document.getElementById('google_translate_element');
+  const dst = document.getElementById('gt_init_container');
+  if (src && dst && src.children.length > 0) {
+    while (src.children.length > 0) dst.appendChild(src.children[0]);
+  }
   closeModal();
 }
 

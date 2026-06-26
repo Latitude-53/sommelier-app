@@ -51,3 +51,15 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Interactive radar, swipes, theme/sound/haptics
 - APK build scripts, admin panel, app icon
 - Fully offline, zero dependencies
+
+## [1.0.6] — 2025-06-26
+
+### Fixed
+- **GT top banner** — permanently hidden via CSS (`iframe.goog-te-banner-frame { display: none !important }`)
+- **"Технологии Google" text** — branding text hidden via CSS
+- **GT in hidden container** — widget initializes in off-screen visible container, moves to settings on open
+- **Can't reset translation** — added "↩ Reset translation" button in settings (clears localStorage + reloads)
+
+### Changed
+- **GT layout** — removed `SIMPLE` layout, now uses default `<select>` dropdown (more reliable on mobile)
+- **GT CSS** — styled select for dark theme (gold border, card background, 140px width)

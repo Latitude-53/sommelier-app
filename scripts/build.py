@@ -1333,7 +1333,13 @@ def to_js():
     quiz_json = json.dumps(QUIZ, ensure_ascii=False, indent=2, default=str)
     dish_json = json.dumps(DISH_PAIRS, ensure_ascii=False, indent=2)
     blind_modes_json = json.dumps(BLIND_MODES, ensure_ascii=False, indent=2)
-    return drinks_json, glossary_json, taxonomy_json, quiz_json, dish_json, blind_modes_json
+    tags_en_path = os.path.join(DATA_DIR, 'tags_en.json')
+    if os.path.exists(tags_en_path):
+        with open(tags_en_path, 'r', encoding='utf-8') as f:
+            tags_en_json = json.dumps(json.load(f), ensure_ascii=False, indent=2)
+    else:
+        tags_en_json = '{}'
+    return drinks_json, glossary_json, taxonomy_json, quiz_json, dish_json, blind_modes_json, tags_en_json
 
 # ============== HTML TEMPLATE ==============
 HTML_TEMPLATE = r'''<!DOCTYPE html>
@@ -1761,7 +1767,65 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
   .dish-card .name { font-size: 15px; font-weight: 600; color: var(--text); flex: 1; font-family: Georgia, serif; }
   .dish-card .count { font-size: 11px; color: var(--text-mute); }
   @media (min-width: 640px) { main { padding: 24px; } .brand h1 { font-size: 19px; } }
+
+/* Google Translate widget — скрываем баннер */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0px !important; }
+.goog-te-gadget { font-size: 0 !important; }
+.goog-te-gadget .goog-te-combo { font-size: 11px; background: var(--card); color: var(--text-dim); border: 1px solid var(--border); border-radius: 8px; padding: 4px 6px; font-family: inherit; }
+
+/* Google Translate dropdown in settings */
+#google_translate_element { min-width: 140px; }
+#google_translate_element .goog-te-gadget { font-size: 12px !important; }
+#google_translate_element .goog-te-gadget .goog-te-combo {
+  background: var(--bg-2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--gold-dim) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  outline: none !important;
+  margin-top: 2px !important;
+}
+#google_translate_element .goog-te-gadget .goog-te-combo option {
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
+#google_translate_element .goog-logo-link,
+#google_translate_element .goog-te-gadget span:nth-child(2) {
+  display: none !important;
+}
+
+
 </style>
+
+<!-- Google Translate Widget -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ru',
+    includedLanguages: 'en,es,fr,de,it,pt,ja,zh-CN',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+  // Restore saved language
+  try {
+    const savedLang = localStorage.getItem('gt_lang');
+    if (savedLang && savedLang !== 'ru') {
+      setTimeout(() => {
+        const select = document.querySelector('.goog-te-combo');
+        if (select) {
+          select.value = savedLang;
+          select.dispatchEvent(new Event('change'));
+        }
+      }, 800);
+    }
+  } catch(e) {}
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
@@ -1772,7 +1836,39 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
   <p style="font-size:11px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.2em;animation:slideUp 0.6s ease 0.4s both;">вкусовые рецепторы</p>
   <div style="margin-top:32px;width:32px;height:32px;border:2px solid var(--gold-dim);border-top-color:var(--gold);border-radius:50%;animation:spin 0.8s linear infinite;"></div>
 </div>
-<style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+<style>@keyframes spin { to { transform: rotate(360deg); } }
+/* Google Translate widget — скрываем баннер */
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+body { top: 0px !important; }
+.goog-te-gadget { font-size: 0 !important; }
+.goog-te-gadget .goog-te-combo { font-size: 11px; background: var(--card); color: var(--text-dim); border: 1px solid var(--border); border-radius: 8px; padding: 4px 6px; font-family: inherit; }
+
+/* Google Translate dropdown in settings */
+#google_translate_element { min-width: 140px; }
+#google_translate_element .goog-te-gadget { font-size: 12px !important; }
+#google_translate_element .goog-te-gadget .goog-te-combo {
+  background: var(--bg-2) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--gold-dim) !important;
+  border-radius: 8px !important;
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  font-family: inherit !important;
+  cursor: pointer !important;
+  outline: none !important;
+  margin-top: 2px !important;
+}
+#google_translate_element .goog-te-gadget .goog-te-combo option {
+  background: var(--card) !important;
+  color: var(--text) !important;
+}
+#google_translate_element .goog-logo-link,
+#google_translate_element .goog-te-gadget span:nth-child(2) {
+  display: none !important;
+}
+
+
+</style>
 <script>
   // Hide splash after load
   window.addEventListener('load', () => {
@@ -1833,7 +1929,7 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
   </section>
   <section class="view" id="view-notes-search">
     <div class="intro"><h3>Поиск по ноте</h3><p>Тапни на вкус (лайм, торф, мёд, дыm...) — увидишь ВСЕ напитки с этой нотой, во ВСЕХ категориях: вино + пиво + крепкое + кофе + чай. Размер тега = сколько напитков.</p></div>
-    <div class="search-bar"><input type="text" id="notes-search-input" placeholder="Поиск тега..."></div>
+    <div class="search-bar"><input type="text" id="notes-search-input" placeholder="Поиск по названию, вкусу, сорте..."></div>
     <div id="notes-cloud"></div>
   </section>
   <section class="view" id="view-pairing">
@@ -1895,6 +1991,7 @@ const QUIZ_FILTERS = [
   ]
 ];
 
+
 // ============== STATE ==============
 let state = {
   view: 'tree', search: '', filter: 'all', glossary_search: '', notes_search: '',
@@ -1945,6 +2042,55 @@ function tagFor(d) {
   if (d.type === 'tea') return 'tag-tea';
   return 'tag-mead';
 }
+
+// Serving info by category
+function servingInfo(d) {
+  if (!d || !d.cat) return null;
+  const cat = d.cat.toLowerCase();
+  const type = d.type;
+  if (type === 'wine') {
+    if (/(игрист|шампанск|креман|кава|просекк|spumante)/i.test(cat)) return { temp: '6-10°', glass: 'flute', note: 'Chill to 6-8°, do not shake' };
+    if (/(рислинг|совиньон|пино гриджио|грюнер|альбариньо|мюскаде|гевюрц)/i.test(cat)) return { temp: '7-10°', glass: 'white wine (small)', note: 'Refreshing acidity' };
+    if (/(шардоне|вионье|марсан)/i.test(cat)) return { temp: '10-13°', glass: 'white wine (large)', note: 'If oaked — slightly warmer' };
+    if (/(пино нуар|гамэ|божоле|гренаш|зинфандель)/i.test(cat)) return { temp: '14-16°', glass: 'red wine (small)', note: 'Light reds — cooler' };
+    if (/(каберн|мерло|сира|шираз|бордо|кьянти|риоха|темпранильо|неббиоло)/i.test(cat)) return { temp: '16-18°', glass: 'red wine (large)', note: 'Full-bodied — warmer, may decant' };
+    if (/(портвейн|херес|мадера|сотерн|токай|айсвайн|креплён)/i.test(cat)) return { temp: '12-16°', glass: 'dessert', note: 'Sweet/fortified' };
+    if (/(розов|rose|rosé|розе)/i.test(cat)) return { temp: '8-12°', glass: 'universal white', note: 'Drink young' };
+    return { temp: '10-14°', glass: 'universal', note: 'Depends on style' };
+  }
+  if (type === 'beer') {
+    if (/(лагер|pilsner|пильзнер|light lager|хеллес)/i.test(cat)) return { temp: '4-7°', glass: 'straight glass', note: 'Refreshing' };
+    if (/(weiss|weizen|пшенич|witbier|витбир)/i.test(cat)) return { temp: '6-8°', glass: 'wheat glass', note: 'With yeast' };
+    if (/(ipa|apa|pale ale|индийское)/i.test(cat)) return { temp: '8-10°', glass: 'tulip', note: 'Hops open up' };
+    if (/(saison|saison|фармхаус)/i.test(cat)) return { temp: '10-12°', glass: 'tulip', note: 'Complex aroma' };
+    if (/(stout|porter|стаут|портер)/i.test(cat)) return { temp: '10-13°', glass: 'snifter', note: 'Roasty notes' };
+    if (/(barleywine|ячменное вино|old ale)/i.test(cat)) return { temp: '12-15°', glass: 'snifter', note: 'Like strong wine' };
+    if (/(lambic|гёз|крик|ламбик|дикое)/i.test(cat)) return { temp: '8-12°', glass: 'tulip', note: 'Wild yeast' };
+    if (/(doppelbock|двойной бок|tripel|трипель|quadrupel|квадрюпель)/i.test(cat)) return { temp: '10-13°', glass: 'chalice', note: 'Trappist' };
+    if (/(sour|кислое|гозе|берлинер)/i.test(cat)) return { temp: '6-9°', glass: 'straight', note: 'Refreshing acidity' };
+    return { temp: '6-10°', glass: 'universal', note: 'By style' };
+  }
+  if (type === 'spirit') {
+    if (/(виски|whisky|whiskey|скотч|бурбон|рай)/i.test(cat)) return { temp: '16-20°', glass: 'glencairn / snifter', note: 'Room temp, add drop of water' };
+    if (/(коньяк|cognac|арманьяк|armagnac|бренди)/i.test(cat)) return { temp: '16-20°', glass: 'snifter', note: 'Warm with hand' };
+    if (/(джин|gin)/i.test(cat)) return { temp: 'cold', glass: 'rocks / martini', note: 'Usually in cocktails' };
+    if (/(водка|vodka)/i.test(cat)) return { temp: '4-8°', glass: 'shot / rocks', note: 'Chilled' };
+    if (/(текила|tequila|мескаль|mezcal)/i.test(cat)) return { temp: '16-20°', glass: 'rocks / caballito', note: 'Mezcal — warmer' };
+    if (/(ром|rum)/i.test(cat)) return { temp: 'cold', glass: 'rocks / tiki', note: 'In cocktails' };
+    if (/(абсент|absinthe)/i.test(cat)) return { temp: 'cold', glass: 'absinthe', note: 'With water over sugar' };
+    if (/(ликёр|liqueur|campari|амаро)/i.test(cat)) return { temp: '6-12°', glass: 'liqueur / rocks', note: 'Digestif' };
+    return { temp: '16-20°', glass: 'snifter', note: 'By type' };
+  }
+  if (type === 'sake') return { temp: '5-50°', glass: 'ochoko / masu', note: 'Depends on type (cold/warm)' };
+  if (type === 'cider') return { temp: '6-10°', glass: 'straight / tulip', note: 'Refreshing' };
+  if (type === 'mead') return { temp: '8-14°', glass: 'mead cup / tulip', note: 'Dry colder, sweet warmer' };
+  if (type === 'coffee') return { temp: '70-85°', glass: 'ceramic cup', note: 'Not boiling! 85° for espresso' };
+  if (type === 'tea') return { temp: '70-95°', glass: 'gaiwan / teapot', note: 'Green 70-80°, black 90-95°' };
+  return null;
+}
+
+function tagTranslate(tag) { return tag; }
+
 function typeLabel(d) {
   if (d.type === 'wine') return 'вино';
   if (d.type === 'beer') return 'пиво';
@@ -1957,60 +2103,6 @@ function typeLabel(d) {
   return '';
 }
 
-// Температуры подачи по категориям (упрощённо, на основе книги Куликовой)
-// Возвращает { temp, glass, note } или null если категория не определена
-function servingInfo(d) {
-  if (!d || !d.cat) return null;
-  const cat = d.cat.toLowerCase();
-  const type = d.type;
-  // Вина
-  if (type === 'wine') {
-    if (/(игрист|шампанск|креман|кава|просекк|spumante)/i.test(cat)) return { temp: '6-10°', glass: 'флейта', note: 'Охладить до 6-8°, не трясти' };
-    if (/(рислинг|совиньон|пино гриджио|грюнер|альбариньо|мюскаде|гевюрц)/i.test(cat)) return { temp: '7-10°', glass: 'белый малый', note: 'Освежающая кислотность' };
-    if (/(шардоне|вионье|марсан)/i.test(cat)) return { temp: '10-13°', glass: 'белый большой', note: 'Если в бочке — чуть теплее' };
-    if (/(пино нуар|гамэ|божоле|гренаш|зинфандель)/i.test(cat)) return { temp: '14-16°', glass: 'красный малый', note: 'Лёгкие красные — прохладнее' };
-    if (/(каберн|мерло|сира|шираз|бордо|кьянти|риоха|темпранильо|неббиоло)/i.test(cat)) return { temp: '16-18°', glass: 'красный большой', note: 'Насыщенные — теплее, можно декантировать' };
-    if (/(портвейн|херес|мадера|сотерн|токай|айсвайн|креплён)/i.test(cat)) return { temp: '12-16°', glass: 'десертный', note: 'Сладкие/креплёные' };
-    if (/(розов|rose|rosé|розе)/i.test(cat)) return { temp: '8-12°', glass: 'белый универсальный', note: 'Пить молодым' };
-    return { temp: '10-14°', glass: 'универсальный', note: 'Смотри по типу' };
-  }
-  // Пиво
-  if (type === 'beer') {
-    if (/(лагер|pilsner|пильзнер|light lager|хеллес)/i.test(cat)) return { temp: '4-7°', glass: 'прямая кружка', note: 'Освежающее' };
-    if (/(weiss|weizen|пшенич|witbier|витбир)/i.test(cat)) return { temp: '6-8°', glass: 'пшеничный бокал', note: 'С дрожжами' };
-    if (/(ipa|apa|pale ale|индийское)/i.test(cat)) return { temp: '8-10°', glass: 'тюльпан', note: 'Хмель раскрывается' };
-    if (/(saison|saison|фармхаус)/i.test(cat)) return { temp: '10-12°', glass: 'тюльпан', note: 'Сложный аромат' };
-    if (/(stout|porter|стаут|портер)/i.test(cat)) return { temp: '10-13°', glass: 'снифтер', note: 'Жарено-кофейные ноты' };
-    if (/(barleywine|ячменное вино|old ale)/i.test(cat)) return { temp: '12-15°', glass: 'снифтер', note: 'Как крепкое вино' };
-    if (/(lambic|гёз|крик|ламбик|дикое)/i.test(cat)) return { temp: '8-12°', glass: 'тюльпан', note: 'Дикие дрожжи' };
-    if (/(doppelbock|двойной бок|tripel|трипель|quadrupel|квадрюпель)/i.test(cat)) return { temp: '10-13°', glass: 'кубок', note: 'Траппистские' };
-    if (/(sour|кислое|гозе|берлинер)/i.test(cat)) return { temp: '6-9°', glass: 'прямая', note: 'Освежающая кислотность' };
-    return { temp: '6-10°', glass: 'универсальный', note: 'По стилю' };
-  }
-  // Крепкое
-  if (type === 'spirit') {
-    if (/(виски|whisky|whiskey|скотч|бурбон|рай)/i.test(cat)) return { temp: '16-20°', glass: 'гленкэрн / снифтер', note: 'Комнатная, можно каплю воды' };
-    if (/(коньяк|cognac|арманьяк|armagnac|бренди)/i.test(cat)) return { temp: '16-20°', glass: 'снифтер', note: 'Тёплой рукой раскрывать' };
-    if (/(джин|gin)/i.test(cat)) return { temp: 'холодное', glass: 'рокс / мартини', note: 'Обычно в коктейле' };
-    if (/(водка|vodka)/i.test(cat)) return { temp: '4-8°', glass: 'шот / рокс', note: 'Охлаждённая' };
-    if (/(текила|tequila|мескаль|mezcal)/i.test(cat)) return { temp: '16-20°', glass: 'рокс / кабальито', note: 'Мескаль — теплее' };
-    if (/(ром|rum)/i.test(cat)) return { temp: 'холодное', glass: 'рокс / тики', note: 'В коктейле' };
-    if (/(абсент|absinthe)/i.test(cat)) return { temp: 'холодное', glass: 'абсентный', note: 'С водой через сахар' };
-    if (/(ликёр|liqueur|campari|амаро)/i.test(cat)) return { temp: '6-12°', glass: 'ликёрный / рокс', note: 'Дижестив' };
-    return { temp: '16-20°', glass: 'снифтер', note: 'По типу' };
-  }
-  // Саке
-  if (type === 'sake') return { temp: '5-50°', glass: 'очоко / масу', note: 'Зависит от типа (холодное/тёплое)' };
-  // Сидр
-  if (type === 'cider') return { temp: '6-10°', glass: 'прямой / тюльпан', note: 'Освежающий' };
-  // Медовуха
-  if (type === 'mead') return { temp: '8-14°', glass: 'медовая чаша / тюльпан', note: 'Сухая холоднее, сладкая теплее' };
-  // Кофе
-  if (type === 'coffee') return { temp: '70-85°', glass: 'керамическая чашка', note: 'Не кипяток! 85° для эспрессо' };
-  // Чай
-  if (type === 'tea') return { temp: '70-95°', glass: 'гайвань / чайник', note: 'Зелёный 70-80°, чёрный 90-95°' };
-  return null;
-}
 function highlightTerms(text) {
   // Wrap known glossary terms in clickable spans
   let result = text;
@@ -2361,17 +2453,17 @@ function openDrink(id) {
     </div>
     <div class="modal-section">
       <h4>Ароматы и вкусы</h4>
-      <p>${d.tags.map(t=>`<span class="profile-pill" style="margin-right:4px;">${t}</span>`).join('')}</p>
+      <p>${d.tags.map(t=>`<span class="profile-pill" style="margin-right:4px;">${tagTranslate(t)}</span>`).join('')}</p>
     </div>
     <div class="modal-section">
       <h4>Вкусовой профиль</h4>
       <div class="radar-dual">
         <div class="radar-cell">
-          <h5>🫁 Структура</h5>
+          <h5>Structure</h5>
           <canvas id="radar-s-${d.id}" width="240" height="240"></canvas>
         </div>
         <div class="radar-cell">
-          <h5>👃 Ароматика</h5>
+          <h5>Aroma</h5>
           <canvas id="radar-a-${d.id}" width="240" height="240"></canvas>
         </div>
       </div>
@@ -2397,11 +2489,11 @@ function openDrink(id) {
         if (!s) return '<p style="color:var(--text-mute);font-size:13px;">Нет данных</p>';
         return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
           <div style="background:var(--bg-2);border-radius:10px;padding:12px;">
-            <div style="font-size:10px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">🌡️ Температура</div>
+            <div style="font-size:10px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">🌡️ \Temperature</div>
             <div style="font-size:18px;color:var(--gold);font-family:Georgia,serif;font-weight:600;">${s.temp}</div>
           </div>
           <div style="background:var(--bg-2);border-radius:10px;padding:12px;">
-            <div style="font-size:10px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">🥃 Бокал</div>
+            <div style="font-size:10px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:4px;">🥃 \Glass</div>
             <div style="font-size:13px;color:var(--text);font-weight:500;">${s.glass}</div>
           </div>
         </div>
@@ -2409,7 +2501,7 @@ function openDrink(id) {
       })()}
     </div>
     <div class="modal-section">
-      <h4>Похожие напитки ${crossList.length ? '(+ кросс-категории)' : ''}</h4>
+      <h4>Similar Drinks ${crossList.length ? '(+ кросс-категории)' : ''}</h4>
       ${similarHTML || '<p style="color:var(--text-mute);font-size:13px;">Похожих в базе нет.</p>'}
     </div>
     <div class="modal-section">
@@ -2465,17 +2557,13 @@ function findSimilar(d, n) {
 }
 
 // ============== RADAR CHART ==============
-// Structure: 8 axes (то, что чувствует язык)
-const STRUCT_LABELS = ['Кислота','Сладость','Горечь','Танины','Тело','Алкоголь','Газация','Солёное/Умами'];
-const STRUCT_KEYS = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
-const STRUCT_N = 8;
-
-// Aroma: 7 clusters (обоняние)
+const STRUCT_LABELS = ['Кислота','Сладость','Горечь','Танины','Тело','Газация','Солёность/Минеральность'];
+const STRUCT_KEYS = ['acid','sweet','bitter','tannin','body','carbonation','savory'];
+const STRUCT_N = 7;
 const AROMA_LABELS = ['Фрукты','Цветы/Травы','Специи','Дерево/Дым','Минералы/Земля','Сладкое/Кондитер','Дрожжи/Фермент'];
 const AROMA_KEYS = ['fruit','floral','spice','wood_smoke','mineral_earth','sweet_pastry','yeast_ferment'];
 const AROMA_N = 7;
 
-// Legacy compatibility (для старого кода который использует RADAR_*)
 const RADAR_LABELS = STRUCT_LABELS;
 const RADAR_KEYS = STRUCT_KEYS;
 const RADAR_N = STRUCT_N;
@@ -2938,8 +3026,8 @@ function showTagDrinks(tag) {
     <p style="color:var(--text-dim); font-size:14px; margin-bottom:14px;">${drinks.length} напитков с этой нотой во всех категориях.</p>
     <div style="display:flex;gap:6px;margin-bottom:12px;">
       <button class="filter-chip active" id="clusters-mode-btn" onclick="setTagViewMode('clusters')">📊 Кластеры</button>
-      <button class="filter-chip" id="links-mode-btn" onclick="setTagViewMode('links')">🔗 Связи</button>
-      <button class="filter-chip" id="list-mode-btn" onclick="setTagViewMode('list')">📋 Список</button>
+      <button class="filter-chip" id="links-mode-btn" onclick="setTagViewMode('links')">\🔗 Links</button>
+      <button class="filter-chip" id="list-mode-btn" onclick="setTagViewMode('list')">\📋 List</button>
     </div>
     <div id="tag-clusters-container">
       <p style="font-size:12px;color:var(--text-mute);margin-bottom:12px;">Напитки сгруппированы по типу и похожести. Тапни на кластер — раскрой.</p>
@@ -3285,18 +3373,18 @@ function renderBuild() {
       <div class="radar-container"><canvas id="build-radar-s" width="320" height="320"></canvas></div>
     </div>
     <div class="build-group">
-      <h4>\u{1FAC1} \u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430 \u00B7 \u044F\u0437\u044B\u043A</h4>
+      <h4>u{1FAC1} \u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430 \u00B7 \u044F\u0437\u044B\u043A</h4>
       ${BUILD_STRUCT.map(item => buildRowHTML('s', item, p.s[item.key])).join('')}
     </div>
     <div class="build-group">
-      <h4>\u{1F443} \u0410\u0440\u043E\u043C\u0430\u0442\u0438\u043A\u0430 \u00B7 \u043D\u043E\u0441</h4>
+      <h4>u{1F443} \u0410\u0440\u043E\u043C\u0430\u0442\u0438\u043A\u0430 \u00B7 \u043D\u043E\u0441</h4>
       ${BUILD_AROMA.map(item => buildRowHTML('a', item, p.a[item.key])).join('')}
     </div>
     <div class="build-actions">
-      <button class="restart-btn" onclick="randomizeBuild()" style="margin-top:0;">\u{1F3B2} \u0421\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u0439</button>
-      <button class="restart-btn" onclick="resetBuild()" style="margin-top:0;">\u00D7 \u0421\u0431\u0440\u043E\u0441</button>
+      <button class="restart-btn" onclick="randomizeBuild()" style="margin-top:0;">u{1F3B2} \u0421\u043B\u0443\u0447\u0430\u0439\u043D\u044B\u0439</button>
+      <button class="restart-btn" onclick="resetBuild()" style="margin-top:0;">u00D7 \u0421\u0431\u0440\u043E\u0441</button>
     </div>
-    <button class="restart-btn" onclick="findSimilarByProfile()" style="background:var(--gold-dim);border-color:var(--gold);color:var(--text);font-weight:600;margin-top:6px;">\u{1F50D} \u041D\u0430\u0439\u0442\u0438 \u043F\u043E\u0445\u043E\u0436\u0438\u0435 \u043D\u0430\u043F\u0438\u0442\u043A\u0438</button>
+    <button class="restart-btn" onclick="findSimilarByProfile()" style="background:var(--gold-dim);border-color:var(--gold);color:var(--text);font-weight:600;margin-top:6px;">u{1F50D} \u041D\u0430\u0439\u0442\u0438 \u043F\u043E\u0445\u043E\u0436\u0438\u0435 \u043D\u0430\u043F\u0438\u0442\u043A\u0438</button>
   `;
   c.querySelectorAll('input.build-slider').forEach(sl => {
     sl.addEventListener('input', e => {
@@ -3621,23 +3709,23 @@ function findSimilarByProfile() {
   const avgTop5 = Math.round(top.slice(0, 5).reduce((s, x) => s + x.match, 0) / 5);
 
   openModal(`
-    <div class="modal-cat">\u{1F50D} \u041F\u043E \u0432\u0430\u0448\u0435\u043C\u0443 \u043F\u0440\u043E\u0444\u0438\u043B\u044E</div>
-    <h2>\u0411\u043B\u0438\u0436\u0430\u0439\u0448\u0438\u0435 \u043D\u0430\u043F\u0438\u0442\u043A\u0438</h2>
+    <div class="modal-cat">u{1F50D} \u041F\u043E \u0432\u0430\u0448\u0435\u043C\u0443 \u043F\u0440\u043E\u0444\u0438\u043B\u044E</div>
+    <h2>u0411\u043B\u0438\u0436\u0430\u0439\u0448\u0438\u0435 \u043D\u0430\u043F\u0438\u0442\u043A\u0438</h2>
     <p style="color:var(--text-dim);font-size:13px;margin-bottom:14px;">
       \u0422\u043E\u043F-${top.length} \u043F\u043E \u0431\u043B\u0438\u0437\u043E\u0441\u0442\u0438 \u043A \u043E\u043F\u0438\u0441\u0430\u043D\u043D\u043E\u043C\u0443 \u0432\u043A\u0443\u0441\u0443. \u0422\u0430\u043F\u043D\u0438 \u043F\u043E \u043B\u044E\u0431\u043E\u043C\u0443 \u2014 \u043E\u0442\u043A\u0440\u043E\u0435\u0442\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0447\u043A\u0430 \u043D\u0430\u043F\u0438\u0442\u043A\u0430.
     </p>
     <div class="card" style="text-align:center;">
-      <div style="font-size:11px;color:var(--text-mute);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.08em;">\u041B\u0443\u0447\u0448\u0435\u0435 \u0441\u043E\u0432\u043F\u0430\u0434\u0435\u043D\u0438\u0435</div>
+      <div style="font-size:11px;color:var(--text-mute);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.08em;">u041B\u0443\u0447\u0448\u0435\u0435 \u0441\u043E\u0432\u043F\u0430\u0434\u0435\u043D\u0438\u0435</div>
       <div style="font-size:18px;color:var(--text);font-family:Georgia,serif;margin-bottom:2px;">${best.d.name}</div>
       <div style="font-size:11px;color:var(--text-mute);margin-bottom:8px;">${best.d.cat} \u00B7 ${typeLabel(best.d)}</div>
       <div style="font-size:36px;color:var(--gold);font-family:Georgia,serif;line-height:1;">${best.match}%</div>
-      <div style="font-size:11px;color:var(--text-mute);margin-top:8px;">\u0421\u0440\u0435\u0434\u043D\u0435\u0435 \u0442\u043E\u043F-5: ${avgTop5}%</div>
+      <div style="font-size:11px;color:var(--text-mute);margin-top:8px;">u0421\u0440\u0435\u0434\u043D\u0435\u0435 \u0442\u043E\u043F-5: ${avgTop5}%</div>
     </div>
     <div class="card">
-      <h5 style="text-align:center;margin:0 0 8px;color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:0.1em;">\u0412\u0430\u0448 \u043F\u0440\u043E\u0444\u0438\u043B\u044C \u0432\u0441. \u0411\u0430\u0437\u0430</h5>
+      <h5 style="text-align:center;margin:0 0 8px;color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:0.1em;">u0412\u0430\u0448 \u043F\u0440\u043E\u0444\u0438\u043B\u044C \u0432\u0441. \u0411\u0430\u0437\u0430</h5>
       <div class="radar-container"><canvas id="build-result-radar" width="320" height="320"></canvas></div>
     </div>
-    <div class="section-title" style="margin-top:14px;">\u0422\u043E\u043F-${top.length} \u043F\u043E\u0445\u043E\u0436\u0438\u0445</div>
+    <div class="section-title" style="margin-top:14px;">u0422\u043E\u043F-${top.length} \u043F\u043E\u0445\u043E\u0436\u0438\u0445</div>
     ${top.map((x, i) => `
       <div class="build-result-row" onclick="closeModal(); openDrink(${x.d.id});">
         <div class="build-result-rank">${i+1}</div>
@@ -3648,7 +3736,7 @@ function findSimilarByProfile() {
         <div class="build-result-match">${x.match}%</div>
       </div>
     `).join('')}
-    <button class="restart-btn" onclick="closeModal()" style="margin-top:14px;">\u0417\u0430\u043A\u0440\u044B\u0442\u044C</button>
+    <button class="restart-btn" onclick="closeModal()" style="margin-top:14px;">u0417\u0430\u043A\u0440\u044B\u0442\u044C</button>
   `);
 
   setTimeout(() => {
@@ -3772,7 +3860,7 @@ function renderCompare() {
         return `
           <div class="compare-item" style="border-left:3px solid ${getCompareStrokes()[i]};">
             <div class="compare-search-wrap" data-idx="${i}">
-              <input type="text" class="compare-search-input" placeholder="Поиск напитка..." value="${d.name}" data-idx="${i}"
+              <input type="text" class="compare-search-input" placeholder="Поиск по названию, вкусу, сорте..." value="${d.name}" data-idx="${i}"
                 onfocus="openCompareDropdown(${i})" oninput="filterCompareDropdown(${i}, this.value)">
               <button class="compare-clear-btn" onclick="clearCompareSearch(${i})" title="Стереть текст">⌫</button>
               <div class="compare-dropdown" id="compare-dropdown-${i}" style="display:none;"></div>
@@ -3782,9 +3870,9 @@ function renderCompare() {
         `;
       }).join('')}
       ${state.compare_list.length < 4 ? `
-        <button class="compare-add-btn" onclick="addCompareSlot()">+ Добавить напиток (${state.compare_list.length}/4)</button>
+        <button class="compare-add-btn" onclick="addCompareSlot()">+ \\+ Add drink (${state.compare_list.length}/4)</button>
       ` : ''}
-      <button class="compare-add-btn" onclick="cycleComparePalette()" style="margin-top:6px;border-style:solid;">🎨 Сменить цвета</button>
+      <button class="compare-add-btn" onclick="cycleComparePalette()" style="margin-top:6px;border-style:solid;">🎨 \\🎨 Change colors</button>
     </div>
   `;
   // Bind remove handlers
@@ -3928,30 +4016,30 @@ function renderCompare() {
   document.getElementById('compare-container').innerHTML = `
     ${matchHTML}
     <div class="card">
-      <h4 style="font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:8px;">🫁 Структура</h4>
+      <h4 style="font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:8px;">Structure</h4>
       <div class="radar-container"><canvas id="compare-radar-s" width="400" height="400"></canvas></div>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;font-size:11px;margin-top:8px;">${legendHTML}</div>
     </div>
     <div class="card">
-      <h4 style="font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:8px;">👃 Ароматика</h4>
+      <h4 style="font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:8px;">Aroma</h4>
       <div class="radar-container"><canvas id="compare-radar-a" width="400" height="400"></canvas></div>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;font-size:11px;margin-top:8px;">${legendHTML}</div>
     </div>
     <div class="card">
-      <div style="font-size:12px;color:var(--text-mute);margin-bottom:8px;">Тапни по названию параметра — сортировка. ↑ = максимум.</div>
+      <div style="font-size:12px;color:var(--text-mute);margin-bottom:8px;">\Тапни по названию параметра — сортировка. ↑ = максимум. — сортировка. ↑ = максимум.</div>
       <table style="width:100%;border-collapse:collapse;font-size:12px;">
         <thead><tr>
           <th style="text-align:left;padding:6px 4px;border-bottom:1px solid var(--border);"></th>
           ${headerCells}
         </tr></thead>
         <tbody>
-          <tr><td colspan="${drinkOrder.length+1}" style="padding:8px 6px 5px;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--border);background:var(--card-2);">🫁 Структура · язык</td></tr>
+          <tr><td colspan="${drinkOrder.length+1}" style="padding:8px 6px 5px;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--border);background:var(--card-2);">\🫁 Structure · tongue</td></tr>
           ${tableRows(Object.keys(sLabels))}
-          <tr><td colspan="${drinkOrder.length+1}" style="padding:10px 6px 5px;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:var(--gold);border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--card-2);">👃 Ароматика · нос</td></tr>
+          <tr><td colspan="${drinkOrder.length+1}" style="padding:10px 6px 5px;font-size:10px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:var(--gold);border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--card-2);">\👃 Aroma · nose</td></tr>
           ${tableRows(Object.keys(aLabels))}
         </tbody>
       </table>
-      ${compareSort ? `<button class="restart-btn" onclick="resetCompareSort()" style="margin-top:12px;font-size:12px;padding:8px 16px;">✕ Сбросить сортировку</button>` : ''}
+      ${compareSort ? `<button class="restart-btn" onclick="resetCompareSort()" style="margin-top:12px;font-size:12px;padding:8px 16px;">✕ \\✕ Reset sort</button>` : ''}
     </div>
     ${drinks.map(d => `<button class="restart-btn" onclick="openDrink(${d.id})">Подробнее: ${d.name.split('(')[0].trim().slice(0,30)}…</button>`).join('')}
   `;
@@ -4066,7 +4154,7 @@ function selectCompareDrink(idx, drinkId) {
 function addToCompare(id) {
   // If already in list — toast and don't duplicate
   if (state.compare_list.includes(id)) {
-    toast('Уже в сравнении');
+    toast('Already in compare');
     return;
   }
   if (state.compare_list.length >= 4) {
@@ -4075,7 +4163,7 @@ function addToCompare(id) {
   } else {
     state.compare_list.push(id);
   }
-  toast('Добавлено в сравнение');
+  toast('Added to compare');
   switchView('compare');
 }
 
@@ -4165,11 +4253,11 @@ function blindHintsHTML(b) {
     // 2 compact radars side by side
     html += `<div class="radar-dual" style="padding:4px 0;">
       <div class="radar-cell">
-        <h5>🫁 Структура</h5>
+        <h5>Structure</h5>
         <canvas id="blind-radar-s" width="180" height="180"></canvas>
       </div>
       <div class="radar-cell">
-        <h5>👃 Ароматика</h5>
+        <h5>Aroma</h5>
         <canvas id="blind-radar-a" width="180" height="180"></canvas>
       </div>
     </div>`;
@@ -4266,7 +4354,7 @@ function renderBlind() {
             <div class="txt" style="font-size:12px;">Марафон ×10</div>
           </button>
         </div>
-        <button class="save-btn" style="width:100%;padding:14px;font-size:15px;margin-top:14px;" onclick="startBlindRound(state.blind_setup.category, state.blind_setup.difficulty, state.blind_setup.mode)">Начать дегустацию →</button>
+        <button class="save-btn" style="width:100%;padding:14px;font-size:15px;margin-top:14px;" onclick="startBlindRound(state.blind_setup.category, state.blind_setup.difficulty, state.blind_setup.mode)">\Start tasting →</button>
       </div>
     `;
     return;
@@ -4382,11 +4470,11 @@ function renderBlind() {
         </div>
         <div class="radar-dual">
           <div class="radar-cell">
-            <h5>🫁 Структура</h5>
+            <h5>Structure</h5>
             <canvas id="blind-radar-s" width="200" height="200"></canvas>
           </div>
           <div class="radar-cell">
-            <h5>👃 Ароматика</h5>
+            <h5>Aroma</h5>
             <canvas id="blind-radar-a" width="200" height="200"></canvas>
           </div>
         </div>
@@ -4625,7 +4713,7 @@ function showSeriesSummary() {
         `).join('')}
       </div>
 
-      <button class="save-btn" style="width:100%;padding:14px;font-size:15px;" onclick="resetBlindScore()">↻ Новая серия</button>
+      <button class="save-btn" style="width:100%;padding:14px;font-size:15px;" onclick="resetBlindScore()">↻ \\New series</button>
     </div>
   `;
   if (stars >= 4) fireConfetti();
@@ -4653,7 +4741,7 @@ function renderGlossary() {
   }).sort((a, b) => a[0].localeCompare(b[0], 'ru'));
   const c = document.getElementById('glossary-container');
   if (!terms.length) {
-    c.innerHTML = `<div class="empty"><div class="ic">📚</div>Термин не найден.</div>`;
+    c.innerHTML = `<div class="empty"><div class="ic">📚</div>\Term not found.</div>`;
     return;
   }
   c.innerHTML = `<div class="section-title">${terms.length} терминов</div>` + terms.map(([t, d]) => `
@@ -4708,7 +4796,7 @@ function renderNotes() {
       </div>
     `;
   }).join('');
-  c.innerHTML = `<div class="section-title">Мои заметки (${ids.length})</div>` + html;
+  c.innerHTML = `<div class="section-title">My Notes (${ids.length})</div>` + html;
 }
 function delNote(id) { const notes = loadNotes(); delete notes[id]; saveNotes(notes); renderNotes(); toast('Заметка удалена'); }
 function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
@@ -4843,11 +4931,11 @@ function renderQuizResult() {
     <div class="section-title">Вкусовой профиль</div>
     <div class="radar-dual">
       <div class="radar-cell">
-        <h5>🫁 Структура</h5>
+        <h5>Structure</h5>
         <canvas id="quiz-radar-s" width="220" height="220"></canvas>
       </div>
       <div class="radar-cell">
-        <h5>👃 Ароматика</h5>
+        <h5>Aroma</h5>
         <canvas id="quiz-radar-a" width="220" height="220"></canvas>
       </div>
     </div>
@@ -4976,7 +5064,7 @@ function tapFeedback(pattern) {
 // ============== SETTINGS ==============
 // Глобальные настройки: тема, звук, вибрация, язык
 const SETTINGS_KEY = 'sommelier_settings_v1';
-const DEFAULT_SETTINGS = { theme: 'dark', sound: false, haptic: true, lang: 'ru' };
+const DEFAULT_SETTINGS = { theme: 'dark', sound: false, haptic: true, lang: 'en' };
 let settings = { ...DEFAULT_SETTINGS };
 try {
   const saved = JSON.parse(localStorage.getItem(SETTINGS_KEY) || '{}');
@@ -4989,6 +5077,7 @@ function saveSettings() {
 
 function openSettings() {
   haptic('light');
+
   const btn = document.getElementById('settings-btn');
   if (btn) { btn.style.transform = 'rotate(120deg)'; setTimeout(() => btn.style.transform = '', 300); }
   openModal(`
@@ -4998,11 +5087,11 @@ function openSettings() {
       <div class="settings-row">
         <div>
           <div class="settings-label">Тема</div>
-          <div class="settings-hint">Тёмная / Светлая</div>
+          <div class="settings-hint">🌙 Dark / \☀️ Light</div>
         </div>
         <div class="settings-segmented" id="seg-theme">
-          <button class="seg-btn ${settings.theme==='dark'?'active':''}" data-val="dark">🌙 Тёмная</button>
-          <button class="seg-btn ${settings.theme==='light'?'active':''}" data-val="light">☀️ Светлая</button>
+          <button class="seg-btn ${settings.theme==='dark'?'active':''}" data-val="dark">🌙 Dark</button>
+          <button class="seg-btn ${settings.theme==='light'?'active':''}" data-val="light">☀️ Light</button>
         </div>
       </div>
       <div class="settings-row">
@@ -5018,7 +5107,7 @@ function openSettings() {
       <div class="settings-row">
         <div>
           <div class="settings-label">Вибрация</div>
-          <div class="settings-hint">Тактильный отклик на тапы</div>
+          <div class="settings-hint">Вибрация</div>
         </div>
         <label class="switch">
           <input type="checkbox" id="set-haptic" ${settings.haptic?'checked':''}>
@@ -5027,16 +5116,13 @@ function openSettings() {
       </div>
       <div class="settings-row">
         <div>
-          <div class="settings-label">Язык</div>
-          <div class="settings-hint">Скоро: English</div>
+          <div class="settings-label">🌐 Translate</div>
+          <div class="settings-hint">Google Translate • auto-saves</div>
         </div>
-        <div class="settings-segmented" id="seg-lang">
-          <button class="seg-btn ${settings.lang==='ru'?'active':''}" data-val="ru">RU</button>
-          <button class="seg-btn ${settings.lang==='en'?'active':''}" data-val="en" disabled style="opacity:0.4;cursor:not-allowed;">EN</button>
-        </div>
+        <div id="google_translate_element"><span style="font-size:11px;color:var(--text-mute);">Loading...</span></div>
       </div>
     </div>
-    <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">Готово</button>
+    <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">\Done</button>
     <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--border);text-align:center;">
       <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.0</div>
       <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 10 вкладок • 29 блюд</div>
@@ -5052,14 +5138,7 @@ function openSettings() {
       document.querySelectorAll('#seg-theme .seg-btn').forEach(x => x.classList.toggle('active', x.dataset.val === settings.theme));
     });
   });
-  document.querySelectorAll('#seg-lang .seg-btn:not([disabled])').forEach(b => {
-    b.addEventListener('click', () => {
-      haptic('light');
-      settings.lang = b.dataset.val;
-      saveSettings();
-      document.querySelectorAll('#seg-lang .seg-btn').forEach(x => x.classList.toggle('active', x.dataset.val === settings.lang));
-    });
-  });
+  // Language switching now via Google Translate
   document.getElementById('set-sound').addEventListener('change', e => {
     settings.sound = e.target.checked;
     saveSettings();
@@ -5225,7 +5304,7 @@ function handleBackButton() {
     }
   } else {
     backPressTime = now;
-    toast('Нажми ещё раз для выхода');
+    toast('Press again to exit');
   }
 }
 
@@ -5239,6 +5318,19 @@ if (window.Capacitor && Capacitor.Plugins && Capacitor.Plugins.App) {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') handleBackButton();
 });
+
+
+
+
+
+
+
+// Save Google Translate language selection
+document.addEventListener('change', e => {
+  if (e.target && e.target.classList && e.target.classList.contains('goog-te-combo')) {
+    try { localStorage.setItem('gt_lang', e.target.value); } catch(err) {}
+  }
+}, true);
 
 // ============== INIT ==============
 // Wait for DOM and data, then render
@@ -5375,7 +5467,7 @@ def sync_data():
 # ============== BUILD ==============
 def build():
     sync_data()
-    drinks_json, glossary_json, taxonomy_json, quiz_json, dish_json, blind_modes_json = to_js()
+    drinks_json, glossary_json, taxonomy_json, quiz_json, dish_json, blind_modes_json, tags_en_json = to_js()
     html = HTML_TEMPLATE
     html = html.replace('__DRINKS__', drinks_json)
     html = html.replace('__GLOSSARY__', glossary_json)
@@ -5383,6 +5475,7 @@ def build():
     html = html.replace('__QUIZ__', quiz_json)
     html = html.replace('__DISH_PAIRS__', dish_json)
     html = html.replace('__BLIND_MODES__', blind_modes_json)
+    html = html.replace('__TAGS_EN__', tags_en_json)
     output_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'www', 'index.html')
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html)

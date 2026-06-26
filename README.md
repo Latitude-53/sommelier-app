@@ -2,7 +2,17 @@
 
 > Мобильное приложение для распознавания вкусов напитков. Полностью офлайн, без серверов и API — весь датасет встроен в один HTML-файл.
 
+> A mobile app for recognizing drink flavors. Fully offline, no servers or API — the entire dataset is embedded in a single HTML file.
+
 **263 напитка • 10 вкладок • 232 термина • 29 блюд • 4 режима дегустации**
+
+## 🌐 Try it
+
+**Online:** https://latitude-53.github.io/sommelier-app/
+
+**APK:** See [Releases](https://github.com/Latitude-53/sommelier-app/releases)
+
+> ⚠️ UI is in Russian — open Settings (⚙) → "Translate" to switch to English (or 7 other languages via Google Translate).
 
 ## 📸 Скриншоты
 

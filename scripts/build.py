@@ -1799,7 +1799,7 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
     <button data-view="tree" class="active">Дерево</button>
     <button data-view="quiz">Я в тупике</button>
     <button data-view="build">Опиши</button>
-    <button data-view="blind">Слепая</button>
+    <button data-view="blind">Дегустация</button>
     <button data-view="browse">База</button>
     <button data-view="notes-search">По ноте</button>
     <button data-view="pairing">К еде</button>
@@ -4203,7 +4203,7 @@ function renderBlind() {
     }
     const setup = state.blind_setup;
     c.innerHTML = `
-      <div class="intro"><h3>Слепая дегустация</h3><p>Приложение загадывает напиток. Угадай: 1) тип (вино/пиво/...) 2) категорию 3) конкретный напиток. Учись распознавать вкусы!</p></div>
+      <div class="intro"><h3>Дегустация</h3><p>Приложение загадывает напиток. Угадай: 1) тип (вино/пиво/...) 2) категорию 3) конкретный напиток. Учись распознавать вкусы!</p></div>
       <div class="card" style="padding:20px;">
         <div style="text-align:center; margin-bottom:16px;">
           <div style="font-size:48px; margin-bottom:10px;">🍷🔍</div>

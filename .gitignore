@@ -1,0 +1,32 @@
+# Android build artifacts
+android/
+android-release/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build cache
+*.apk
+*.aab
+.gradle/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Backup
+*.bak
+*.backup
+*~

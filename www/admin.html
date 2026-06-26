@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Админка — Помощник сомелье</title>
+<style>
+  :root {
+    --bg: #1a1410; --bg-2: #221a14; --card: #2a2018; --card-2: #322620;
+    --border: #3d2f24; --text: #f5e6d3; --text-dim: #b8a08a; --text-mute: #7a6a5a;
+    --gold: #c9a55c; --gold-dim: #8a7440;
+    --wine: #a8484a; --wine-dim: #6b2e2f;
+    --acid: #c9b04a; --sweet: #d47b6a; --bitter: #7a8a4a; --tannin: #9a5a6a; --umami: #8a6a9a; --salty: #6a8a8a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 14px; line-height: 1.5; padding: 20px;
+  }
+  h1, h2 { font-family: Georgia, serif; color: var(--gold); }
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .btn { background: var(--gold); color: #1a1410; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; font-family: inherit; font-size: 13px; }
+  .btn:active { transform: scale(0.97); }
+  .btn-secondary { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+  .btn-danger { background: var(--wine-dim); color: #f5d5d5; }
+  .btn-sm { padding: 4px 10px; font-size: 11px; }
+  .layout { display: grid; grid-template-columns: 320px 1fr; gap: 16px; height: calc(100vh - 100px); }
+  .sidebar { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px; overflow-y: auto; }
+  .main { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; overflow-y: auto; }
+  .file-tabs { display: flex; gap: 4px; margin-bottom: 12px; flex-wrap: wrap; }
+  .file-tab { background: var(--bg-2); border: 1px solid var(--border); color: var(--text-dim); padding: 6px 12px; border-radius: 8px; cursor: pointer; font-size: 12px; font-family: inherit; }
+  .file-tab.active { background: var(--gold-dim); color: var(--text); border-color: var(--gold); }
+  .item-list { display: flex; flex-direction: column; gap: 4px; }
+  .item-row { padding: 8px 10px; background: var(--bg-2); border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+  .item-row:hover, .item-row.active { background: var(--card-2); border-color: var(--gold-dim); }
+  .item-row .name { font-size: 13px; color: var(--text); }
+  .item-row .meta { font-size: 10px; color: var(--text-mute); margin-top: 2px; }
+  .form-group { margin-bottom: 12px; }
+  .form-group label { display: block; font-size: 11px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+    color: var(--text); padding: 8px 10px; font-size: 13px; font-family: inherit;
+  }
+  .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--gold-dim); }
+  .form-group textarea { resize: vertical; min-height: 60px; }
+  .profile-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .profile-slider { text-align: center; }
+  .profile-slider .lbl { font-size: 10px; color: var(--text-mute); margin-bottom: 4px; }
+  .profile-slider input[type=range] { width: 100%; }
+  .profile-slider .val { font-size: 12px; color: var(--gold); font-weight: bold; }
+  .tags-input { display: flex; flex-wrap: wrap; gap: 4px; padding: 6px; min-height: 38px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; }
+  .tag-chip { background: var(--gold-dim); color: var(--text); padding: 2px 8px; border-radius: 10px; font-size: 11px; display: flex; align-items: center; gap: 4px; }
+  .tag-chip button { background: none; border: none; color: var(--text); cursor: pointer; font-size: 12px; line-height: 1; }
+  .tag-add { background: var(--bg-2); border: 1px dashed var(--gold-dim); color: var(--gold); padding: 2px 8px; border-radius: 10px; font-size: 11px; }
+  .cross-list { display: flex; flex-wrap: wrap; gap: 4px; }
+  .cross-chip { background: var(--cider-dim, #5a8a5a); color: #d5e5d5; padding: 2px 8px; border-radius: 10px; font-size: 11px; display: flex; align-items: center; gap: 4px; }
+  .empty { text-align: center; padding: 40px 20px; color: var(--text-mute); }
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--card-2); border: 1px solid var(--gold-dim); color: var(--text); padding: 10px 20px; border-radius: 24px; font-size: 13px; z-index: 300; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  .toast.show { opacity: 1; }
+  .unsaved-dot { display: inline-block; width: 8px; height: 8px; background: var(--wine); border-radius: 50%; margin-left: 6px; }
+  .actions-bar { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .raw-editor { width: 100%; min-height: 400px; font-family: 'Courier New', monospace; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>🛠 Админка — Помощник сомелье</h1>
+    <p style="color: var(--text-mute); font-size: 12px; margin-top: 4px;">
+      Редактирование JSON-датасета. Работает в Chrome/Edge.
+      <span id="folder-status" style="color: var(--wine);">Папка не выбрана</span>
+    </p>
+  </div>
+  <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <button class="btn btn-secondary" onclick="selectFolder()">📁 Открыть папку data/</button>
+    <button class="btn" onclick="saveAll()" id="save-btn" disabled>💾 Сохранить всё</button>
+    <button class="btn btn-secondary" onclick="buildHtml()" id="build-btn" disabled>🔨 Собрать HTML</button>
+    <button class="btn btn-secondary" onclick="exportDataset()" id="export-btn" disabled>📤 Экспорт датасета</button>
+    <button class="btn btn-secondary" onclick="document.getElementById('import-input').click()">📥 Импорт drinks.json</button>
+    <input type="file" id="import-input" accept=".json" style="display:none" onchange="importDrinks(event)">
+  </div>
+</div>
+
+<div class="file-tabs" id="file-tabs"></div>
+
+<div class="layout">
+  <div class="sidebar">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+      <input type="text" id="search" placeholder="Поиск..." style="flex: 1; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); padding: 6px 10px; font-size: 12px; font-family: inherit;">
+      <button class="btn btn-sm" onclick="addItem()" style="margin-left: 8px;">+ Добавить</button>
+    </div>
+    <div class="item-list" id="item-list"></div>
+  </div>
+  <div class="main" id="form-area">
+    <div class="empty">
+      <div style="font-size: 48px; margin-bottom: 12px;">📂</div>
+      <p>Открой папку <code>data/</code> чтобы начать редактировать</p>
+      <p style="margin-top: 8px; font-size: 12px;">Кнопка "📁 Открыть папку data/" вверху справа</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ============== STATE ==============
+let state = {
+  dirHandle: null,        // FileSystemDirectoryHandle
+  currentFile: 'drinks.json',
+  data: {},                // {filename: [items]}
+  dirty: {},               // {filename: true} if unsaved
+  selectedIdx: 0,
+  search: ''
+};
+
+const FILES = [
+  { name: 'drinks.json', label: '🍷 Напитки', idField: 'id', nameField: 'name' },
+  { name: 'taxonomy.json', label: '🌳 Дерево вкусов', idField: 'id', nameField: 'title' },
+  { name: 'glossary.json', label: '📖 Словарь', idField: null, nameField: null, isDict: true },
+  { name: 'dish_pairs.json', label: '🍽 Пары к еде', idField: null, nameField: 'dish' },
+  { name: 'quiz.json', label: '❓ Квиз', idField: null, nameField: 'q' },
+  { name: 'blind_modes.json', label: '🎯 Слепая: режимы', idField: 'id', nameField: 'title' }
+];
+
+// ============== FILE SYSTEM ACCESS API ==============
+async function selectFolder() {
+  if (!window.showDirectoryPicker) {
+    toast('File System Access API не поддерживается. Используй Chrome или Edge.');
+    return;
+  }
+  try {
+    state.dirHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+    document.getElementById('folder-status').textContent = `📁 ${state.dirHandle.name}/`;
+    document.getElementById('folder-status').style.color = 'var(--cider)';
+    document.getElementById('save-btn').disabled = false;
+    document.getElementById('build-btn').disabled = false;
+    document.getElementById('export-btn').disabled = false;
+    await loadAllFiles();
+    renderFileTabs();
+    renderItemList();
+    toast('Папка открыта: ' + state.dirHandle.name);
+  } catch (e) {
+    if (e.name !== 'AbortError') {
+      toast('Ошибка: ' + e.message);
+    }
+  }
+}
+
+async function loadAllFiles() {
+  for (const f of FILES) {
+    try {
+      const fileHandle = await state.dirHandle.getFileHandle(f.name);
+      const file = await fileHandle.getFile();
+      const text = await file.text();
+      state.data[f.name] = JSON.parse(text);
+    } catch (e) {
+      console.warn('Could not load', f.name, e);
+      state.data[f.name] = [];
+    }
+  }
+}
+
+async function saveFile(filename) {
+  if (!state.dirHandle) return;
+  try {
+    const fileHandle = await state.dirHandle.getFileHandle(filename, { create: true });
+    const writable = await fileHandle.createWritable();
+    await writable.write(JSON.stringify(state.data[filename], null, 2));
+    await writable.close();
+    state.dirty[filename] = false;
+    updateFileTabs();
+    toast('✓ Сохранено: ' + filename);
+  } catch (e) {
+    toast('Ошибка сохранения: ' + e.message);
+  }
+}
+
+async function saveAll() {
+  if (!state.dirHandle) return;
+  for (const f of FILES) {
+    if (state.dirty[f.name]) {
+      await saveFile(f.name);
+    }
+  }
+  toast('✓ Все файлы сохранены');
+}
+
+async function buildHtml() {
+  // Save first
+  await saveAll();
+  // Try to find build.py and run it — but browser can't run Python.
+  // Instead, show instructions.
+  toast('✓ JSON сохранён. Запусти: python3 scripts/build.py');
+  // Optionally: try to open a new tab with the regenerated HTML
+}
+
+// ============== EXPORT / IMPORT DATASET ==============
+// Экспорт: скачивает drinks.json одним файлом (для отправки мне на обновление)
+async function exportDataset() {
+  if (!state.data['drinks.json'] || !state.data['drinks.json'].length) {
+    toast('Нет данных для экспорта. Открой папку data/ сначала.');
+    return;
+  }
+  const json = JSON.stringify(state.data['drinks.json'], null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  const ts = new Date().toISOString().slice(0, 10);
+  a.download = `drinks-${ts}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  toast(`📤 Экспортировано ${state.data['drinks.json'].length} напитков`);
+}
+
+// Импорт: загружает drinks.json (например от меня обратно), заменяет текущий датасет
+async function importDrinks(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  try {
+    const text = await file.text();
+    const data = JSON.parse(text);
+    if (!Array.isArray(data)) {
+      toast('Ошибка: JSON должен быть массивом напитков');
+      return;
+    }
+    if (!state.dirHandle) {
+      // Нет открытой папки — просто загрузим в память и покажем
+      state.data['drinks.json'] = data;
+      state.dirty['drinks.json'] = true;
+      renderFileTabs();
+      renderItemList();
+      toast(`📥 Загружено ${data.length} напитков. Открой папку data/ и сохрани.`);
+      return;
+    }
+    state.data['drinks.json'] = data;
+    state.dirty['drinks.json'] = true;
+    await saveFile('drinks.json');
+    renderFileTabs();
+    renderItemList();
+    toast(`📥 Импортировано ${data.length} напитков`);
+  } catch (e) {
+    toast('Ошибка импорта: ' + e.message);
+  }
+  // Reset input so same file can be selected again
+  event.target.value = '';
+}
+
+// ============== RENDERING ==============
+function renderFileTabs() {
+  const c = document.getElementById('file-tabs');
+  c.innerHTML = FILES.map(f => `
+    <button class="file-tab ${state.currentFile === f.name ? 'active' : ''}" onclick="switchFile('${f.name}')">
+      ${f.label}${state.dirty[f.name] ? '<span class="unsaved-dot"></span>' : ''}
+    </button>
+  `).join('');
+}
+
+function switchFile(name) {
+  state.currentFile = name;
+  state.selectedIdx = 0;
+  state.search = '';
+  document.getElementById('search').value = '';
+  renderFileTabs();
+  renderItemList();
+  renderForm();
+}
+
+function renderItemList() {
+  const c = document.getElementById('item-list');
+  const data = state.data[state.currentFile] || [];
+  const fileConfig = FILES.find(f => f.name === state.currentFile);
+  const search = state.search.toLowerCase();
+
+  let items = data;
+  if (search && fileConfig.nameField) {
+    items = data.filter(item => {
+      const name = (item[fileConfig.nameField] || '').toLowerCase();
+      return name.includes(search);
+    });
+  }
+
+  if (!items.length) {
+    c.innerHTML = '<div class="empty" style="padding: 20px;"><p style="font-size: 12px;">Нет элементов</p></div>';
+    return;
+  }
+
+  c.innerHTML = items.map((item, i) => {
+    const realIdx = data.indexOf(item);
+    const name = fileConfig.nameField ? (item[fileConfig.nameField] || 'Без названия') : (fileConfig.isDict ? Object.keys(item)[0] : `#${i+1}`);
+    const meta = fileConfig.idField && item[fileConfig.idField] ? `ID: ${item[fileConfig.idField]}` : '';
+    return `
+      <div class="item-row ${state.selectedIdx === realIdx ? 'active' : ''}" onclick="selectItem(${realIdx})">
+        <div class="name">${name}</div>
+        ${meta ? `<div class="meta">${meta}</div>` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+function selectItem(idx) {
+  state.selectedIdx = idx;
+  renderItemList();
+  renderForm();
+}
+
+function markDirty() {
+  state.dirty[state.currentFile] = true;
+  updateFileTabs();
+}
+
+function updateFileTabs() {
+  document.querySelectorAll('.file-tab').forEach((tab, i) => {
+    const fname = FILES[i].name;
+    const dot = tab.querySelector('.unsaved-dot');
+    if (state.dirty[fname] && !dot) {
+      tab.innerHTML += '<span class="unsaved-dot"></span>';
+    } else if (!state.dirty[fname] && dot) {
+      dot.remove();
+    }
+  });
+}
+
+// ============== FORM RENDERING (per file type) ==============
+function renderForm() {
+  const c = document.getElementById('form-area');
+  const data = state.data[state.currentFile] || [];
+  const fileConfig = FILES.find(f => f.name === state.currentFile);
+
+  if (fileConfig.isDict) {
+    renderGlossaryForm(c, data);
+    return;
+  }
+
+  const item = data[state.selectedIdx];
+  if (!item) {
+    c.innerHTML = '<div class="empty"><p>Выбери элемент слева</p></div>';
+    return;
+  }
+
+  if (state.currentFile === 'drinks.json') {
+    renderDrinkForm(c, item);
+  } else if (state.currentFile === 'taxonomy.json') {
+    renderTaxonomyForm(c, item);
+  } else if (state.currentFile === 'dish_pairs.json') {
+    renderDishPairForm(c, item);
+  } else if (state.currentFile === 'quiz.json') {
+    renderQuizForm(c, item);
+  } else if (state.currentFile === 'blind_modes.json') {
+    renderBlindModeForm(c, item);
+  }
+}
+
+function renderDrinkForm(c, item) {
+  const sKeys = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
+  const sLabels = ['Кислота','Сладость','Горечь','Танины','Тело','Алкоголь','Газация','Солёное/Умами'];
+  const aKeys = ['fruit','floral','spice','wood_smoke','mineral_earth','sweet_pastry','yeast_ferment'];
+  const aLabels = ['Фрукты','Цветы/Травы','Специи','Дерево/Дым','Минералы/Земля','Сладкое/Кондитер','Дрожжи/Фермент'];
+  c.innerHTML = `
+    <div class="actions-bar">
+      <button class="btn btn-sm" onclick="duplicateItem()">📋 Дублировать</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteItem()">🗑 Удалить</button>
+      <span style="margin-left: auto; font-size: 11px; color: var(--text-mute);">ID: ${item.id || '—'}</span>
+    </div>
+    <div class="form-group">
+      <label>Название</label>
+      <input type="text" value="${escapeAttr(item.name || '')}" onchange="updateField('name', this.value)">
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+      <div class="form-group">
+        <label>Тип</label>
+        <select onchange="updateField('type', this.value)">
+          ${['wine','beer','spirit','sake','cider','mead','coffee','tea'].map(t => `<option value="${t}" ${item.type===t?'selected':''}>${t}</option>`).join('')}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Категория</label>
+        <input type="text" value="${escapeAttr(item.cat || '')}" onchange="updateField('cat', this.value)">
+      </div>
+      <div class="form-group">
+        <label>Подкатегория (subcat)</label>
+        <input type="text" value="${escapeAttr(item.subcat || '')}" onchange="updateField('subcat', this.value)" placeholder="напр: Зелёный, Эспрессо, Игристое...">
+      </div>
+      <div class="form-group">
+        <label>ABV</label>
+        <input type="text" value="${escapeAttr(item.abv || '')}" onchange="updateField('abv', this.value)">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Происхождение</label>
+      <input type="text" value="${escapeAttr(item.origin || '')}" onchange="updateField('origin', this.value)">
+    </div>
+    <div class="form-group">
+      <label>🫁 Структура и текстура (1-5) — то, что чувствует язык</label>
+      <div class="profile-grid">
+        ${sKeys.map((k, i) => `
+          <div class="profile-slider">
+            <div class="lbl">${sLabels[i]}</div>
+            <input type="range" min="1" max="5" value="${item.s?.[k] || 1}" oninput="updateStruct('${k}', this.value); document.getElementById('sval-${k}').textContent = this.value">
+            <div class="val" id="sval-${k}">${item.s?.[k] || 1}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <div class="form-group">
+      <label>👃 Ароматика (1-5) — кластеры обоняния</label>
+      <div class="profile-grid">
+        ${aKeys.map((k, i) => `
+          <div class="profile-slider">
+            <div class="lbl">${aLabels[i]}</div>
+            <input type="range" min="1" max="5" value="${item.a?.[k] || 1}" oninput="updateAroma('${k}', this.value); document.getElementById('aval-${k}').textContent = this.value">
+            <div class="val" id="aval-${k}">${item.a?.[k] || 1}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Теги (вкусовые ноты)</label>
+      <div class="tags-input" id="tags-input">
+        ${(item.tags || []).map((t, i) => `
+          <span class="tag-chip">${escapeHtml(t)}<button onclick="removeTag(${i})">×</button></span>
+        `).join('')}
+        <input type="text" placeholder="+ добавить" style="background: none; border: none; color: var(--text); font-size: 11px; min-width: 80px;" onkeydown="if(event.key==='Enter'){addTag(this.value); this.value='';}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Описание</label>
+      <textarea onchange="updateField('desc', this.value)">${escapeHtml(item.desc || '')}</textarea>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div class="form-group">
+        <label>Гастрономия (через запятую)</label>
+        <input type="text" value="${escapeAttr((item.pair || []).join(', '))}" onchange="updateArrayField('pair', this.value)">
+      </div>
+      <div class="form-group">
+        <label>Температура</label>
+        <input type="text" value="${escapeAttr(item.temp || '')}" onchange="updateField('temp', this.value)">
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div class="form-group">
+        <label>Бокал</label>
+        <input type="text" value="${escapeAttr(item.glass || '')}" onchange="updateField('glass', this.value)">
+      </div>
+      <div class="form-group">
+        <label>Кросс-ссылки (ID через запятую)</label>
+        <input type="text" value="${escapeAttr((item.cross || []).join(', '))}" onchange="updateCrossField(this.value)">
+      </div>
+    </div>
+  `;
+}
+
+function renderTaxonomyForm(c, item) {
+  c.innerHTML = `
+    <div class="actions-bar">
+      <button class="btn btn-sm" onclick="duplicateItem()">📋 Дублировать</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteItem()">🗑 Удалить</button>
+    </div>
+    <div class="form-group">
+      <label>ID рецептора</label>
+      <input type="text" value="${escapeAttr(item.id || '')}" onchange="updateField('id', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Иконка</label>
+      <input type="text" value="${escapeAttr(item.icon || '')}" onchange="updateField('icon', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Заголовок</label>
+      <input type="text" value="${escapeAttr(item.title || '')}" onchange="updateField('title', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Подзаголовок</label>
+      <input type="text" value="${escapeAttr(item.sub || '')}" onchange="updateField('sub', this.value)">
+    </div>
+    <div class="form-group">
+      <label>CSS-класс</label>
+      <input type="text" value="${escapeAttr(item.class || '')}" onchange="updateField('class', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Подкатегории (JSON)</label>
+      <textarea class="raw-editor" onchange="updateFieldRaw('subs', this.value)">${JSON.stringify(item.subs || [], null, 2)}</textarea>
+    </div>
+  `;
+}
+
+function renderGlossaryForm(c, data) {
+  // Glossary is a dict {term: definition}
+  const terms = Object.entries(data).sort((a,b) => a[0].localeCompare(b[0], 'ru'));
+  c.innerHTML = `
+    <div class="actions-bar">
+      <button class="btn btn-sm" onclick="addGlossaryTerm()">+ Добавить термин</button>
+    </div>
+    <div class="item-list">
+      ${terms.map(([term, def], i) => `
+        <div class="form-group" style="background: var(--bg-2); padding: 12px; border-radius: 8px;">
+          <label>Термин</label>
+          <input type="text" value="${escapeAttr(term)}" onchange="renameGlossaryTerm(${i}, this.value)">
+          <label style="margin-top: 8px;">Определение</label>
+          <textarea onchange="updateGlossaryDef(${i}, this.value)">${escapeHtml(def)}</textarea>
+          <button class="btn btn-danger btn-sm" style="margin-top: 8px;" onclick="deleteGlossaryTerm(${i})">🗑 Удалить</button>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderDishPairForm(c, item) {
+  c.innerHTML = `
+    <div class="actions-bar">
+      <button class="btn btn-sm" onclick="duplicateItem()">📋 Дублировать</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteItem()">🗑 Удалить</button>
+    </div>
+    <div class="form-group">
+      <label>Блюдо</label>
+      <input type="text" value="${escapeAttr(item.dish || '')}" onchange="updateField('dish', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Иконка</label>
+      <input type="text" value="${escapeAttr(item.icon || '')}" onchange="updateField('icon', this.value)">
+    </div>
+    <div class="form-group">
+      <label>ID напитков (через запятую)</label>
+      <input type="text" value="${escapeAttr((item.ids || []).join(', '))}" onchange="updateIdsField(this.value)">
+    </div>
+  `;
+}
+
+function renderQuizForm(c, item) {
+  c.innerHTML = `
+    <div class="actions-bar">
+      <button class="btn btn-sm" onclick="duplicateItem()">📋 Дублировать</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteItem()">🗑 Удалить</button>
+    </div>
+    <div class="form-group">
+      <label>Вопрос</label>
+      <input type="text" value="${escapeAttr(item.q || '')}" onchange="updateField('q', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Подсказка</label>
+      <input type="text" value="${escapeAttr(item.hint || '')}" onchange="updateField('hint', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Ответы (JSON)</label>
+      <textarea class="raw-editor" onchange="updateFieldRaw('a', this.value)">${JSON.stringify(item.a || [], null, 2)}</textarea>
+    </div>
+  `;
+}
+
+function renderBlindModeForm(c, item) {
+  c.innerHTML = `
+    <div class="actions-bar">
+      <button class="btn btn-sm" onclick="duplicateItem()">📋 Дублировать</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteItem()">🗑 Удалить</button>
+    </div>
+    <div class="form-group">
+      <label>ID</label>
+      <input type="text" value="${escapeAttr(item.id || '')}" onchange="updateField('id', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Иконка</label>
+      <input type="text" value="${escapeAttr(item.icon || '')}" onchange="updateField('icon', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Заголовок</label>
+      <input type="text" value="${escapeAttr(item.title || '')}" onchange="updateField('title', this.value)">
+    </div>
+    <div class="form-group">
+      <label>Описание</label>
+      <textarea onchange="updateField('description', this.value)">${escapeHtml(item.description || '')}</textarea>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+      <div class="form-group">
+        <label>Показывать радар</label>
+        <select onchange="updateField('show_radar', this.value === 'true')">
+          <option value="true" ${item.show_radar?'selected':''}>Да</option>
+          <option value="false" ${!item.show_radar?'selected':''}>Нет</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Показывать теги</label>
+        <select onchange="updateField('show_tags', this.value === 'true')">
+          <option value="true" ${item.show_tags?'selected':''}>Да</option>
+          <option value="false" ${!item.show_tags?'selected':''}>Нет</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Показывать подсказку</label>
+        <select onchange="updateField('show_hint', this.value === 'true')">
+          <option value="true" ${item.show_hint?'selected':''}>Да</option>
+          <option value="false" ${!item.show_hint?'selected':''}>Нет</option>
+        </select>
+      </div>
+    </div>
+  `;
+}
+
+// ============== FIELD UPDATES ==============
+function updateField(field, value) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  item[field] = value;
+  markDirty();
+  // Update list to reflect name change
+  if (field === 'name' || field === 'title' || field === 'dish' || field === 'q') {
+    renderItemList();
+  }
+}
+function updateFieldRaw(field, value) {
+  try {
+    const parsed = JSON.parse(value);
+    const item = state.data[state.currentFile][state.selectedIdx];
+    item[field] = parsed;
+    markDirty();
+    toast('✓ JSON валиден');
+  } catch (e) {
+    toast('JSON ошибка: ' + e.message);
+  }
+}
+function updateStruct(key, value) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  if (!item.s) item.s = {};
+  item.s[key] = parseInt(value);
+  markDirty();
+}
+function updateAroma(key, value) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  if (!item.a) item.a = {};
+  item.a[key] = parseInt(value);
+  markDirty();
+}
+function updateArrayField(field, value) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  item[field] = value.split(',').map(s => s.trim()).filter(s => s);
+  markDirty();
+}
+function updateCrossField(value) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  item.cross = value.split(',').map(s => parseInt(s.trim())).filter(s => !isNaN(s));
+  markDirty();
+}
+function updateIdsField(value) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  item.ids = value.split(',').map(s => parseInt(s.trim())).filter(s => !isNaN(s));
+  markDirty();
+}
+
+// Tags
+function addTag(value) {
+  if (!value.trim()) return;
+  const item = state.data[state.currentFile][state.selectedIdx];
+  if (!item.tags) item.tags = [];
+  item.tags.push(value.trim());
+  markDirty();
+  renderForm();
+}
+function removeTag(idx) {
+  const item = state.data[state.currentFile][state.selectedIdx];
+  item.tags.splice(idx, 1);
+  markDirty();
+  renderForm();
+}
+
+// Glossary
+function addGlossaryTerm() {
+  const data = state.data[state.currentFile];
+  let i = 1;
+  while (data[`Новый термин ${i}`]) i++;
+  data[`Новый термин ${i}`] = 'Определение...';
+  markDirty();
+  renderForm();
+}
+function renameGlossaryTerm(idx, newName) {
+  const data = state.data[state.currentFile];
+  const entries = Object.entries(data);
+  const [oldName, def] = entries[idx];
+  delete data[oldName];
+  data[newName] = def;
+  markDirty();
+  renderForm();
+}
+function updateGlossaryDef(idx, value) {
+  const data = state.data[state.currentFile];
+  const entries = Object.entries(data);
+  const [name] = entries[idx];
+  data[name] = value;
+  markDirty();
+}
+function deleteGlossaryTerm(idx) {
+  const data = state.data[state.currentFile];
+  const entries = Object.entries(data);
+  const [name] = entries[idx];
+  delete data[name];
+  markDirty();
+  renderForm();
+}
+
+// Item operations
+function addItem() {
+  const data = state.data[state.currentFile];
+  const fileConfig = FILES.find(f => f.name === state.currentFile);
+  let newItem;
+  if (state.currentFile === 'drinks.json') {
+    const maxId = Math.max(...data.map(d => d.id || 0), 0);
+    newItem = {
+      id: maxId + 1,
+      name: 'Новый напиток',
+      type: 'wine', cat: '', subcat: '', origin: '', abv: '',
+      s: { acid: 1, sweet: 1, bitter: 1, tannin: 1, body: 1, alcohol: 1, carbonation: 1, savory: 1 },
+      a: { fruit: 1, floral: 1, spice: 1, wood_smoke: 1, mineral_earth: 1, sweet_pastry: 1, yeast_ferment: 1 },
+      tags: [], desc: '', pair: [], temp: '', glass: '', cross: []
+    };
+  } else if (state.currentFile === 'glossary.json') {
+    addGlossaryTerm();
+    return;
+  } else {
+    newItem = fileConfig.idField ? { id: 'new', title: 'Новый' } : {};
+  }
+  data.push(newItem);
+  state.selectedIdx = data.length - 1;
+  markDirty();
+  renderItemList();
+  renderForm();
+  toast('✓ Добавлен новый элемент');
+}
+function duplicateItem() {
+  const data = state.data[state.currentFile];
+  const item = data[state.selectedIdx];
+  const copy = JSON.parse(JSON.stringify(item));
+  if (copy.id && typeof copy.id === 'number') copy.id = Math.max(...data.map(d => d.id || 0)) + 1;
+  if (copy.name) copy.name = (copy.name || '') + ' (копия)';
+  data.push(copy);
+  state.selectedIdx = data.length - 1;
+  markDirty();
+  renderItemList();
+  renderForm();
+  toast('✓ Дублировано');
+}
+function deleteItem() {
+  if (!confirm('Удалить элемент?')) return;
+  const data = state.data[state.currentFile];
+  data.splice(state.selectedIdx, 1);
+  state.selectedIdx = Math.max(0, state.selectedIdx - 1);
+  markDirty();
+  renderItemList();
+  renderForm();
+  toast('✓ Удалено');
+}
+
+// ============== HELPERS ==============
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function escapeAttr(s) { return escapeHtml(s); }
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// Search
+document.getElementById('search').addEventListener('input', e => {
+  state.search = e.target.value;
+  renderItemList();
+});
+
+// Check API support
+if (!window.showDirectoryPicker) {
+  document.getElementById('folder-status').textContent = '⚠️ Нужен Chrome/Edge (File System Access API)';
+}
+</script>
+</body>
+</html>

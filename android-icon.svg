@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#2a2018"/>
+      <stop offset="100%" stop-color="#1a1410"/>
+    </radialGradient>
+    <radialGradient id="gold" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e8c878"/>
+      <stop offset="50%" stop-color="#c9a55c"/>
+      <stop offset="100%" stop-color="#8a7440"/>
+    </radialGradient>
+    <linearGradient id="wine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d46a6c"/>
+      <stop offset="100%" stop-color="#7a3032"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- Subtle radar rings (flavor profile) -->
+  <g stroke="#3d2f24" stroke-width="2" fill="none" opacity="0.6">
+    <circle cx="256" cy="240" r="180"/>
+    <circle cx="256" cy="240" r="130"/>
+    <circle cx="256" cy="240" r="80"/>
+  </g>
+  <g stroke="#5a4828" stroke-width="1.5" fill="none" opacity="0.5">
+    <line x1="256" y1="60" x2="256" y2="420"/>
+    <line x1="76" y1="240" x2="436" y2="240"/>
+    <line x1="128" y1="112" x2="384" y2="368"/>
+    <line x1="384" y1="112" x2="128" y2="368"/>
+  </g>
+  <!-- Wine glass (centered, elegant) -->
+  <g>
+    <!-- Bowl -->
+    <path d="M 196 130 Q 196 130 196 180 Q 196 230 256 240 Q 316 230 316 180 Q 316 130 316 130 Z" fill="url(#wine)" stroke="#c9a55c" stroke-width="3"/>
+    <!-- Wine surface highlight -->
+    <ellipse cx="256" cy="145" rx="58" ry="6" fill="#e8908c" opacity="0.7"/>
+    <!-- Stem -->
+    <rect x="252" y="240" width="8" height="90" fill="#c9a55c"/>
+    <!-- Base -->
+    <ellipse cx="256" cy="335" rx="48" ry="8" fill="#c9a55c"/>
+    <ellipse cx="256" cy="332" rx="48" ry="6" fill="#8a7440"/>
+  </g>
+  <!-- Gold accent dots (flavor vertices) -->
+  <g fill="url(#gold)">
+    <circle cx="256" cy="60" r="8"/>
+    <circle cx="384" cy="112" r="6"/>
+    <circle cx="436" cy="240" r="7"/>
+    <circle cx="384" cy="368" r="6"/>
+    <circle cx="256" cy="420" r="8"/>
+    <circle cx="128" cy="368" r="6"/>
+    <circle cx="76" cy="240" r="7"/>
+    <circle cx="128" cy="112" r="6"/>
+  </g>
+  <!-- Connect vertices (flavor profile polygon) -->
+  <path d="M 256 60 L 384 112 L 436 240 L 384 368 L 256 420 L 128 368 L 76 240 L 128 112 Z" fill="url(#gold)" fill-opacity="0.12" stroke="url(#gold)" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

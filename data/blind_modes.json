@@ -1,0 +1,38 @@
+[
+  {
+    "id": "all",
+    "title": "Классика",
+    "icon": "🎯",
+    "description": "Радар + все ноты",
+    "show_radar": true,
+    "show_tags": true,
+    "show_hint": false
+  },
+  {
+    "id": "notes",
+    "title": "Только ноты",
+    "icon": "🏷️",
+    "description": "Без радара — только вкусовые теги. Сложнее.",
+    "show_radar": false,
+    "show_tags": true,
+    "show_hint": false
+  },
+  {
+    "id": "profile",
+    "title": "Только профиль",
+    "icon": "📊",
+    "description": "Только радар, без нот. По форме угадывай.",
+    "show_radar": true,
+    "show_tags": false,
+    "show_hint": false
+  },
+  {
+    "id": "expert",
+    "title": "Эксперт",
+    "icon": "🏆",
+    "description": "Только подсказка: происхождение + крепость. Для профи.",
+    "show_radar": false,
+    "show_tags": false,
+    "show_hint": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "appId": "com.sommelier.app",
+  "appName": "Помощник сомелье",
+  "webDir": "www",
+  "backgroundColor": "#1a1410",
+  "android": {
+    "backgroundColor": "#1a1410",
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1000,
+      "backgroundColor": "#1a1410",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    },
+    "Haptics": {},
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#1a1410"
+    }
+  }
+}

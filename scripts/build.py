@@ -1769,9 +1769,15 @@ HTML_TEMPLATE = r'''<!DOCTYPE html>
   @media (min-width: 640px) { main { padding: 24px; } .brand h1 { font-size: 19px; } }
 
 /* Google Translate — полностью скрываем баннер и брендинг */
-iframe.goog-te-banner-frame { display: none !important; }
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0 !important; position: static !important; }
+/* GT banner — убиваем всеми способами */
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.skiptranslate,
+div.goog-te-banner-frame,
+.goog-te-banner { display: none !important; visibility: hidden !important; opacity: 0 !important; height: 0 !important; width: 0 !important; }
+body { top: 0 !important; position: static !important; margin-top: 0 !important; }
+html { top: 0 !important; }
+.goog-tooltip { display: none !important; }
 .goog-tooltip, .goog-tooltip:hover { display: none !important; }
 .goog-text-highlight { background: none !important; box-shadow: none !important; }
 /* Скрываем "Технологии Google" */
@@ -1860,9 +1866,15 @@ function googleTranslateElementInit() {
 </div>
 <style>@keyframes spin { to { transform: rotate(360deg); } }
 /* Google Translate — полностью скрываем баннер и брендинг */
-iframe.goog-te-banner-frame { display: none !important; }
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-body { top: 0 !important; position: static !important; }
+/* GT banner — убиваем всеми способами */
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.skiptranslate,
+div.goog-te-banner-frame,
+.goog-te-banner { display: none !important; visibility: hidden !important; opacity: 0 !important; height: 0 !important; width: 0 !important; }
+body { top: 0 !important; position: static !important; margin-top: 0 !important; }
+html { top: 0 !important; }
+.goog-tooltip { display: none !important; }
 .goog-tooltip, .goog-tooltip:hover { display: none !important; }
 .goog-text-highlight { background: none !important; box-shadow: none !important; }
 /* Скрываем "Технологии Google" */
@@ -5409,6 +5421,22 @@ document.addEventListener('keydown', e => {
 
 
 
+
+
+// Kill Google Translate banner — aggressive approach for mobile
+setInterval(() => {
+  // Remove banner iframe
+  const banner = document.querySelector('iframe.goog-te-banner-frame');
+  if (banner) banner.remove();
+  // Remove banner container
+  const skipTranslate = document.querySelector('.goog-te-banner-frame');
+  if (skipTranslate) skipTranslate.remove();
+  // Fix body position
+  if (document.body.style.top) document.body.style.top = '';
+  // Remove "translated" tooltip
+  const tooltips = document.querySelectorAll('.goog-tooltip');
+  tooltips.forEach(t => t.remove());
+}, 200);
 
 // Save Google Translate language selection
 document.addEventListener('change', e => {

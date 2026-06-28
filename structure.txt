@@ -1,0 +1,4233 @@
+﻿Folder PATH listing
+Volume serial number is 08C4-142E
+D:.
+ж   .gitignore
+ж   build.gradle.kts
+ж   capacitor.config.json
+ж   gradle.properties
+ж   gradlew
+ж   gradlew.bat
+ж   local.properties
+ж   package-lock.json
+ж   package.json
+ж   README.md
+ж   settings.gradle.kts
+ж   structure.txt
+ж   
++---.idea
+ж   ж   .name
+ж   ж   AndroidProjectSystem.xml
+ж   ж   gradle.xml
+ж   ж   misc.xml
+ж   ж   runConfigurations.xml
+ж   ж   workspace.xml
+ж   ж   
+ж   L---caches
+ж           deviceStreaming.xml
+ж           
++---android
+ж   ж   .gitignore
+ж   ж   build.gradle
+ж   ж   capacitor.settings.gradle
+ж   ж   gradle.properties
+ж   ж   gradlew
+ж   ж   gradlew.bat
+ж   ж   local.properties
+ж   ж   settings.gradle
+ж   ж   variables.gradle
+ж   ж   
+ж   +---.gradle
+ж   ж   ж   config.properties
+ж   ж   ж   file-system.probe
+ж   ж   ж   
+ж   ж   +---8.2.1
+ж   ж   ж   ж   gc.properties
+ж   ж   ж   ж   
+ж   ж   ж   +---checksums
+ж   ж   ж   ж       checksums.lock
+ж   ж   ж   ж       md5-checksums.bin
+ж   ж   ж   ж       sha1-checksums.bin
+ж   ж   ж   ж       
+ж   ж   ж   +---dependencies-accessors
+ж   ж   ж   ж       dependencies-accessors.lock
+ж   ж   ж   ж       gc.properties
+ж   ж   ж   ж       
+ж   ж   ж   +---executionHistory
+ж   ж   ж   ж       executionHistory.bin
+ж   ж   ж   ж       executionHistory.lock
+ж   ж   ж   ж       
+ж   ж   ж   +---fileChanges
+ж   ж   ж   ж       last-build.bin
+ж   ж   ж   ж       
+ж   ж   ж   +---fileHashes
+ж   ж   ж   ж       fileHashes.bin
+ж   ж   ж   ж       fileHashes.lock
+ж   ж   ж   ж       resourceHashesCache.bin
+ж   ж   ж   ж       
+ж   ж   ж   L---vcsMetadata
+ж   ж   +---buildOutputCleanup
+ж   ж   ж       buildOutputCleanup.lock
+ж   ж   ж       cache.properties
+ж   ж   ж       outputFiles.bin
+ж   ж   ж       
+ж   ж   L---vcs-1
+ж   ж           gc.properties
+ж   ж           
+ж   +---.idea
+ж   ж   ж   AndroidProjectSystem.xml
+ж   ж   ж   compiler.xml
+ж   ж   ж   deploymentTargetSelector.xml
+ж   ж   ж   deviceManager.xml
+ж   ж   ж   gradle.xml
+ж   ж   ж   migrations.xml
+ж   ж   ж   misc.xml
+ж   ж   ж   workspace.xml
+ж   ж   ж   
+ж   ж   +---caches
+ж   ж   ж       deviceStreaming.xml
+ж   ж   ж       
+ж   ж   L---runConfigurations
+ж   ж           Somellier.xml
+ж   ж           
+ж   +---app
+ж   ж   ж   .gitignore
+ж   ж   ж   build.gradle
+ж   ж   ж   capacitor.build.gradle
+ж   ж   ж   proguard-rules.pro
+ж   ж   ж   
+ж   ж   +---build
+ж   ж   ж   ж   .npmkeep
+ж   ж   ж   ж   
+ж   ж   ж   +---generated
+ж   ж   ж   ж   +---ap_generated_sources
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   L---res
+ж   ж   ж   ж       +---pngs
+ж   ж   ж   ж       ж   L---debug
+ж   ж   ж   ж       ж       L---drawable-anydpi-v24
+ж   ж   ж   ж       ж               ic_launcher_foreground.xml
+ж   ж   ж   ж       ж               
+ж   ж   ж   ж       L---resValues
+ж   ж   ж   ж           L---debug
+ж   ж   ж   +---intermediates
+ж   ж   ж   ж   +---aar_metadata_check
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---annotation_processor_list
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           annotationProcessors.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---apk_ide_redirect_file
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           redirect.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---app_metadata
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           app-metadata.properties
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---assets
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       ж   capacitor.config.json
+ж   ж   ж   ж   ж       ж   capacitor.plugins.json
+ж   ж   ж   ж   ж       ж   native-bridge.js
+ж   ж   ж   ж   ж       ж   
+ж   ж   ж   ж   ж       L---public
+ж   ж   ж   ж   ж               admin.html
+ж   ж   ж   ж   ж               cordova.js
+ж   ж   ж   ж   ж               cordova_plugins.js
+ж   ж   ж   ж   ж               index.html
+ж   ж   ж   ж   ж               
+ж   ж   ж   ж   +---compatible_screen_manifest
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           output-metadata.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---compile_and_runtime_not_namespaced_r_class_jar
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           R.jar
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---compressed_assets
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж           L---assets
+ж   ж   ж   ж   ж               ж   capacitor.config.json.jar
+ж   ж   ж   ж   ж               ж   capacitor.plugins.json.jar
+ж   ж   ж   ж   ж               ж   native-bridge.js.jar
+ж   ж   ж   ж   ж               ж   
+ж   ж   ж   ж   ж               L---public
+ж   ж   ж   ж   ж                       admin.html.jar
+ж   ж   ж   ж   ж                       cordova.js.jar
+ж   ж   ж   ж   ж                       cordova_plugins.js.jar
+ж   ж   ж   ж   ж                       index.html.jar
+ж   ж   ж   ж   ж                       
+ж   ж   ж   ж   +---data_binding_layout_info_type_merge
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---data_binding_layout_info_type_package
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---desugar_graph
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж           +---currentProject
+ж   ж   ж   ж   ж           ж   +---dirs_bucket_0
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   +---dirs_bucket_1
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   +---dirs_bucket_2
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   +---dirs_bucket_3
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   +---jar_4a0bf0014642edca1e9ef463ffe76a98783ec41d670079d7f99d2a6bbd442a0b_bucket_0
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   +---jar_4a0bf0014642edca1e9ef463ffe76a98783ec41d670079d7f99d2a6bbd442a0b_bucket_1
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   +---jar_4a0bf0014642edca1e9ef463ffe76a98783ec41d670079d7f99d2a6bbd442a0b_bucket_2
+ж   ж   ж   ж   ж           ж   ж       graph.bin
+ж   ж   ж   ж   ж           ж   ж       
+ж   ж   ж   ж   ж           ж   L---jar_4a0bf0014642edca1e9ef463ffe76a98783ec41d670079d7f99d2a6bbd442a0b_bucket_3
+ж   ж   ж   ж   ж           ж           graph.bin
+ж   ж   ж   ж   ж           ж           
+ж   ж   ж   ж   ж           +---externalLibs
+ж   ж   ж   ж   ж           +---mixedScopes
+ж   ж   ж   ж   ж           L---otherProjects
+ж   ж   ж   ж   +---dex
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       +---mergeExtDexDebug
+ж   ж   ж   ж   ж       ж       classes.dex
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mergeLibDexDebug
+ж   ж   ж   ж   ж       ж   +---0
+ж   ж   ж   ж   ж       ж   ж       classes.dex
+ж   ж   ж   ж   ж       ж   ж       
+ж   ж   ж   ж   ж       ж   +---1
+ж   ж   ж   ж   ж       ж   +---10
+ж   ж   ж   ж   ж       ж   +---11
+ж   ж   ж   ж   ж       ж   +---12
+ж   ж   ж   ж   ж       ж   +---13
+ж   ж   ж   ж   ж       ж   +---14
+ж   ж   ж   ж   ж       ж   +---15
+ж   ж   ж   ж   ж       ж   +---2
+ж   ж   ж   ж   ж       ж   +---3
+ж   ж   ж   ж   ж       ж   +---4
+ж   ж   ж   ж   ж       ж   +---5
+ж   ж   ж   ж   ж       ж   +---6
+ж   ж   ж   ж   ж       ж   +---7
+ж   ж   ж   ж   ж       ж   +---8
+ж   ж   ж   ж   ж       ж   L---9
+ж   ж   ж   ж   ж       L---mergeProjectDexDebug
+ж   ж   ж   ж   ж           +---0
+ж   ж   ж   ж   ж           ж       classes.dex
+ж   ж   ж   ж   ж           ж       
+ж   ж   ж   ж   ж           +---1
+ж   ж   ж   ж   ж           +---10
+ж   ж   ж   ж   ж           +---11
+ж   ж   ж   ж   ж           +---12
+ж   ж   ж   ж   ж           +---13
+ж   ж   ж   ж   ж           +---14
+ж   ж   ж   ж   ж           +---15
+ж   ж   ж   ж   ж           +---2
+ж   ж   ж   ж   ж           +---3
+ж   ж   ж   ж   ж           +---4
+ж   ж   ж   ж   ж           +---5
+ж   ж   ж   ж   ж           +---6
+ж   ж   ж   ж   ж           +---7
+ж   ж   ж   ж   ж           ж       classes.dex
+ж   ж   ж   ж   ж           ж       
+ж   ж   ж   ж   ж           +---8
+ж   ж   ж   ж   ж           L---9
+ж   ж   ж   ж   +---dex_archive_input_jar_hashes
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           out
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---dex_number_of_buckets_file
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           out
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---duplicate_classes_check
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---external_file_lib_dex_archives
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---external_libs_dex_archive
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---external_libs_dex_archive_with_artifact_transforms
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---global_synthetics_dex
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---global_synthetics_external_lib
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---global_synthetics_external_libs_artifact_transform
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---global_synthetics_file_lib
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---global_synthetics_mixed_scope
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---global_synthetics_project
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---global_synthetics_subproject
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---incremental
+ж   ж   ж   ж   ж   +---debug
+ж   ж   ж   ж   ж   ж   +---mergeDebugResources
+ж   ж   ж   ж   ж   ж   ж   ж   compile-file-map.properties
+ж   ж   ж   ж   ж   ж   ж   ж   merger.xml
+ж   ж   ж   ж   ж   ж   ж   ж   
+ж   ж   ж   ж   ж   ж   ж   +---merged.dir
+ж   ж   ж   ж   ж   ж   ж   ж   +---values
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-af
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-af.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-am
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-am.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ar
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ar.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-as
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-as.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-az
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-az.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-b+sr+Latn
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-b+sr+Latn.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-be
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-be.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-bg
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-bg.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-bn
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-bn.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-bs
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-bs.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ca
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ca.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-cs
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-cs.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-da
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-da.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-de
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-de.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-el
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-el.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-en-rAU
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-en-rAU.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-en-rCA
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-en-rCA.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-en-rGB
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-en-rGB.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-en-rIN
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-en-rIN.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-en-rXC
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-en-rXC.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-es
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-es.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-es-rUS
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-es-rUS.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-et
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-et.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-eu
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-eu.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-fa
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-fa.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-fi
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-fi.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-fr
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-fr.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-fr-rCA
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-fr-rCA.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-gl
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-gl.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-gu
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-gu.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-h720dp-v13
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-h720dp-v13.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-hdpi-v4
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-hdpi-v4.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-hi
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-hi.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-hr
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-hr.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-hu
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-hu.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-hy
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-hy.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-in
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-in.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-is
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-is.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-it
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-it.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-iw
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-iw.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ja
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ja.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ka
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ka.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-kk
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-kk.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-km
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-km.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-kn
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-kn.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ko
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ko.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ky
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ky.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-land
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-land.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-large-v4
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-large-v4.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ldltr-v21
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ldltr-v21.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-lo
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-lo.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-lt
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-lt.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-lv
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-lv.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-mk
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-mk.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ml.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-mn
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-mn.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-mr
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-mr.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ms
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ms.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-my
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-my.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-nb
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-nb.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ne
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ne.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-night-v8
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-night-v8.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-nl
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-nl.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-or
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-or.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-pa
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-pa.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-pl
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-pl.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-port
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-port.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-pt
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-pt.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-pt-rBR
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-pt-rBR.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-pt-rPT
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-pt-rPT.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ro
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ro.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ru
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ru.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-si
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-si.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sk
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sk.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sl
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sl.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sq
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sq.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sr
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sr.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sv
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sv.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sw
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sw.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-sw600dp-v13
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-sw600dp-v13.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ta
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ta.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-te
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-te.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-th
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-th.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-tl
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-tl.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-tr
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-tr.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-uk
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-uk.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-ur
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-ur.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-uz
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-uz.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v16
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v16.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v17
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v17.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v18
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v18.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v21
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v21.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v22
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v22.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v23
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v23.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v24
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v24.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v25
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v25.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v26
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v26.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v27
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v27.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v28
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v28.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v29
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v29.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-v31
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-v31.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-vi
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-vi.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-watch-v20
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-watch-v20.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-watch-v21
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-watch-v21.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-xlarge-v4
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-xlarge-v4.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-zh-rCN
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-zh-rCN.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-zh-rHK
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-zh-rHK.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   +---values-zh-rTW
+ж   ж   ж   ж   ж   ж   ж   ж   ж       values-zh-rTW.xml
+ж   ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   ж   L---values-zu
+ж   ж   ж   ж   ж   ж   ж   ж           values-zu.xml
+ж   ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   ж   L---stripped.dir
+ж   ж   ж   ж   ж   ж   L---packageDebugResources
+ж   ж   ж   ж   ж   ж       ж   compile-file-map.properties
+ж   ж   ж   ж   ж   ж       ж   merger.xml
+ж   ж   ж   ж   ж   ж       ж   
+ж   ж   ж   ж   ж   ж       +---merged.dir
+ж   ж   ж   ж   ж   ж       ж   L---values
+ж   ж   ж   ж   ж   ж       ж           values.xml
+ж   ж   ж   ж   ж   ж       ж           
+ж   ж   ж   ж   ж   ж       L---stripped.dir
+ж   ж   ж   ж   ж   +---debug-mergeJavaRes
+ж   ж   ж   ж   ж   ж   ж   merge-state
+ж   ж   ж   ж   ж   ж   ж   
+ж   ж   ж   ж   ж   ж   L---zip-cache
+ж   ж   ж   ж   ж   ж           1XhL2B7RzFLoLmM2p2mBjOnN3cg=
+ж   ж   ж   ж   ж   ж           244TepBAg4tk17rolf_dErqwAIM=
+ж   ж   ж   ж   ж   ж           2NDl7rWAUytv0UIeEwq1DFz9ODo=
+ж   ж   ж   ж   ж   ж           7NDWc9__N5ZV4MRvkfVTyveuSzw=
+ж   ж   ж   ж   ж   ж           BjZHp+AUAYX0Hbwz3D+zlC7hxZo=
+ж   ж   ж   ж   ж   ж           BQLil5smF15vwHeP72UisBeJ8UY=
+ж   ж   ж   ж   ж   ж           Cfqj4sXN1Homr8ecD0joJUcYCYw=
+ж   ж   ж   ж   ж   ж           ckcCSDI2bDANA6aNDlawpTLzQgc=
+ж   ж   ж   ж   ж   ж           cvMF7Q5IhkfjGNYs374h0aYKDLA=
+ж   ж   ж   ж   ж   ж           DJ7tFlx0o7wOuhej0+I0bW5DGho=
+ж   ж   ж   ж   ж   ж           dOfdw0w42PrpubrQT6_hvTWz4+c=
+ж   ж   ж   ж   ж   ж           drhh6Od0bTEv_SqpJhbc0veC34c=
+ж   ж   ж   ж   ж   ж           Eexx8VdO3_PdJRwl2_kzaAtk4No=
+ж   ж   ж   ж   ж   ж           eGzJfi6APAtK1+FwF2KcwBiqvmo=
+ж   ж   ж   ж   ж   ж           FbWxm_DoG_O92KfGDHa4IsT3Suw=
+ж   ж   ж   ж   ж   ж           FzHE_+Eg3y6vWVrmlUd_e63x+vQ=
+ж   ж   ж   ж   ж   ж           IwdHFGfoJ3Oi5DpqdfMkGqRFRfQ=
+ж   ж   ж   ж   ж   ж           IzXOxy9HZK_9ft20yPWMlEE3+Uw=
+ж   ж   ж   ж   ж   ж           kng5ubgnwoVcBaYxu0LoNuY+XFY=
+ж   ж   ж   ж   ж   ж           lQVign4KbUFVDutH1vRapiloySk=
+ж   ж   ж   ж   ж   ж           MapPsdB95hAmAhg3lTeFlgIczM0=
+ж   ж   ж   ж   ж   ж           mj2Omv1wbpgVMSj1iluecC4_PHQ=
+ж   ж   ж   ж   ж   ж           N+RcEf5upj0sph0bfVrcVO1s_vo=
+ж   ж   ж   ж   ж   ж           n0njTPTxmLIPA0rttPC00z0InKI=
+ж   ж   ж   ж   ж   ж           oMLsIeV5OOmhNbyp5goMcUg3Qac=
+ж   ж   ж   ж   ж   ж           pfHGpvZ0BsYdreHzDTCus8q2zPE=
+ж   ж   ж   ж   ж   ж           PfmFJHyR+7OeOU8sa0P24kVoeqo=
+ж   ж   ж   ж   ж   ж           qzXHvcYdOtTTodOlRbYuGO842bQ=
+ж   ж   ж   ж   ж   ж           rHSk94VE_hOtli61skRI291F3TE=
+ж   ж   ж   ж   ж   ж           RpVummqMkfcTb2Bsd1jnYknF3y4=
+ж   ж   ж   ж   ж   ж           rVc_NErpPAWbYJ2MdJQBNBnkOPs=
+ж   ж   ж   ж   ж   ж           SJNN+sRSUrCAI5V2fcAmu79RQTM=
+ж   ж   ж   ж   ж   ж           sJYAhW50UjcWtMNuge1zp2sN5c8=
+ж   ж   ж   ж   ж   ж           SPs5Z6bMSp79xbSy7ICgY7p1AXk=
+ж   ж   ж   ж   ж   ж           Syk2RQREGNDIaDs4wLAkpdWe7u0=
+ж   ж   ж   ж   ж   ж           tiwXTCEQIt_o5dxoCDW1ASLdcnY=
+ж   ж   ж   ж   ж   ж           TTfFagO10LdIXqvewu26n0OsyLE=
+ж   ж   ж   ж   ж   ж           vDBMgSakxwAZ8T8MoRUWwLoe4_w=
+ж   ж   ж   ж   ж   ж           vfjKUPAmMxzx0HhIOoc9kEIgnl0=
+ж   ж   ж   ж   ж   ж           wcKKcuE1n3JmZ3kqE2co1wsQpNI=
+ж   ж   ж   ж   ж   ж           wighEb6nmnhTdpnZj5QsAo5jWxI=
+ж   ж   ж   ж   ж   ж           WjyZBaExjr_B9kW9dBJXgI0_l1A=
+ж   ж   ж   ж   ж   ж           xctH8qcMeUHHhLQy+Hk14q8esIw=
+ж   ж   ж   ж   ж   ж           XnX7XRH8F4_yszRufCjkZvlbF4M=
+ж   ж   ж   ж   ж   ж           xQfQFisidCde6wUwmtpxZCSw1bs=
+ж   ж   ж   ж   ж   ж           zB5oPcNs5F8mrLjEMhUq2lNKm+M=
+ж   ж   ж   ж   ж   ж           ZBS4CsK_9JPzsdESzN+6F8l+AN8=
+ж   ж   ж   ж   ж   ж           zd568yfajDXxT7YAlRlxlTFoQIw=
+ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   +---mergeDebugAssets
+ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   +---mergeDebugJniLibFolders
+ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   +---mergeDebugShaders
+ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   L---packageDebug
+ж   ж   ж   ж   ж       L---tmp
+ж   ж   ж   ж   ж           L---debug
+ж   ж   ж   ж   ж               ж   dex-renamer-state.txt
+ж   ж   ж   ж   ж               ж   
+ж   ж   ж   ж   ж               L---zip-cache
+ж   ж   ж   ж   ж                       androidResources
+ж   ж   ж   ж   ж                       javaResources0
+ж   ж   ж   ж   ж                       
+ж   ж   ж   ж   +---javac
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---classes
+ж   ж   ж   ж   ж           L---com
+ж   ж   ж   ж   ж               L---sommelier
+ж   ж   ж   ж   ж                   L---app
+ж   ж   ж   ж   ж                           MainActivity.class
+ж   ж   ж   ж   ж                           
+ж   ж   ж   ж   +---local_only_symbol_list
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           R-def.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---manifest_merge_blame_file
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           manifest-merger-blame-debug-report.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_java_res
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           base.jar
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_jni_libs
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---merged_manifest
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           AndroidManifest.xml
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_manifests
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           AndroidManifest.xml
+ж   ж   ж   ж   ж           output-metadata.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_res
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           drawable-anydpi-v24_ic_launcher_foreground.xml.flat
+ж   ж   ж   ж   ж           drawable-land-hdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-land-mdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-land-xhdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-land-xxhdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-land-xxxhdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-port-hdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-port-mdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-port-xhdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-port-xxhdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable-port-xxxhdpi_splash.png.flat
+ж   ж   ж   ж   ж           drawable_ic_launcher_background.xml.flat
+ж   ж   ж   ж   ж           drawable_splash.png.flat
+ж   ж   ж   ж   ж           layout_activity_main.xml.flat
+ж   ж   ж   ж   ж           mipmap-anydpi-v26_ic_launcher.xml.flat
+ж   ж   ж   ж   ж           mipmap-anydpi-v26_ic_launcher_round.xml.flat
+ж   ж   ж   ж   ж           mipmap-hdpi_ic_launcher.png.flat
+ж   ж   ж   ж   ж           mipmap-hdpi_ic_launcher_foreground.png.flat
+ж   ж   ж   ж   ж           mipmap-hdpi_ic_launcher_round.png.flat
+ж   ж   ж   ж   ж           mipmap-mdpi_ic_launcher.png.flat
+ж   ж   ж   ж   ж           mipmap-mdpi_ic_launcher_foreground.png.flat
+ж   ж   ж   ж   ж           mipmap-mdpi_ic_launcher_round.png.flat
+ж   ж   ж   ж   ж           mipmap-xhdpi_ic_launcher.png.flat
+ж   ж   ж   ж   ж           mipmap-xhdpi_ic_launcher_foreground.png.flat
+ж   ж   ж   ж   ж           mipmap-xhdpi_ic_launcher_round.png.flat
+ж   ж   ж   ж   ж           mipmap-xxhdpi_ic_launcher.png.flat
+ж   ж   ж   ж   ж           mipmap-xxhdpi_ic_launcher_foreground.png.flat
+ж   ж   ж   ж   ж           mipmap-xxhdpi_ic_launcher_round.png.flat
+ж   ж   ж   ж   ж           mipmap-xxxhdpi_ic_launcher.png.flat
+ж   ж   ж   ж   ж           mipmap-xxxhdpi_ic_launcher_foreground.png.flat
+ж   ж   ж   ж   ж           mipmap-xxxhdpi_ic_launcher_round.png.flat
+ж   ж   ж   ж   ж           values-af_values-af.arsc.flat
+ж   ж   ж   ж   ж           values-am_values-am.arsc.flat
+ж   ж   ж   ж   ж           values-ar_values-ar.arsc.flat
+ж   ж   ж   ж   ж           values-as_values-as.arsc.flat
+ж   ж   ж   ж   ж           values-az_values-az.arsc.flat
+ж   ж   ж   ж   ж           values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+ж   ж   ж   ж   ж           values-be_values-be.arsc.flat
+ж   ж   ж   ж   ж           values-bg_values-bg.arsc.flat
+ж   ж   ж   ж   ж           values-bn_values-bn.arsc.flat
+ж   ж   ж   ж   ж           values-bs_values-bs.arsc.flat
+ж   ж   ж   ж   ж           values-ca_values-ca.arsc.flat
+ж   ж   ж   ж   ж           values-cs_values-cs.arsc.flat
+ж   ж   ж   ж   ж           values-da_values-da.arsc.flat
+ж   ж   ж   ж   ж           values-de_values-de.arsc.flat
+ж   ж   ж   ж   ж           values-el_values-el.arsc.flat
+ж   ж   ж   ж   ж           values-en-rAU_values-en-rAU.arsc.flat
+ж   ж   ж   ж   ж           values-en-rCA_values-en-rCA.arsc.flat
+ж   ж   ж   ж   ж           values-en-rGB_values-en-rGB.arsc.flat
+ж   ж   ж   ж   ж           values-en-rIN_values-en-rIN.arsc.flat
+ж   ж   ж   ж   ж           values-en-rXC_values-en-rXC.arsc.flat
+ж   ж   ж   ж   ж           values-es-rUS_values-es-rUS.arsc.flat
+ж   ж   ж   ж   ж           values-es_values-es.arsc.flat
+ж   ж   ж   ж   ж           values-et_values-et.arsc.flat
+ж   ж   ж   ж   ж           values-eu_values-eu.arsc.flat
+ж   ж   ж   ж   ж           values-fa_values-fa.arsc.flat
+ж   ж   ж   ж   ж           values-fi_values-fi.arsc.flat
+ж   ж   ж   ж   ж           values-fr-rCA_values-fr-rCA.arsc.flat
+ж   ж   ж   ж   ж           values-fr_values-fr.arsc.flat
+ж   ж   ж   ж   ж           values-gl_values-gl.arsc.flat
+ж   ж   ж   ж   ж           values-gu_values-gu.arsc.flat
+ж   ж   ж   ж   ж           values-h720dp-v13_values-h720dp-v13.arsc.flat
+ж   ж   ж   ж   ж           values-hdpi-v4_values-hdpi-v4.arsc.flat
+ж   ж   ж   ж   ж           values-hi_values-hi.arsc.flat
+ж   ж   ж   ж   ж           values-hr_values-hr.arsc.flat
+ж   ж   ж   ж   ж           values-hu_values-hu.arsc.flat
+ж   ж   ж   ж   ж           values-hy_values-hy.arsc.flat
+ж   ж   ж   ж   ж           values-in_values-in.arsc.flat
+ж   ж   ж   ж   ж           values-is_values-is.arsc.flat
+ж   ж   ж   ж   ж           values-it_values-it.arsc.flat
+ж   ж   ж   ж   ж           values-iw_values-iw.arsc.flat
+ж   ж   ж   ж   ж           values-ja_values-ja.arsc.flat
+ж   ж   ж   ж   ж           values-ka_values-ka.arsc.flat
+ж   ж   ж   ж   ж           values-kk_values-kk.arsc.flat
+ж   ж   ж   ж   ж           values-km_values-km.arsc.flat
+ж   ж   ж   ж   ж           values-kn_values-kn.arsc.flat
+ж   ж   ж   ж   ж           values-ko_values-ko.arsc.flat
+ж   ж   ж   ж   ж           values-ky_values-ky.arsc.flat
+ж   ж   ж   ж   ж           values-land_values-land.arsc.flat
+ж   ж   ж   ж   ж           values-large-v4_values-large-v4.arsc.flat
+ж   ж   ж   ж   ж           values-ldltr-v21_values-ldltr-v21.arsc.flat
+ж   ж   ж   ж   ж           values-lo_values-lo.arsc.flat
+ж   ж   ж   ж   ж           values-lt_values-lt.arsc.flat
+ж   ж   ж   ж   ж           values-lv_values-lv.arsc.flat
+ж   ж   ж   ж   ж           values-mk_values-mk.arsc.flat
+ж   ж   ж   ж   ж           values-ml_values-ml.arsc.flat
+ж   ж   ж   ж   ж           values-mn_values-mn.arsc.flat
+ж   ж   ж   ж   ж           values-mr_values-mr.arsc.flat
+ж   ж   ж   ж   ж           values-ms_values-ms.arsc.flat
+ж   ж   ж   ж   ж           values-my_values-my.arsc.flat
+ж   ж   ж   ж   ж           values-nb_values-nb.arsc.flat
+ж   ж   ж   ж   ж           values-ne_values-ne.arsc.flat
+ж   ж   ж   ж   ж           values-night-v8_values-night-v8.arsc.flat
+ж   ж   ж   ж   ж           values-nl_values-nl.arsc.flat
+ж   ж   ж   ж   ж           values-or_values-or.arsc.flat
+ж   ж   ж   ж   ж           values-pa_values-pa.arsc.flat
+ж   ж   ж   ж   ж           values-pl_values-pl.arsc.flat
+ж   ж   ж   ж   ж           values-port_values-port.arsc.flat
+ж   ж   ж   ж   ж           values-pt-rBR_values-pt-rBR.arsc.flat
+ж   ж   ж   ж   ж           values-pt-rPT_values-pt-rPT.arsc.flat
+ж   ж   ж   ж   ж           values-pt_values-pt.arsc.flat
+ж   ж   ж   ж   ж           values-ro_values-ro.arsc.flat
+ж   ж   ж   ж   ж           values-ru_values-ru.arsc.flat
+ж   ж   ж   ж   ж           values-si_values-si.arsc.flat
+ж   ж   ж   ж   ж           values-sk_values-sk.arsc.flat
+ж   ж   ж   ж   ж           values-sl_values-sl.arsc.flat
+ж   ж   ж   ж   ж           values-sq_values-sq.arsc.flat
+ж   ж   ж   ж   ж           values-sr_values-sr.arsc.flat
+ж   ж   ж   ж   ж           values-sv_values-sv.arsc.flat
+ж   ж   ж   ж   ж           values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+ж   ж   ж   ж   ж           values-sw_values-sw.arsc.flat
+ж   ж   ж   ж   ж           values-ta_values-ta.arsc.flat
+ж   ж   ж   ж   ж           values-te_values-te.arsc.flat
+ж   ж   ж   ж   ж           values-th_values-th.arsc.flat
+ж   ж   ж   ж   ж           values-tl_values-tl.arsc.flat
+ж   ж   ж   ж   ж           values-tr_values-tr.arsc.flat
+ж   ж   ж   ж   ж           values-uk_values-uk.arsc.flat
+ж   ж   ж   ж   ж           values-ur_values-ur.arsc.flat
+ж   ж   ж   ж   ж           values-uz_values-uz.arsc.flat
+ж   ж   ж   ж   ж           values-v16_values-v16.arsc.flat
+ж   ж   ж   ж   ж           values-v17_values-v17.arsc.flat
+ж   ж   ж   ж   ж           values-v18_values-v18.arsc.flat
+ж   ж   ж   ж   ж           values-v21_values-v21.arsc.flat
+ж   ж   ж   ж   ж           values-v22_values-v22.arsc.flat
+ж   ж   ж   ж   ж           values-v23_values-v23.arsc.flat
+ж   ж   ж   ж   ж           values-v24_values-v24.arsc.flat
+ж   ж   ж   ж   ж           values-v25_values-v25.arsc.flat
+ж   ж   ж   ж   ж           values-v26_values-v26.arsc.flat
+ж   ж   ж   ж   ж           values-v27_values-v27.arsc.flat
+ж   ж   ж   ж   ж           values-v28_values-v28.arsc.flat
+ж   ж   ж   ж   ж           values-v29_values-v29.arsc.flat
+ж   ж   ж   ж   ж           values-v31_values-v31.arsc.flat
+ж   ж   ж   ж   ж           values-vi_values-vi.arsc.flat
+ж   ж   ж   ж   ж           values-watch-v20_values-watch-v20.arsc.flat
+ж   ж   ж   ж   ж           values-watch-v21_values-watch-v21.arsc.flat
+ж   ж   ж   ж   ж           values-xlarge-v4_values-xlarge-v4.arsc.flat
+ж   ж   ж   ж   ж           values-zh-rCN_values-zh-rCN.arsc.flat
+ж   ж   ж   ж   ж           values-zh-rHK_values-zh-rHK.arsc.flat
+ж   ж   ж   ж   ж           values-zh-rTW_values-zh-rTW.arsc.flat
+ж   ж   ж   ж   ж           values-zu_values-zu.arsc.flat
+ж   ж   ж   ж   ж           values_values.arsc.flat
+ж   ж   ж   ж   ж           xml_config.xml.flat
+ж   ж   ж   ж   ж           xml_file_paths.xml.flat
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_res_blame_folder
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж           +---multi-v2
+ж   ж   ж   ж   ж           ж       debug.json
+ж   ж   ж   ж   ж           ж       values-af.json
+ж   ж   ж   ж   ж           ж       values-am.json
+ж   ж   ж   ж   ж           ж       values-ar.json
+ж   ж   ж   ж   ж           ж       values-as.json
+ж   ж   ж   ж   ж           ж       values-az.json
+ж   ж   ж   ж   ж           ж       values-b+sr+Latn.json
+ж   ж   ж   ж   ж           ж       values-be.json
+ж   ж   ж   ж   ж           ж       values-bg.json
+ж   ж   ж   ж   ж           ж       values-bn.json
+ж   ж   ж   ж   ж           ж       values-bs.json
+ж   ж   ж   ж   ж           ж       values-ca.json
+ж   ж   ж   ж   ж           ж       values-cs.json
+ж   ж   ж   ж   ж           ж       values-da.json
+ж   ж   ж   ж   ж           ж       values-de.json
+ж   ж   ж   ж   ж           ж       values-el.json
+ж   ж   ж   ж   ж           ж       values-en-rAU.json
+ж   ж   ж   ж   ж           ж       values-en-rCA.json
+ж   ж   ж   ж   ж           ж       values-en-rGB.json
+ж   ж   ж   ж   ж           ж       values-en-rIN.json
+ж   ж   ж   ж   ж           ж       values-en-rXC.json
+ж   ж   ж   ж   ж           ж       values-es-rUS.json
+ж   ж   ж   ж   ж           ж       values-es.json
+ж   ж   ж   ж   ж           ж       values-et.json
+ж   ж   ж   ж   ж           ж       values-eu.json
+ж   ж   ж   ж   ж           ж       values-fa.json
+ж   ж   ж   ж   ж           ж       values-fi.json
+ж   ж   ж   ж   ж           ж       values-fr-rCA.json
+ж   ж   ж   ж   ж           ж       values-fr.json
+ж   ж   ж   ж   ж           ж       values-gl.json
+ж   ж   ж   ж   ж           ж       values-gu.json
+ж   ж   ж   ж   ж           ж       values-h720dp-v13.json
+ж   ж   ж   ж   ж           ж       values-hdpi-v4.json
+ж   ж   ж   ж   ж           ж       values-hi.json
+ж   ж   ж   ж   ж           ж       values-hr.json
+ж   ж   ж   ж   ж           ж       values-hu.json
+ж   ж   ж   ж   ж           ж       values-hy.json
+ж   ж   ж   ж   ж           ж       values-in.json
+ж   ж   ж   ж   ж           ж       values-is.json
+ж   ж   ж   ж   ж           ж       values-it.json
+ж   ж   ж   ж   ж           ж       values-iw.json
+ж   ж   ж   ж   ж           ж       values-ja.json
+ж   ж   ж   ж   ж           ж       values-ka.json
+ж   ж   ж   ж   ж           ж       values-kk.json
+ж   ж   ж   ж   ж           ж       values-km.json
+ж   ж   ж   ж   ж           ж       values-kn.json
+ж   ж   ж   ж   ж           ж       values-ko.json
+ж   ж   ж   ж   ж           ж       values-ky.json
+ж   ж   ж   ж   ж           ж       values-land.json
+ж   ж   ж   ж   ж           ж       values-large-v4.json
+ж   ж   ж   ж   ж           ж       values-ldltr-v21.json
+ж   ж   ж   ж   ж           ж       values-lo.json
+ж   ж   ж   ж   ж           ж       values-lt.json
+ж   ж   ж   ж   ж           ж       values-lv.json
+ж   ж   ж   ж   ж           ж       values-mk.json
+ж   ж   ж   ж   ж           ж       values-ml.json
+ж   ж   ж   ж   ж           ж       values-mn.json
+ж   ж   ж   ж   ж           ж       values-mr.json
+ж   ж   ж   ж   ж           ж       values-ms.json
+ж   ж   ж   ж   ж           ж       values-my.json
+ж   ж   ж   ж   ж           ж       values-nb.json
+ж   ж   ж   ж   ж           ж       values-ne.json
+ж   ж   ж   ж   ж           ж       values-night-v8.json
+ж   ж   ж   ж   ж           ж       values-nl.json
+ж   ж   ж   ж   ж           ж       values-or.json
+ж   ж   ж   ж   ж           ж       values-pa.json
+ж   ж   ж   ж   ж           ж       values-pl.json
+ж   ж   ж   ж   ж           ж       values-port.json
+ж   ж   ж   ж   ж           ж       values-pt-rBR.json
+ж   ж   ж   ж   ж           ж       values-pt-rPT.json
+ж   ж   ж   ж   ж           ж       values-pt.json
+ж   ж   ж   ж   ж           ж       values-ro.json
+ж   ж   ж   ж   ж           ж       values-ru.json
+ж   ж   ж   ж   ж           ж       values-si.json
+ж   ж   ж   ж   ж           ж       values-sk.json
+ж   ж   ж   ж   ж           ж       values-sl.json
+ж   ж   ж   ж   ж           ж       values-sq.json
+ж   ж   ж   ж   ж           ж       values-sr.json
+ж   ж   ж   ж   ж           ж       values-sv.json
+ж   ж   ж   ж   ж           ж       values-sw.json
+ж   ж   ж   ж   ж           ж       values-sw600dp-v13.json
+ж   ж   ж   ж   ж           ж       values-ta.json
+ж   ж   ж   ж   ж           ж       values-te.json
+ж   ж   ж   ж   ж           ж       values-th.json
+ж   ж   ж   ж   ж           ж       values-tl.json
+ж   ж   ж   ж   ж           ж       values-tr.json
+ж   ж   ж   ж   ж           ж       values-uk.json
+ж   ж   ж   ж   ж           ж       values-ur.json
+ж   ж   ж   ж   ж           ж       values-uz.json
+ж   ж   ж   ж   ж           ж       values-v16.json
+ж   ж   ж   ж   ж           ж       values-v17.json
+ж   ж   ж   ж   ж           ж       values-v18.json
+ж   ж   ж   ж   ж           ж       values-v21.json
+ж   ж   ж   ж   ж           ж       values-v22.json
+ж   ж   ж   ж   ж           ж       values-v23.json
+ж   ж   ж   ж   ж           ж       values-v24.json
+ж   ж   ж   ж   ж           ж       values-v25.json
+ж   ж   ж   ж   ж           ж       values-v26.json
+ж   ж   ж   ж   ж           ж       values-v27.json
+ж   ж   ж   ж   ж           ж       values-v28.json
+ж   ж   ж   ж   ж           ж       values-v29.json
+ж   ж   ж   ж   ж           ж       values-v31.json
+ж   ж   ж   ж   ж           ж       values-vi.json
+ж   ж   ж   ж   ж           ж       values-watch-v20.json
+ж   ж   ж   ж   ж           ж       values-watch-v21.json
+ж   ж   ж   ж   ж           ж       values-xlarge-v4.json
+ж   ж   ж   ж   ж           ж       values-zh-rCN.json
+ж   ж   ж   ж   ж           ж       values-zh-rHK.json
+ж   ж   ж   ж   ж           ж       values-zh-rTW.json
+ж   ж   ж   ж   ж           ж       values-zu.json
+ж   ж   ж   ж   ж           ж       values.json
+ж   ж   ж   ж   ж           ж       
+ж   ж   ж   ж   ж           L---single
+ж   ж   ж   ж   ж                   debug.json
+ж   ж   ж   ж   ж                   
+ж   ж   ж   ж   +---merged_shaders
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---mixed_scope_dex_archive
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---navigation_json
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           navigation.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---packaged_manifests
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           AndroidManifest.xml
+ж   ж   ж   ж   ж           output-metadata.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---packaged_res
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       +---drawable
+ж   ж   ж   ж   ж       ж       ic_launcher_background.xml
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-land-hdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-land-mdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-land-xhdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-land-xxhdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-land-xxxhdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-port-hdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-port-mdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-port-xhdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-port-xxhdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-port-xxxhdpi-v4
+ж   ж   ж   ж   ж       ж       splash.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---drawable-v24
+ж   ж   ж   ж   ж       ж       ic_launcher_foreground.xml
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---layout
+ж   ж   ж   ж   ж       ж       activity_main.xml
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mipmap-anydpi-v26
+ж   ж   ж   ж   ж       ж       ic_launcher.xml
+ж   ж   ж   ж   ж       ж       ic_launcher_round.xml
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mipmap-hdpi-v4
+ж   ж   ж   ж   ж       ж       ic_launcher.png
+ж   ж   ж   ж   ж       ж       ic_launcher_foreground.png
+ж   ж   ж   ж   ж       ж       ic_launcher_round.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mipmap-mdpi-v4
+ж   ж   ж   ж   ж       ж       ic_launcher.png
+ж   ж   ж   ж   ж       ж       ic_launcher_foreground.png
+ж   ж   ж   ж   ж       ж       ic_launcher_round.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mipmap-xhdpi-v4
+ж   ж   ж   ж   ж       ж       ic_launcher.png
+ж   ж   ж   ж   ж       ж       ic_launcher_foreground.png
+ж   ж   ж   ж   ж       ж       ic_launcher_round.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mipmap-xxhdpi-v4
+ж   ж   ж   ж   ж       ж       ic_launcher.png
+ж   ж   ж   ж   ж       ж       ic_launcher_foreground.png
+ж   ж   ж   ж   ж       ж       ic_launcher_round.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---mipmap-xxxhdpi-v4
+ж   ж   ж   ж   ж       ж       ic_launcher.png
+ж   ж   ж   ж   ж       ж       ic_launcher_foreground.png
+ж   ж   ж   ж   ж       ж       ic_launcher_round.png
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       +---values
+ж   ж   ж   ж   ж       ж       values.xml
+ж   ж   ж   ж   ж       ж       
+ж   ж   ж   ж   ж       L---xml
+ж   ж   ж   ж   ж               config.xml
+ж   ж   ж   ж   ж               file_paths.xml
+ж   ж   ж   ж   ж               
+ж   ж   ж   ж   +---processed_res
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж               output-metadata.json
+ж   ж   ж   ж   ж               resources-debug.ap_
+ж   ж   ж   ж   ж               
+ж   ж   ж   ж   +---project_dex_archive
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж           ж   c210846d27ec4ae8efd1c11cc597bfe97a82fe4067959d96957f00b8b7f4e17c_0.jar
+ж   ж   ж   ж   ж           ж   c210846d27ec4ae8efd1c11cc597bfe97a82fe4067959d96957f00b8b7f4e17c_1.jar
+ж   ж   ж   ж   ж           ж   c210846d27ec4ae8efd1c11cc597bfe97a82fe4067959d96957f00b8b7f4e17c_2.jar
+ж   ж   ж   ж   ж           ж   c210846d27ec4ae8efd1c11cc597bfe97a82fe4067959d96957f00b8b7f4e17c_3.jar
+ж   ж   ж   ж   ж           ж   
+ж   ж   ж   ж   ж           L---com
+ж   ж   ж   ж   ж               L---sommelier
+ж   ж   ж   ж   ж                   L---app
+ж   ж   ж   ж   ж                           MainActivity.dex
+ж   ж   ж   ж   ж                           
+ж   ж   ж   ж   +---runtime_symbol_list
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           R.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---signing_config_versions
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           signing-config-versions.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---source_set_path_map
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           file-map.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---stable_resource_ids_file
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           stableIds.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---sub_project_dex_archive
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---symbol_list_with_package_name
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           package-aware-r.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---validate_signing_config
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   L---variant_model
+ж   ж   ж   ж       L---debug
+ж   ж   ж   ж               variant_model.json
+ж   ж   ж   ж               
+ж   ж   ж   +---outputs
+ж   ж   ж   ж   +---apk
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           app-debug.apk
+ж   ж   ж   ж   ж           output-metadata.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   L---logs
+ж   ж   ж   ж           manifest-merger-debug-report.txt
+ж   ж   ж   ж           
+ж   ж   ж   L---tmp
+ж   ж   ж       L---compileDebugJavaWithJavac
+ж   ж   ж               previous-compilation-data.bin
+ж   ж   ж               
+ж   ж   L---src
+ж   ж       +---androidTest
+ж   ж       ж   L---java
+ж   ж       ж       L---com
+ж   ж       ж           L---getcapacitor
+ж   ж       ж               L---myapp
+ж   ж       ж                       ExampleInstrumentedTest.java
+ж   ж       ж                       
+ж   ж       +---main
+ж   ж       ж   ж   AndroidManifest.xml
+ж   ж       ж   ж   
+ж   ж       ж   +---assets
+ж   ж       ж   ж   ж   capacitor.config.json
+ж   ж       ж   ж   ж   capacitor.plugins.json
+ж   ж       ж   ж   ж   
+ж   ж       ж   ж   L---public
+ж   ж       ж   ж           admin.html
+ж   ж       ж   ж           cordova.js
+ж   ж       ж   ж           cordova_plugins.js
+ж   ж       ж   ж           index.html
+ж   ж       ж   ж           
+ж   ж       ж   +---java
+ж   ж       ж   ж   L---com
+ж   ж       ж   ж       L---sommelier
+ж   ж       ж   ж           L---app
+ж   ж       ж   ж                   MainActivity.java
+ж   ж       ж   ж                   
+ж   ж       ж   L---res
+ж   ж       ж       +---drawable
+ж   ж       ж       ж       ic_launcher_background.xml
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-land-hdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-land-mdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-land-xhdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-land-xxhdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-land-xxxhdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-port-hdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-port-mdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-port-xhdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-port-xxhdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-port-xxxhdpi
+ж   ж       ж       ж       splash.png
+ж   ж       ж       ж       
+ж   ж       ж       +---drawable-v24
+ж   ж       ж       ж       ic_launcher_foreground.xml
+ж   ж       ж       ж       
+ж   ж       ж       +---layout
+ж   ж       ж       ж       activity_main.xml
+ж   ж       ж       ж       
+ж   ж       ж       +---mipmap-anydpi-v26
+ж   ж       ж       ж       ic_launcher.xml
+ж   ж       ж       ж       ic_launcher_round.xml
+ж   ж       ж       ж       
+ж   ж       ж       +---mipmap-hdpi
+ж   ж       ж       ж       ic_launcher.png
+ж   ж       ж       ж       ic_launcher_foreground.png
+ж   ж       ж       ж       ic_launcher_round.png
+ж   ж       ж       ж       
+ж   ж       ж       +---mipmap-mdpi
+ж   ж       ж       ж       ic_launcher.png
+ж   ж       ж       ж       ic_launcher_foreground.png
+ж   ж       ж       ж       ic_launcher_round.png
+ж   ж       ж       ж       
+ж   ж       ж       +---mipmap-xhdpi
+ж   ж       ж       ж       ic_launcher.png
+ж   ж       ж       ж       ic_launcher_foreground.png
+ж   ж       ж       ж       ic_launcher_round.png
+ж   ж       ж       ж       
+ж   ж       ж       +---mipmap-xxhdpi
+ж   ж       ж       ж       ic_launcher.png
+ж   ж       ж       ж       ic_launcher_foreground.png
+ж   ж       ж       ж       ic_launcher_round.png
+ж   ж       ж       ж       
+ж   ж       ж       +---mipmap-xxxhdpi
+ж   ж       ж       ж       ic_launcher.png
+ж   ж       ж       ж       ic_launcher_foreground.png
+ж   ж       ж       ж       ic_launcher_round.png
+ж   ж       ж       ж       
+ж   ж       ж       +---values
+ж   ж       ж       ж       ic_launcher_background.xml
+ж   ж       ж       ж       strings.xml
+ж   ж       ж       ж       styles.xml
+ж   ж       ж       ж       
+ж   ж       ж       L---xml
+ж   ж       ж               config.xml
+ж   ж       ж               file_paths.xml
+ж   ж       ж               
+ж   ж       L---test
+ж   ж           L---java
+ж   ж               L---com
+ж   ж                   L---getcapacitor
+ж   ж                       L---myapp
+ж   ж                               ExampleUnitTest.java
+ж   ж                               
+ж   +---capacitor-cordova-android-plugins
+ж   ж   ж   build.gradle
+ж   ж   ж   cordova.variables.gradle
+ж   ж   ж   
+ж   ж   +---build
+ж   ж   ж   +---.transforms
+ж   ж   ж   ж   +---63b2dfff92fe860e2e9dbf4d0f90d946
+ж   ж   ж   ж   ж   ж   results.bin
+ж   ж   ж   ж   ж   ж   
+ж   ж   ж   ж   ж   L---transformed
+ж   ж   ж   ж   +---75d39b218f2c88335bbc08b59105f15d
+ж   ж   ж   ж   ж   ж   results.bin
+ж   ж   ж   ж   ж   ж   
+ж   ж   ж   ж   ж   L---transformed
+ж   ж   ж   ж   ж       L---classes
+ж   ж   ж   ж   ж           +---classes_dex
+ж   ж   ж   ж   ж           L---classes_global-synthetics
+ж   ж   ж   ж   L---b363b73172602fc81518b2f444cc001e
+ж   ж   ж   ж       ж   results.bin
+ж   ж   ж   ж       ж   
+ж   ж   ж   ж       L---transformed
+ж   ж   ж   +---generated
+ж   ж   ж   ж   L---res
+ж   ж   ж   ж       +---pngs
+ж   ж   ж   ж       ж   L---debug
+ж   ж   ж   ж       L---resValues
+ж   ж   ж   ж           L---debug
+ж   ж   ж   +---intermediates
+ж   ж   ж   ж   +---aapt_friendly_merged_manifests
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---aapt
+ж   ж   ж   ж   ж               AndroidManifest.xml
+ж   ж   ж   ж   ж               output-metadata.json
+ж   ж   ж   ж   ж               
+ж   ж   ж   ж   +---aar_metadata
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           aar-metadata.properties
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---annotation_processor_list
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           annotationProcessors.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---compiled_local_resources
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---compile_library_classes_jar
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           classes.jar
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---compile_r_class_jar
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           R.jar
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---compile_symbol_list
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           R.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---data_binding_layout_info_type_package
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---incremental
+ж   ж   ж   ж   ж   +---debug
+ж   ж   ж   ж   ж   ж   L---packageDebugResources
+ж   ж   ж   ж   ж   ж       ж   compile-file-map.properties
+ж   ж   ж   ж   ж   ж       ж   merger.xml
+ж   ж   ж   ж   ж   ж       ж   
+ж   ж   ж   ж   ж   ж       +---merged.dir
+ж   ж   ж   ж   ж   ж       L---stripped.dir
+ж   ж   ж   ж   ж   +---mergeDebugJniLibFolders
+ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   +---mergeDebugShaders
+ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   L---packageDebugAssets
+ж   ж   ж   ж   ж           merger.xml
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---library_assets
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---library_jni
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---jni
+ж   ж   ж   ж   +---local_only_symbol_list
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           R-def.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---manifest_merge_blame_file
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           manifest-merger-blame-debug-report.txt
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_jni_libs
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---merged_manifest
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           AndroidManifest.xml
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---merged_shaders
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   +---navigation_json
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           navigation.json
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   +---packaged_res
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---public_res
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   +---runtime_library_classes_jar
+ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж           classes.jar
+ж   ж   ж   ж   ж           
+ж   ж   ж   ж   L---symbol_list_with_package_name
+ж   ж   ж   ж       L---debug
+ж   ж   ж   ж               package-aware-r.txt
+ж   ж   ж   ж               
+ж   ж   ж   L---outputs
+ж   ж   ж       L---logs
+ж   ж   ж               manifest-merger-debug-report.txt
+ж   ж   ж               
+ж   ж   L---src
+ж   ж       L---main
+ж   ж           ж   AndroidManifest.xml
+ж   ж           ж   
+ж   ж           +---java
+ж   ж           ж       .gitkeep
+ж   ж           ж       
+ж   ж           L---res
+ж   ж                   .gitkeep
+ж   ж                   
+ж   L---gradle
+ж       L---wrapper
+ж               gradle-wrapper.jar
+ж               gradle-wrapper.properties
+ж               
++---app
+ж   ж   .gitignore
+ж   ж   build.gradle.kts
+ж   ж   
+ж   L---src
+ж       +---androidTest
+ж       ж   L---java
+ж       ж       L---com
+ж       ж           L---example
+ж       ж               L---somlellierhelper
+ж       ж                       ExampleInstrumentedTest.kt
+ж       ж                       
+ж       +---main
+ж       ж   ж   AndroidManifest.xml
+ж       ж   ж   
+ж       ж   +---java
+ж       ж   ж   L---com
+ж       ж   ж       L---example
+ж       ж   ж           L---somlellierhelper
+ж       ж   ж               ж   MainActivity.kt
+ж       ж   ж               ж   
+ж       ж   ж               L---ui
+ж       ж   ж                   L---theme
+ж       ж   ж                           Color.kt
+ж       ж   ж                           Theme.kt
+ж       ж   ж                           Type.kt
+ж       ж   ж                           
+ж       ж   +---keepRules
+ж       ж   ж       rules.keep
+ж       ж   ж       
+ж       ж   L---res
+ж       ж       +---drawable
+ж       ж       ж       ic_launcher_background.xml
+ж       ж       ж       ic_launcher_foreground.xml
+ж       ж       ж       
+ж       ж       +---mipmap-anydpi-v26
+ж       ж       ж       ic_launcher.xml
+ж       ж       ж       ic_launcher_round.xml
+ж       ж       ж       
+ж       ж       +---mipmap-hdpi
+ж       ж       ж       ic_launcher.webp
+ж       ж       ж       ic_launcher_round.webp
+ж       ж       ж       
+ж       ж       +---mipmap-mdpi
+ж       ж       ж       ic_launcher.webp
+ж       ж       ж       ic_launcher_round.webp
+ж       ж       ж       
+ж       ж       +---mipmap-xhdpi
+ж       ж       ж       ic_launcher.webp
+ж       ж       ж       ic_launcher_round.webp
+ж       ж       ж       
+ж       ж       +---mipmap-xxhdpi
+ж       ж       ж       ic_launcher.webp
+ж       ж       ж       ic_launcher_round.webp
+ж       ж       ж       
+ж       ж       +---mipmap-xxxhdpi
+ж       ж       ж       ic_launcher.webp
+ж       ж       ж       ic_launcher_round.webp
+ж       ж       ж       
+ж       ж       +---values
+ж       ж       ж       colors.xml
+ж       ж       ж       strings.xml
+ж       ж       ж       themes.xml
+ж       ж       ж       
+ж       ж       L---xml
+ж       ж               backup_rules.xml
+ж       ж               data_extraction_rules.xml
+ж       ж               
+ж       L---test
+ж           L---java
+ж               L---com
+ж                   L---example
+ж                       L---somlellierhelper
+ж                               ExampleUnitTest.kt
+ж                               
++---data
+ж       blind_modes.json
+ж       dish_pairs.json
+ж       drinks.json
+ж       glossary.json
+ж       quiz.json
+ж       taxonomy.json
+ж       
++---gradle
+ж   ж   gradle-daemon-jvm.properties
+ж   ж   libs.versions.toml
+ж   ж   
+ж   L---wrapper
+ж           gradle-wrapper.jar
+ж           gradle-wrapper.properties
+ж           
++---node_modules
+ж   ж   .package-lock.json
+ж   ж   
+ж   +---.bin
+ж   ж       cap
+ж   ж       cap.cmd
+ж   ж       cap.ps1
+ж   ж       capacitor
+ж   ж       capacitor.cmd
+ж   ж       capacitor.ps1
+ж   ж       esparse
+ж   ж       esparse.cmd
+ж   ж       esparse.ps1
+ж   ж       esvalidate
+ж   ж       esvalidate.cmd
+ж   ж       esvalidate.ps1
+ж   ж       is-docker
+ж   ж       is-docker.cmd
+ж   ж       is-docker.ps1
+ж   ж       mkdirp
+ж   ж       mkdirp.cmd
+ж   ж       mkdirp.ps1
+ж   ж       native-run
+ж   ж       native-run.cmd
+ж   ж       native-run.ps1
+ж   ж       node-which
+ж   ж       node-which.cmd
+ж   ж       node-which.ps1
+ж   ж       rimraf
+ж   ж       rimraf.cmd
+ж   ж       rimraf.ps1
+ж   ж       semver
+ж   ж       semver.cmd
+ж   ж       semver.ps1
+ж   ж       tree-kill
+ж   ж       tree-kill.cmd
+ж   ж       tree-kill.ps1
+ж   ж       
+ж   +---@capacitor
+ж   ж   +---android
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   
+ж   ж   ж   L---capacitor
+ж   ж   ж       ж   build.gradle
+ж   ж   ж       ж   lint-baseline.xml
+ж   ж   ж       ж   lint.xml
+ж   ж   ж       ж   proguard-rules.pro
+ж   ж   ж       ж   
+ж   ж   ж       +---build
+ж   ж   ж       ж   +---.transforms
+ж   ж   ж       ж   ж   +---208c479fabcf39488a86c7eb7cf0b209
+ж   ж   ж       ж   ж   ж   ж   results.bin
+ж   ж   ж       ж   ж   ж   ж   
+ж   ж   ж       ж   ж   ж   L---transformed
+ж   ж   ж       ж   ж   ж       L---classes
+ж   ж   ж       ж   ж   ж           +---classes_dex
+ж   ж   ж       ж   ж   ж           ж       classes.dex
+ж   ж   ж       ж   ж   ж           ж       
+ж   ж   ж       ж   ж   ж           L---classes_global-synthetics
+ж   ж   ж       ж   ж   +---726c87c5d9df1f590a9ecd5427a10e76
+ж   ж   ж       ж   ж   ж   ж   results.bin
+ж   ж   ж       ж   ж   ж   ж   
+ж   ж   ж       ж   ж   ж   L---transformed
+ж   ж   ж       ж   ж   L---dc0d6fd0c77326eb4bf33e69a343beac
+ж   ж   ж       ж   ж       ж   results.bin
+ж   ж   ж       ж   ж       ж   
+ж   ж   ж       ж   ж       L---transformed
+ж   ж   ж       ж   +---generated
+ж   ж   ж       ж   ж   +---ap_generated_sources
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---out
+ж   ж   ж       ж   ж   L---res
+ж   ж   ж       ж   ж       +---pngs
+ж   ж   ж       ж   ж       ж   L---debug
+ж   ж   ж       ж   ж       L---resValues
+ж   ж   ж       ж   ж           L---debug
+ж   ж   ж       ж   +---intermediates
+ж   ж   ж       ж   ж   +---aapt_friendly_merged_manifests
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---aapt
+ж   ж   ж       ж   ж   ж               AndroidManifest.xml
+ж   ж   ж       ж   ж   ж               output-metadata.json
+ж   ж   ж       ж   ж   ж               
+ж   ж   ж       ж   ж   +---aar_metadata
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           aar-metadata.properties
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---annotation_processor_list
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           annotationProcessors.json
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---compiled_local_resources
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---out
+ж   ж   ж       ж   ж   ж               layout_bridge_layout_main.xml.flat
+ж   ж   ж       ж   ж   ж               layout_fragment_bridge.xml.flat
+ж   ж   ж       ж   ж   ж               layout_no_webview.xml.flat
+ж   ж   ж       ж   ж   ж               
+ж   ж   ж       ж   ж   +---compile_library_classes_jar
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           classes.jar
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---compile_r_class_jar
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           R.jar
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---compile_symbol_list
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           R.txt
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---data_binding_layout_info_type_package
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---out
+ж   ж   ж       ж   ж   +---incremental
+ж   ж   ж       ж   ж   ж   +---debug
+ж   ж   ж       ж   ж   ж   ж   L---packageDebugResources
+ж   ж   ж       ж   ж   ж   ж       ж   compile-file-map.properties
+ж   ж   ж       ж   ж   ж   ж       ж   merger.xml
+ж   ж   ж       ж   ж   ж   ж       ж   
+ж   ж   ж       ж   ж   ж   ж       +---merged.dir
+ж   ж   ж       ж   ж   ж   ж       ж   L---values
+ж   ж   ж       ж   ж   ж   ж       ж           values.xml
+ж   ж   ж       ж   ж   ж   ж       ж           
+ж   ж   ж       ж   ж   ж   ж       L---stripped.dir
+ж   ж   ж       ж   ж   ж   +---mergeDebugJniLibFolders
+ж   ж   ж       ж   ж   ж   ж       merger.xml
+ж   ж   ж       ж   ж   ж   ж       
+ж   ж   ж       ж   ж   ж   +---mergeDebugShaders
+ж   ж   ж       ж   ж   ж   ж       merger.xml
+ж   ж   ж       ж   ж   ж   ж       
+ж   ж   ж       ж   ж   ж   L---packageDebugAssets
+ж   ж   ж       ж   ж   ж           merger.xml
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---javac
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---classes
+ж   ж   ж       ж   ж   ж           L---com
+ж   ж   ж       ж   ж   ж               L---getcapacitor
+ж   ж   ж       ж   ж   ж                   ж   AndroidProtocolHandler.class
+ж   ж   ж       ж   ж   ж                   ж   App$AppRestoredListener.class
+ж   ж   ж       ж   ж   ж                   ж   App$AppStatusChangeListener.class
+ж   ж   ж       ж   ж   ж                   ж   App.class
+ж   ж   ж       ж   ж   ж                   ж   AppUUID.class
+ж   ж   ж       ж   ж   ж                   ж   Bridge$Builder.class
+ж   ж   ж       ж   ж   ж                   ж   Bridge.class
+ж   ж   ж       ж   ж   ж                   ж   BridgeActivity.class
+ж   ж   ж       ж   ж   ж                   ж   BridgeFragment.class
+ж   ж   ж       ж   ж   ж                   ж   BridgeWebChromeClient$ActivityResultListener.class
+ж   ж   ж       ж   ж   ж                   ж   BridgeWebChromeClient$PermissionListener.class
+ж   ж   ж       ж   ж   ж                   ж   BridgeWebChromeClient.class
+ж   ж   ж       ж   ж   ж                   ж   BridgeWebViewClient.class
+ж   ж   ж       ж   ж   ж                   ж   CapacitorWebView.class
+ж   ж   ж       ж   ж   ж                   ж   CapConfig$Builder.class
+ж   ж   ж       ж   ж   ж                   ж   CapConfig.class
+ж   ж   ж       ж   ж   ж                   ж   FileUtils$Type.class
+ж   ж   ж       ж   ж   ж                   ж   FileUtils.class
+ж   ж   ж       ж   ж   ж                   ж   InvalidPluginException.class
+ж   ж   ж       ж   ж   ж                   ж   InvalidPluginMethodException.class
+ж   ж   ж       ж   ж   ж                   ж   JSArray.class
+ж   ж   ж       ж   ж   ж                   ж   JSExport.class
+ж   ж   ж       ж   ж   ж                   ж   JSExportException.class
+ж   ж   ж       ж   ж   ж                   ж   JSInjector.class
+ж   ж   ж       ж   ж   ж                   ж   JSObject.class
+ж   ж   ж       ж   ж   ж                   ж   JSValue.class
+ж   ж   ж       ж   ж   ж                   ж   Logger.class
+ж   ж   ж       ж   ж   ж                   ж   MessageHandler.class
+ж   ж   ж       ж   ж   ж                   ж   NativePlugin.class
+ж   ж   ж       ж   ж   ж                   ж   PermissionState.class
+ж   ж   ж       ж   ж   ж                   ж   Plugin.class
+ж   ж   ж       ж   ж   ж                   ж   PluginCall$PluginCallDataTypeException.class
+ж   ж   ж       ж   ж   ж                   ж   PluginCall.class
+ж   ж   ж       ж   ж   ж                   ж   PluginConfig.class
+ж   ж   ж       ж   ж   ж                   ж   PluginHandle.class
+ж   ж   ж       ж   ж   ж                   ж   PluginInvocationException.class
+ж   ж   ж       ж   ж   ж                   ж   PluginLoadException.class
+ж   ж   ж       ж   ж   ж                   ж   PluginManager.class
+ж   ж   ж       ж   ж   ж                   ж   PluginMethod.class
+ж   ж   ж       ж   ж   ж                   ж   PluginMethodHandle.class
+ж   ж   ж       ж   ж   ж                   ж   PluginResult.class
+ж   ж   ж       ж   ж   ж                   ж   ProcessedRoute.class
+ж   ж   ж       ж   ж   ж                   ж   RouteProcessor.class
+ж   ж   ж       ж   ж   ж                   ж   ServerPath$PathType.class
+ж   ж   ж       ж   ж   ж                   ж   ServerPath.class
+ж   ж   ж       ж   ж   ж                   ж   UriMatcher.class
+ж   ж   ж       ж   ж   ж                   ж   WebViewListener.class
+ж   ж   ж       ж   ж   ж                   ж   WebViewLocalServer$1.class
+ж   ж   ж       ж   ж   ж                   ж   WebViewLocalServer$LazyInputStream.class
+ж   ж   ж       ж   ж   ж                   ж   WebViewLocalServer$LollipopLazyInputStream.class
+ж   ж   ж       ж   ж   ж                   ж   WebViewLocalServer$PathHandler.class
+ж   ж   ж       ж   ж   ж                   ж   WebViewLocalServer.class
+ж   ж   ж       ж   ж   ж                   ж   
+ж   ж   ж       ж   ж   ж                   +---annotation
+ж   ж   ж       ж   ж   ж                   ж       ActivityCallback.class
+ж   ж   ж       ж   ж   ж                   ж       CapacitorPlugin.class
+ж   ж   ж       ж   ж   ж                   ж       Permission.class
+ж   ж   ж       ж   ж   ж                   ж       PermissionCallback.class
+ж   ж   ж       ж   ж   ж                   ж       
+ж   ж   ж       ж   ж   ж                   +---cordova
+ж   ж   ж       ж   ж   ж                   ж       CapacitorCordovaCookieManager.class
+ж   ж   ж       ж   ж   ж                   ж       MockCordovaInterfaceImpl.class
+ж   ж   ж       ж   ж   ж                   ж       MockCordovaWebViewImpl$CapacitorEvalBridgeMode.class
+ж   ж   ж       ж   ж   ж                   ж       MockCordovaWebViewImpl.class
+ж   ж   ж       ж   ж   ж                   ж       
+ж   ж   ж       ж   ж   ж                   +---plugin
+ж   ж   ж       ж   ж   ж                   ж   ж   CapacitorCookieManager.class
+ж   ж   ж       ж   ж   ж                   ж   ж   CapacitorCookies.class
+ж   ж   ж       ж   ж   ж                   ж   ж   CapacitorHttp$1.class
+ж   ж   ж       ж   ж   ж                   ж   ж   CapacitorHttp.class
+ж   ж   ж       ж   ж   ж                   ж   ж   WebView.class
+ж   ж   ж       ж   ж   ж                   ж   ж   
+ж   ж   ж       ж   ж   ж                   ж   L---util
+ж   ж   ж       ж   ж   ж                   ж           AssetUtil.class
+ж   ж   ж       ж   ж   ж                   ж           CapacitorHttpUrlConnection.class
+ж   ж   ж       ж   ж   ж                   ж           HttpRequestHandler$HttpURLConnectionBuilder.class
+ж   ж   ж       ж   ж   ж                   ж           HttpRequestHandler$ProgressEmitter.class
+ж   ж   ж       ж   ж   ж                   ж           HttpRequestHandler$ResponseType.class
+ж   ж   ж       ж   ж   ж                   ж           HttpRequestHandler.class
+ж   ж   ж       ж   ж   ж                   ж           ICapacitorHttpUrlConnection.class
+ж   ж   ж       ж   ж   ж                   ж           MimeType.class
+ж   ж   ж       ж   ж   ж                   ж           
+ж   ж   ж       ж   ж   ж                   L---util
+ж   ж   ж       ж   ж   ж                           HostMask$Any.class
+ж   ж   ж       ж   ж   ж                           HostMask$Nothing.class
+ж   ж   ж       ж   ж   ж                           HostMask$Parser.class
+ж   ж   ж       ж   ж   ж                           HostMask$Simple.class
+ж   ж   ж       ж   ж   ж                           HostMask$Util.class
+ж   ж   ж       ж   ж   ж                           HostMask.class
+ж   ж   ж       ж   ж   ж                           InternalUtils.class
+ж   ж   ж       ж   ж   ж                           JSONUtils.class
+ж   ж   ж       ж   ж   ж                           PermissionHelper.class
+ж   ж   ж       ж   ж   ж                           WebColor.class
+ж   ж   ж       ж   ж   ж                           
+ж   ж   ж       ж   ж   +---library_assets
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---out
+ж   ж   ж       ж   ж   ж               native-bridge.js
+ж   ж   ж       ж   ж   ж               
+ж   ж   ж       ж   ж   +---library_jni
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---jni
+ж   ж   ж       ж   ж   +---local_only_symbol_list
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           R-def.txt
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---manifest_merge_blame_file
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           manifest-merger-blame-debug-report.txt
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---merged_jni_libs
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---out
+ж   ж   ж       ж   ж   +---merged_manifest
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           AndroidManifest.xml
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---merged_shaders
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       L---out
+ж   ж   ж       ж   ж   +---navigation_json
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           navigation.json
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   +---packaged_res
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж       +---layout
+ж   ж   ж       ж   ж   ж       ж       bridge_layout_main.xml
+ж   ж   ж       ж   ж   ж       ж       fragment_bridge.xml
+ж   ж   ж       ж   ж   ж       ж       no_webview.xml
+ж   ж   ж       ж   ж   ж       ж       
+ж   ж   ж       ж   ж   ж       L---values
+ж   ж   ж       ж   ж   ж               values.xml
+ж   ж   ж       ж   ж   ж               
+ж   ж   ж       ж   ж   +---public_res
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   +---runtime_library_classes_jar
+ж   ж   ж       ж   ж   ж   L---debug
+ж   ж   ж       ж   ж   ж           classes.jar
+ж   ж   ж       ж   ж   ж           
+ж   ж   ж       ж   ж   L---symbol_list_with_package_name
+ж   ж   ж       ж   ж       L---debug
+ж   ж   ж       ж   ж               package-aware-r.txt
+ж   ж   ж       ж   ж               
+ж   ж   ж       ж   +---outputs
+ж   ж   ж       ж   ж   L---logs
+ж   ж   ж       ж   ж           manifest-merger-debug-report.txt
+ж   ж   ж       ж   ж           
+ж   ж   ж       ж   L---tmp
+ж   ж   ж       ж       L---compileDebugJavaWithJavac
+ж   ж   ж       ж               previous-compilation-data.bin
+ж   ж   ж       ж               
+ж   ж   ж       L---src
+ж   ж   ж           L---main
+ж   ж   ж               ж   AndroidManifest.xml
+ж   ж   ж               ж   
+ж   ж   ж               +---assets
+ж   ж   ж               ж       native-bridge.js
+ж   ж   ж               ж       
+ж   ж   ж               +---java
+ж   ж   ж               ж   L---com
+ж   ж   ж               ж       L---getcapacitor
+ж   ж   ж               ж           ж   AndroidProtocolHandler.java
+ж   ж   ж               ж           ж   App.java
+ж   ж   ж               ж           ж   AppUUID.java
+ж   ж   ж               ж           ж   Bridge.java
+ж   ж   ж               ж           ж   BridgeActivity.java
+ж   ж   ж               ж           ж   BridgeFragment.java
+ж   ж   ж               ж           ж   BridgeWebChromeClient.java
+ж   ж   ж               ж           ж   BridgeWebViewClient.java
+ж   ж   ж               ж           ж   CapacitorWebView.java
+ж   ж   ж               ж           ж   CapConfig.java
+ж   ж   ж               ж           ж   FileUtils.java
+ж   ж   ж               ж           ж   InvalidPluginException.java
+ж   ж   ж               ж           ж   InvalidPluginMethodException.java
+ж   ж   ж               ж           ж   JSArray.java
+ж   ж   ж               ж           ж   JSExport.java
+ж   ж   ж               ж           ж   JSExportException.java
+ж   ж   ж               ж           ж   JSInjector.java
+ж   ж   ж               ж           ж   JSObject.java
+ж   ж   ж               ж           ж   JSValue.java
+ж   ж   ж               ж           ж   Logger.java
+ж   ж   ж               ж           ж   MessageHandler.java
+ж   ж   ж               ж           ж   NativePlugin.java
+ж   ж   ж               ж           ж   PermissionState.java
+ж   ж   ж               ж           ж   Plugin.java
+ж   ж   ж               ж           ж   PluginCall.java
+ж   ж   ж               ж           ж   PluginConfig.java
+ж   ж   ж               ж           ж   PluginHandle.java
+ж   ж   ж               ж           ж   PluginInvocationException.java
+ж   ж   ж               ж           ж   PluginLoadException.java
+ж   ж   ж               ж           ж   PluginManager.java
+ж   ж   ж               ж           ж   PluginMethod.java
+ж   ж   ж               ж           ж   PluginMethodHandle.java
+ж   ж   ж               ж           ж   PluginResult.java
+ж   ж   ж               ж           ж   ProcessedRoute.java
+ж   ж   ж               ж           ж   RouteProcessor.java
+ж   ж   ж               ж           ж   ServerPath.java
+ж   ж   ж               ж           ж   UriMatcher.java
+ж   ж   ж               ж           ж   WebViewListener.java
+ж   ж   ж               ж           ж   WebViewLocalServer.java
+ж   ж   ж               ж           ж   
+ж   ж   ж               ж           +---annotation
+ж   ж   ж               ж           ж       ActivityCallback.java
+ж   ж   ж               ж           ж       CapacitorPlugin.java
+ж   ж   ж               ж           ж       Permission.java
+ж   ж   ж               ж           ж       PermissionCallback.java
+ж   ж   ж               ж           ж       
+ж   ж   ж               ж           +---cordova
+ж   ж   ж               ж           ж       CapacitorCordovaCookieManager.java
+ж   ж   ж               ж           ж       MockCordovaInterfaceImpl.java
+ж   ж   ж               ж           ж       MockCordovaWebViewImpl.java
+ж   ж   ж               ж           ж       
+ж   ж   ж               ж           +---plugin
+ж   ж   ж               ж           ж   ж   CapacitorCookieManager.java
+ж   ж   ж               ж           ж   ж   CapacitorCookies.java
+ж   ж   ж               ж           ж   ж   CapacitorHttp.java
+ж   ж   ж               ж           ж   ж   WebView.java
+ж   ж   ж               ж           ж   ж   
+ж   ж   ж               ж           ж   L---util
+ж   ж   ж               ж           ж           AssetUtil.java
+ж   ж   ж               ж           ж           CapacitorHttpUrlConnection.java
+ж   ж   ж               ж           ж           HttpRequestHandler.java
+ж   ж   ж               ж           ж           ICapacitorHttpUrlConnection.java
+ж   ж   ж               ж           ж           MimeType.java
+ж   ж   ж               ж           ж           
+ж   ж   ж               ж           L---util
+ж   ж   ж               ж                   HostMask.java
+ж   ж   ж               ж                   InternalUtils.java
+ж   ж   ж               ж                   JSONUtils.java
+ж   ж   ж               ж                   PermissionHelper.java
+ж   ж   ж               ж                   WebColor.java
+ж   ж   ж               ж                   
+ж   ж   ж               L---res
+ж   ж   ж                   +---layout
+ж   ж   ж                   ж       bridge_layout_main.xml
+ж   ж   ж                   ж       fragment_bridge.xml
+ж   ж   ж                   ж       no_webview.xml
+ж   ж   ж                   ж       
+ж   ж   ж                   L---values
+ж   ж   ж                           attrs.xml
+ж   ж   ж                           colors.xml
+ж   ж   ж                           strings.xml
+ж   ж   ж                           styles.xml
+ж   ж   ж                           
+ж   ж   +---cli
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   +---assets
+ж   ж   ж   ж       android-template.tar.gz
+ж   ж   ж   ж       capacitor-cordova-android-plugins.tar.gz
+ж   ж   ж   ж       capacitor-cordova-ios-plugins.tar.gz
+ж   ж   ж   ж       ios-pods-template.tar.gz
+ж   ж   ж   ж       ios-spm-template.tar.gz
+ж   ж   ж   ж       
+ж   ж   ж   +---bin
+ж   ж   ж   ж       capacitor
+ж   ж   ж   ж       
+ж   ж   ж   L---dist
+ж   ж   ж       ж   colors.js
+ж   ж   ж       ж   common.js
+ж   ж   ж       ж   config.js
+ж   ж   ж       ж   cordova.js
+ж   ж   ж       ж   declarations.d.ts
+ж   ж   ж       ж   declarations.js
+ж   ж   ж       ж   definitions.js
+ж   ж   ж       ж   errors.js
+ж   ж   ж       ж   framework-configs.js
+ж   ж   ж       ж   index.js
+ж   ж   ж       ж   ipc.js
+ж   ж   ж       ж   log.js
+ж   ж   ж       ж   plugin.js
+ж   ж   ж       ж   sysconfig.js
+ж   ж   ж       ж   telemetry.js
+ж   ж   ж       ж   
+ж   ж   ж       +---android
+ж   ж   ж       ж       add.js
+ж   ж   ж       ж       build.js
+ж   ж   ж       ж       common.js
+ж   ж   ж       ж       doctor.js
+ж   ж   ж       ж       open.js
+ж   ж   ж       ж       run.js
+ж   ж   ж       ж       update.js
+ж   ж   ж       ж       
+ж   ж   ж       +---ios
+ж   ж   ж       ж       add.js
+ж   ж   ж       ж       build.js
+ж   ж   ж       ж       common.js
+ж   ж   ж       ж       doctor.js
+ж   ж   ж       ж       open.js
+ж   ж   ж       ж       run.js
+ж   ж   ж       ж       update.js
+ж   ж   ж       ж       
+ж   ж   ж       +---tasks
+ж   ж   ж       ж       add.js
+ж   ж   ж       ж       build.js
+ж   ж   ж       ж       config.js
+ж   ж   ж       ж       copy.js
+ж   ж   ж       ж       create.js
+ж   ж   ж       ж       doctor.js
+ж   ж   ж       ж       init.js
+ж   ж   ж       ж       list.js
+ж   ж   ж       ж       migrate.js
+ж   ж   ж       ж       new-plugin.js
+ж   ж   ж       ж       open.js
+ж   ж   ж       ж       run.js
+ж   ж   ж       ж       serve.js
+ж   ж   ж       ж       sourcemaps.js
+ж   ж   ж       ж       sync.js
+ж   ж   ж       ж       telemetry.js
+ж   ж   ж       ж       update.js
+ж   ж   ж       ж       
+ж   ж   ж       +---util
+ж   ж   ж       ж       cli.js
+ж   ж   ж       ж       emoji.js
+ж   ж   ж       ж       fn.js
+ж   ж   ж       ж       fs.js
+ж   ж   ж       ж       iosplugin.js
+ж   ж   ж       ж       js.js
+ж   ж   ж       ж       livereload.js
+ж   ж   ж       ж       monorepotools.js
+ж   ж   ж       ж       native-run.js
+ж   ж   ж       ж       node.js
+ж   ж   ж       ж       promise.js
+ж   ж   ж       ж       spm.js
+ж   ж   ж       ж       subprocess.js
+ж   ж   ж       ж       template.js
+ж   ж   ж       ж       term.js
+ж   ж   ж       ж       uuid.js
+ж   ж   ж       ж       xml.js
+ж   ж   ж       ж       
+ж   ж   ж       L---web
+ж   ж   ж               copy.js
+ж   ж   ж               
+ж   ж   +---core
+ж   ж   ж   ж   cookies.md
+ж   ж   ж   ж   cordova.js
+ж   ж   ж   ж   http.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   +---dist
+ж   ж   ж   ж       capacitor.js
+ж   ж   ж   ж       capacitor.js.map
+ж   ж   ж   ж       index.cjs.js
+ж   ж   ж   ж       index.cjs.js.map
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       index.js.map
+ж   ж   ж   ж       
+ж   ж   ж   L---types
+ж   ж   ж       ж   core-plugins.d.ts
+ж   ж   ж       ж   definitions-internal.d.ts
+ж   ж   ж       ж   definitions.d.ts
+ж   ж   ж       ж   global.d.ts
+ж   ж   ж       ж   index.d.ts
+ж   ж   ж       ж   platforms.d.ts
+ж   ж   ж       ж   runtime.d.ts
+ж   ж   ж       ж   util.d.ts
+ж   ж   ж       ж   web-plugin.d.ts
+ж   ж   ж       ж   
+ж   ж   ж       L---legacy
+ж   ж   ж               legacy-definitions.d.ts
+ж   ж   ж               legacy-web-plugin-merge.d.ts
+ж   ж   ж               
+ж   ж   +---haptics
+ж   ж   ж   ж   CapacitorHaptics.podspec
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   Package.swift
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   +---android
+ж   ж   ж   ж   ж   build.gradle
+ж   ж   ж   ж   ж   
+ж   ж   ж   ж   +---build
+ж   ж   ж   ж   ж   +---.transforms
+ж   ж   ж   ж   ж   ж   +---255d25317101fbdd1956b2173681f8fe
+ж   ж   ж   ж   ж   ж   ж   ж   results.bin
+ж   ж   ж   ж   ж   ж   ж   ж   
+ж   ж   ж   ж   ж   ж   ж   L---transformed
+ж   ж   ж   ж   ж   ж   ж       L---classes
+ж   ж   ж   ж   ж   ж   ж           +---classes_dex
+ж   ж   ж   ж   ж   ж   ж           ж       classes.dex
+ж   ж   ж   ж   ж   ж   ж           ж       
+ж   ж   ж   ж   ж   ж   ж           L---classes_global-synthetics
+ж   ж   ж   ж   ж   ж   +---52188ac2413d4a4e115ff1d05206fb93
+ж   ж   ж   ж   ж   ж   ж   ж   results.bin
+ж   ж   ж   ж   ж   ж   ж   ж   
+ж   ж   ж   ж   ж   ж   ж   L---transformed
+ж   ж   ж   ж   ж   ж   L---764336e24f33a72175b680606121c8ce
+ж   ж   ж   ж   ж   ж       ж   results.bin
+ж   ж   ж   ж   ж   ж       ж   
+ж   ж   ж   ж   ж   ж       L---transformed
+ж   ж   ж   ж   ж   +---generated
+ж   ж   ж   ж   ж   ж   +---ap_generated_sources
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж   ж   L---res
+ж   ж   ж   ж   ж   ж       +---pngs
+ж   ж   ж   ж   ж   ж       ж   L---debug
+ж   ж   ж   ж   ж   ж       L---resValues
+ж   ж   ж   ж   ж   ж           L---debug
+ж   ж   ж   ж   ж   +---intermediates
+ж   ж   ж   ж   ж   ж   +---aapt_friendly_merged_manifests
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---aapt
+ж   ж   ж   ж   ж   ж   ж               AndroidManifest.xml
+ж   ж   ж   ж   ж   ж   ж               output-metadata.json
+ж   ж   ж   ж   ж   ж   ж               
+ж   ж   ж   ж   ж   ж   +---aar_metadata
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           aar-metadata.properties
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---annotation_processor_list
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           annotationProcessors.json
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---compiled_local_resources
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж   ж   +---compile_library_classes_jar
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           classes.jar
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---compile_r_class_jar
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           R.jar
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---compile_symbol_list
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           R.txt
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---data_binding_layout_info_type_package
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж   ж   +---incremental
+ж   ж   ж   ж   ж   ж   ж   +---debug
+ж   ж   ж   ж   ж   ж   ж   ж   L---packageDebugResources
+ж   ж   ж   ж   ж   ж   ж   ж       ж   compile-file-map.properties
+ж   ж   ж   ж   ж   ж   ж   ж       ж   merger.xml
+ж   ж   ж   ж   ж   ж   ж   ж       ж   
+ж   ж   ж   ж   ж   ж   ж   ж       +---merged.dir
+ж   ж   ж   ж   ж   ж   ж   ж       L---stripped.dir
+ж   ж   ж   ж   ж   ж   ж   +---mergeDebugJniLibFolders
+ж   ж   ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   +---mergeDebugShaders
+ж   ж   ж   ж   ж   ж   ж   ж       merger.xml
+ж   ж   ж   ж   ж   ж   ж   ж       
+ж   ж   ж   ж   ж   ж   ж   L---packageDebugAssets
+ж   ж   ж   ж   ж   ж   ж           merger.xml
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---javac
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---classes
+ж   ж   ж   ж   ж   ж   ж           L---com
+ж   ж   ж   ж   ж   ж   ж               L---capacitorjs
+ж   ж   ж   ж   ж   ж   ж                   L---plugins
+ж   ж   ж   ж   ж   ж   ж                       L---haptics
+ж   ж   ж   ж   ж   ж   ж                           ж   Haptics.class
+ж   ж   ж   ж   ж   ж   ж                           ж   HapticsPlugin.class
+ж   ж   ж   ж   ж   ж   ж                           ж   
+ж   ж   ж   ж   ж   ж   ж                           L---arguments
+ж   ж   ж   ж   ж   ж   ж                                   HapticsImpactType.class
+ж   ж   ж   ж   ж   ж   ж                                   HapticsNotificationType.class
+ж   ж   ж   ж   ж   ж   ж                                   HapticsSelectionType.class
+ж   ж   ж   ж   ж   ж   ж                                   HapticsVibrationType.class
+ж   ж   ж   ж   ж   ж   ж                                   
+ж   ж   ж   ж   ж   ж   +---library_assets
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж   ж   +---library_jni
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---jni
+ж   ж   ж   ж   ж   ж   +---local_only_symbol_list
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           R-def.txt
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---manifest_merge_blame_file
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           manifest-merger-blame-debug-report.txt
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---merged_jni_libs
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж   ж   +---merged_manifest
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           AndroidManifest.xml
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---merged_shaders
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж       L---out
+ж   ж   ж   ж   ж   ж   +---navigation_json
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           navigation.json
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   +---packaged_res
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   +---public_res
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   +---runtime_library_classes_jar
+ж   ж   ж   ж   ж   ж   ж   L---debug
+ж   ж   ж   ж   ж   ж   ж           classes.jar
+ж   ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   ж   L---symbol_list_with_package_name
+ж   ж   ж   ж   ж   ж       L---debug
+ж   ж   ж   ж   ж   ж               package-aware-r.txt
+ж   ж   ж   ж   ж   ж               
+ж   ж   ж   ж   ж   +---outputs
+ж   ж   ж   ж   ж   ж   L---logs
+ж   ж   ж   ж   ж   ж           manifest-merger-debug-report.txt
+ж   ж   ж   ж   ж   ж           
+ж   ж   ж   ж   ж   L---tmp
+ж   ж   ж   ж   ж       L---compileDebugJavaWithJavac
+ж   ж   ж   ж   ж               previous-compilation-data.bin
+ж   ж   ж   ж   ж               
+ж   ж   ж   ж   L---src
+ж   ж   ж   ж       L---main
+ж   ж   ж   ж           ж   AndroidManifest.xml
+ж   ж   ж   ж           ж   
+ж   ж   ж   ж           L---java
+ж   ж   ж   ж               L---com
+ж   ж   ж   ж                   L---capacitorjs
+ж   ж   ж   ж                       L---plugins
+ж   ж   ж   ж                           L---haptics
+ж   ж   ж   ж                               ж   Haptics.java
+ж   ж   ж   ж                               ж   HapticsPlugin.java
+ж   ж   ж   ж                               ж   
+ж   ж   ж   ж                               L---arguments
+ж   ж   ж   ж                                       HapticsImpactType.java
+ж   ж   ж   ж                                       HapticsNotificationType.java
+ж   ж   ж   ж                                       HapticsSelectionType.java
+ж   ж   ж   ж                                       HapticsVibrationType.java
+ж   ж   ж   ж                                       
+ж   ж   ж   +---dist
+ж   ж   ж   ж   ж   docs.json
+ж   ж   ж   ж   ж   plugin.cjs.js
+ж   ж   ж   ж   ж   plugin.cjs.js.map
+ж   ж   ж   ж   ж   plugin.js
+ж   ж   ж   ж   ж   plugin.js.map
+ж   ж   ж   ж   ж   
+ж   ж   ж   ж   L---esm
+ж   ж   ж   ж           definitions.d.ts
+ж   ж   ж   ж           definitions.js
+ж   ж   ж   ж           definitions.js.map
+ж   ж   ж   ж           index.d.ts
+ж   ж   ж   ж           index.js
+ж   ж   ж   ж           index.js.map
+ж   ж   ж   ж           web.d.ts
+ж   ж   ж   ж           web.js
+ж   ж   ж   ж           web.js.map
+ж   ж   ж   ж           
+ж   ж   ж   L---ios
+ж   ж   ж       +---Sources
+ж   ж   ж       ж   L---HapticsPlugin
+ж   ж   ж       ж           Haptics.swift
+ж   ж   ж       ж           HapticsPlugin.swift
+ж   ж   ж       ж           
+ж   ж   ж       L---Tests
+ж   ж   ж           L---HapticsPluginTests
+ж   ж   ж                   HapticsPluginTests.swift
+ж   ж   ж                   
+ж   ж   L---status-bar
+ж   ж       ж   CapacitorStatusBar.podspec
+ж   ж       ж   LICENSE
+ж   ж       ж   package.json
+ж   ж       ж   Package.swift
+ж   ж       ж   README.md
+ж   ж       ж   
+ж   ж       +---android
+ж   ж       ж   ж   build.gradle
+ж   ж       ж   ж   
+ж   ж       ж   +---build
+ж   ж       ж   ж   +---.transforms
+ж   ж       ж   ж   ж   +---6bc337249403e76de76a8ad7676b0f2d
+ж   ж       ж   ж   ж   ж   ж   results.bin
+ж   ж       ж   ж   ж   ж   ж   
+ж   ж       ж   ж   ж   ж   L---transformed
+ж   ж       ж   ж   ж   +---d86458618fa9aa8d63bf67a4bba7a59d
+ж   ж       ж   ж   ж   ж   ж   results.bin
+ж   ж       ж   ж   ж   ж   ж   
+ж   ж       ж   ж   ж   ж   L---transformed
+ж   ж       ж   ж   ж   L---de3e5e9e32ad8aaaf89ca5a04a16fbe6
+ж   ж       ж   ж   ж       ж   results.bin
+ж   ж       ж   ж   ж       ж   
+ж   ж       ж   ж   ж       L---transformed
+ж   ж       ж   ж   ж           L---classes
+ж   ж       ж   ж   ж               +---classes_dex
+ж   ж       ж   ж   ж               ж       classes.dex
+ж   ж       ж   ж   ж               ж       
+ж   ж       ж   ж   ж               L---classes_global-synthetics
+ж   ж       ж   ж   +---generated
+ж   ж       ж   ж   ж   +---ap_generated_sources
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---out
+ж   ж       ж   ж   ж   L---res
+ж   ж       ж   ж   ж       +---pngs
+ж   ж       ж   ж   ж       ж   L---debug
+ж   ж       ж   ж   ж       L---resValues
+ж   ж       ж   ж   ж           L---debug
+ж   ж       ж   ж   +---intermediates
+ж   ж       ж   ж   ж   +---aapt_friendly_merged_manifests
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---aapt
+ж   ж       ж   ж   ж   ж               AndroidManifest.xml
+ж   ж       ж   ж   ж   ж               output-metadata.json
+ж   ж       ж   ж   ж   ж               
+ж   ж       ж   ж   ж   +---aar_metadata
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           aar-metadata.properties
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---annotation_processor_list
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           annotationProcessors.json
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---compiled_local_resources
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---out
+ж   ж       ж   ж   ж   +---compile_library_classes_jar
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           classes.jar
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---compile_r_class_jar
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           R.jar
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---compile_symbol_list
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           R.txt
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---data_binding_layout_info_type_package
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---out
+ж   ж       ж   ж   ж   +---incremental
+ж   ж       ж   ж   ж   ж   +---debug
+ж   ж       ж   ж   ж   ж   ж   L---packageDebugResources
+ж   ж       ж   ж   ж   ж   ж       ж   compile-file-map.properties
+ж   ж       ж   ж   ж   ж   ж       ж   merger.xml
+ж   ж       ж   ж   ж   ж   ж       ж   
+ж   ж       ж   ж   ж   ж   ж       +---merged.dir
+ж   ж       ж   ж   ж   ж   ж       L---stripped.dir
+ж   ж       ж   ж   ж   ж   +---mergeDebugJniLibFolders
+ж   ж       ж   ж   ж   ж   ж       merger.xml
+ж   ж       ж   ж   ж   ж   ж       
+ж   ж       ж   ж   ж   ж   +---mergeDebugShaders
+ж   ж       ж   ж   ж   ж   ж       merger.xml
+ж   ж       ж   ж   ж   ж   ж       
+ж   ж       ж   ж   ж   ж   L---packageDebugAssets
+ж   ж       ж   ж   ж   ж           merger.xml
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---javac
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---classes
+ж   ж       ж   ж   ж   ж           L---com
+ж   ж       ж   ж   ж   ж               L---capacitorjs
+ж   ж       ж   ж   ж   ж                   L---plugins
+ж   ж       ж   ж   ж   ж                       L---statusbar
+ж   ж       ж   ж   ж   ж                               StatusBar.class
+ж   ж       ж   ж   ж   ж                               StatusBarInfo.class
+ж   ж       ж   ж   ж   ж                               StatusBarPlugin.class
+ж   ж       ж   ж   ж   ж                               
+ж   ж       ж   ж   ж   +---library_assets
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---out
+ж   ж       ж   ж   ж   +---library_jni
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---jni
+ж   ж       ж   ж   ж   +---local_only_symbol_list
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           R-def.txt
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---manifest_merge_blame_file
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           manifest-merger-blame-debug-report.txt
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---merged_jni_libs
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---out
+ж   ж       ж   ж   ж   +---merged_manifest
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           AndroidManifest.xml
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---merged_shaders
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж       L---out
+ж   ж       ж   ж   ж   +---navigation_json
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           navigation.json
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   +---packaged_res
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   +---public_res
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   +---runtime_library_classes_jar
+ж   ж       ж   ж   ж   ж   L---debug
+ж   ж       ж   ж   ж   ж           classes.jar
+ж   ж       ж   ж   ж   ж           
+ж   ж       ж   ж   ж   L---symbol_list_with_package_name
+ж   ж       ж   ж   ж       L---debug
+ж   ж       ж   ж   ж               package-aware-r.txt
+ж   ж       ж   ж   ж               
+ж   ж       ж   ж   +---outputs
+ж   ж       ж   ж   ж   L---logs
+ж   ж       ж   ж   ж           manifest-merger-debug-report.txt
+ж   ж       ж   ж   ж           
+ж   ж       ж   ж   L---tmp
+ж   ж       ж   ж       L---compileDebugJavaWithJavac
+ж   ж       ж   ж               previous-compilation-data.bin
+ж   ж       ж   ж               
+ж   ж       ж   L---src
+ж   ж       ж       L---main
+ж   ж       ж           ж   AndroidManifest.xml
+ж   ж       ж           ж   
+ж   ж       ж           L---java
+ж   ж       ж               L---com
+ж   ж       ж                   L---capacitorjs
+ж   ж       ж                       L---plugins
+ж   ж       ж                           L---statusbar
+ж   ж       ж                                   StatusBar.java
+ж   ж       ж                                   StatusBarInfo.java
+ж   ж       ж                                   StatusBarPlugin.java
+ж   ж       ж                                   
+ж   ж       +---dist
+ж   ж       ж   ж   docs.json
+ж   ж       ж   ж   plugin.cjs.js
+ж   ж       ж   ж   plugin.cjs.js.map
+ж   ж       ж   ж   plugin.js
+ж   ж       ж   ж   plugin.js.map
+ж   ж       ж   ж   
+ж   ж       ж   L---esm
+ж   ж       ж           definitions.d.ts
+ж   ж       ж           definitions.js
+ж   ж       ж           definitions.js.map
+ж   ж       ж           index.d.ts
+ж   ж       ж           index.js
+ж   ж       ж           index.js.map
+ж   ж       ж           
+ж   ж       L---ios
+ж   ж           +---Sources
+ж   ж           ж   L---StatusBarPlugin
+ж   ж           ж           StatusBarPlugin.swift
+ж   ж           ж           
+ж   ж           L---Tests
+ж   ж               L---StatusBarPluginTests
+ж   ж                       StatusBarPluginTests.swift
+ж   ж                       
+ж   +---@ionic
+ж   ж   +---cli-framework-output
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   L---dist
+ж   ж   ж           colors.d.ts
+ж   ж   ж           colors.js
+ж   ж   ж           index.d.ts
+ж   ж   ж           index.js
+ж   ж   ж           logger.d.ts
+ж   ж   ж           logger.js
+ж   ж   ж           output.d.ts
+ж   ж   ж           output.js
+ж   ж   ж           tasks.d.ts
+ж   ж   ж           tasks.js
+ж   ж   ж           utils.d.ts
+ж   ж   ж           utils.js
+ж   ж   ж           
+ж   ж   +---utils-array
+ж   ж   ж   ж   CHANGELOG.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   L---dist
+ж   ж   ж           index.d.ts
+ж   ж   ж           index.js
+ж   ж   ж           
+ж   ж   +---utils-fs
+ж   ж   ж   ж   CHANGELOG.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   L---dist
+ж   ж   ж           index.d.ts
+ж   ж   ж           index.js
+ж   ж   ж           safe.d.ts
+ж   ж   ж           safe.js
+ж   ж   ж           
+ж   ж   +---utils-object
+ж   ж   ж   ж   CHANGELOG.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   L---dist
+ж   ж   ж           index.d.ts
+ж   ж   ж           index.js
+ж   ж   ж           
+ж   ж   +---utils-process
+ж   ж   ж   ж   CHANGELOG.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   +---dist
+ж   ж   ж   ж       index.d.ts
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       
+ж   ж   ж   L---node_modules
+ж   ж   ж       L---@ionic
+ж   ж   ж           L---utils-terminal
+ж   ж   ж               ж   CHANGELOG.md
+ж   ж   ж               ж   LICENSE
+ж   ж   ж               ж   package.json
+ж   ж   ж               ж   README.md
+ж   ж   ж               ж   
+ж   ж   ж               L---dist
+ж   ж   ж                       ansi.d.ts
+ж   ж   ж                       ansi.js
+ж   ж   ж                       cursor.d.ts
+ж   ж   ж                       cursor.js
+ж   ж   ж                       format.d.ts
+ж   ж   ж                       format.js
+ж   ж   ж                       index.d.ts
+ж   ж   ж                       index.js
+ж   ж   ж                       info.d.ts
+ж   ж   ж                       info.js
+ж   ж   ж                       
+ж   ж   +---utils-stream
+ж   ж   ж   ж   CHANGELOG.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   L---dist
+ж   ж   ж           index.d.ts
+ж   ж   ж           index.js
+ж   ж   ж           
+ж   ж   +---utils-subprocess
+ж   ж   ж   ж   CHANGELOG.md
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   
+ж   ж   ж   +---dist
+ж   ж   ж   ж       index.d.ts
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       
+ж   ж   ж   L---node_modules
+ж   ж   ж       L---@ionic
+ж   ж   ж           +---utils-fs
+ж   ж   ж           ж   ж   CHANGELOG.md
+ж   ж   ж           ж   ж   LICENSE
+ж   ж   ж           ж   ж   package.json
+ж   ж   ж           ж   ж   README.md
+ж   ж   ж           ж   ж   
+ж   ж   ж           ж   L---dist
+ж   ж   ж           ж           index.d.ts
+ж   ж   ж           ж           index.js
+ж   ж   ж           ж           safe.d.ts
+ж   ж   ж           ж           safe.js
+ж   ж   ж           ж           
+ж   ж   ж           L---utils-terminal
+ж   ж   ж               ж   CHANGELOG.md
+ж   ж   ж               ж   LICENSE
+ж   ж   ж               ж   package.json
+ж   ж   ж               ж   README.md
+ж   ж   ж               ж   
+ж   ж   ж               L---dist
+ж   ж   ж                       ansi.d.ts
+ж   ж   ж                       ansi.js
+ж   ж   ж                       cursor.d.ts
+ж   ж   ж                       cursor.js
+ж   ж   ж                       format.d.ts
+ж   ж   ж                       format.js
+ж   ж   ж                       index.d.ts
+ж   ж   ж                       index.js
+ж   ж   ж                       info.d.ts
+ж   ж   ж                       info.js
+ж   ж   ж                       
+ж   ж   L---utils-terminal
+ж   ж       ж   LICENSE
+ж   ж       ж   package.json
+ж   ж       ж   README.md
+ж   ж       ж   
+ж   ж       L---dist
+ж   ж               ansi.d.ts
+ж   ж               ansi.js
+ж   ж               cursor.d.ts
+ж   ж               cursor.js
+ж   ж               format.d.ts
+ж   ж               format.js
+ж   ж               index.d.ts
+ж   ж               index.js
+ж   ж               info.d.ts
+ж   ж               info.js
+ж   ж               
+ж   +---@types
+ж   ж   +---fs-extra
+ж   ж   ж       index.d.ts
+ж   ж   ж       LICENSE
+ж   ж   ж       package.json
+ж   ж   ж       README.md
+ж   ж   ж       
+ж   ж   +---node
+ж   ж   ж   ж   assert.d.ts
+ж   ж   ж   ж   async_hooks.d.ts
+ж   ж   ж   ж   buffer.buffer.d.ts
+ж   ж   ж   ж   buffer.d.ts
+ж   ж   ж   ж   child_process.d.ts
+ж   ж   ж   ж   cluster.d.ts
+ж   ж   ж   ж   console.d.ts
+ж   ж   ж   ж   constants.d.ts
+ж   ж   ж   ж   crypto.d.ts
+ж   ж   ж   ж   dgram.d.ts
+ж   ж   ж   ж   diagnostics_channel.d.ts
+ж   ж   ж   ж   dns.d.ts
+ж   ж   ж   ж   domain.d.ts
+ж   ж   ж   ж   events.d.ts
+ж   ж   ж   ж   fs.d.ts
+ж   ж   ж   ж   globals.d.ts
+ж   ж   ж   ж   globals.typedarray.d.ts
+ж   ж   ж   ж   http.d.ts
+ж   ж   ж   ж   http2.d.ts
+ж   ж   ж   ж   https.d.ts
+ж   ж   ж   ж   index.d.ts
+ж   ж   ж   ж   inspector.d.ts
+ж   ж   ж   ж   inspector.generated.d.ts
+ж   ж   ж   ж   LICENSE
+ж   ж   ж   ж   module.d.ts
+ж   ж   ж   ж   net.d.ts
+ж   ж   ж   ж   os.d.ts
+ж   ж   ж   ж   package.json
+ж   ж   ж   ж   path.d.ts
+ж   ж   ж   ж   perf_hooks.d.ts
+ж   ж   ж   ж   process.d.ts
+ж   ж   ж   ж   punycode.d.ts
+ж   ж   ж   ж   querystring.d.ts
+ж   ж   ж   ж   quic.d.ts
+ж   ж   ж   ж   readline.d.ts
+ж   ж   ж   ж   README.md
+ж   ж   ж   ж   repl.d.ts
+ж   ж   ж   ж   sea.d.ts
+ж   ж   ж   ж   sqlite.d.ts
+ж   ж   ж   ж   stream.d.ts
+ж   ж   ж   ж   string_decoder.d.ts
+ж   ж   ж   ж   test.d.ts
+ж   ж   ж   ж   timers.d.ts
+ж   ж   ж   ж   tls.d.ts
+ж   ж   ж   ж   trace_events.d.ts
+ж   ж   ж   ж   tty.d.ts
+ж   ж   ж   ж   url.d.ts
+ж   ж   ж   ж   util.d.ts
+ж   ж   ж   ж   v8.d.ts
+ж   ж   ж   ж   vm.d.ts
+ж   ж   ж   ж   wasi.d.ts
+ж   ж   ж   ж   worker_threads.d.ts
+ж   ж   ж   ж   zlib.d.ts
+ж   ж   ж   ж   
+ж   ж   ж   +---assert
+ж   ж   ж   ж       strict.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---dns
+ж   ж   ж   ж       promises.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---fs
+ж   ж   ж   ж       promises.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---inspector
+ж   ж   ж   ж       promises.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---path
+ж   ж   ж   ж       posix.d.ts
+ж   ж   ж   ж       win32.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---readline
+ж   ж   ж   ж       promises.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---stream
+ж   ж   ж   ж       consumers.d.ts
+ж   ж   ж   ж       iter.d.ts
+ж   ж   ж   ж       promises.d.ts
+ж   ж   ж   ж       web.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---test
+ж   ж   ж   ж       reporters.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---timers
+ж   ж   ж   ж       promises.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---ts5.6
+ж   ж   ж   ж   ж   buffer.buffer.d.ts
+ж   ж   ж   ж   ж   globals.typedarray.d.ts
+ж   ж   ж   ж   ж   index.d.ts
+ж   ж   ж   ж   ж   
+ж   ж   ж   ж   L---compatibility
+ж   ж   ж   ж           float16array.d.ts
+ж   ж   ж   ж           
+ж   ж   ж   +---ts5.7
+ж   ж   ж   ж   ж   index.d.ts
+ж   ж   ж   ж   ж   
+ж   ж   ж   ж   L---compatibility
+ж   ж   ж   ж           float16array.d.ts
+ж   ж   ж   ж           
+ж   ж   ж   +---util
+ж   ж   ж   ж       types.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   +---web-globals
+ж   ж   ж   ж       abortcontroller.d.ts
+ж   ж   ж   ж       blob.d.ts
+ж   ж   ж   ж       console.d.ts
+ж   ж   ж   ж       crypto.d.ts
+ж   ж   ж   ж       domexception.d.ts
+ж   ж   ж   ж       encoding.d.ts
+ж   ж   ж   ж       events.d.ts
+ж   ж   ж   ж       fetch.d.ts
+ж   ж   ж   ж       importmeta.d.ts
+ж   ж   ж   ж       messaging.d.ts
+ж   ж   ж   ж       navigator.d.ts
+ж   ж   ж   ж       performance.d.ts
+ж   ж   ж   ж       storage.d.ts
+ж   ж   ж   ж       streams.d.ts
+ж   ж   ж   ж       timers.d.ts
+ж   ж   ж   ж       url.d.ts
+ж   ж   ж   ж       
+ж   ж   ж   L---zlib
+ж   ж   ж           iter.d.ts
+ж   ж   ж           
+ж   ж   L---slice-ansi
+ж   ж           index.d.ts
+ж   ж           LICENSE
+ж   ж           package.json
+ж   ж           README.md
+ж   ж           
+ж   +---@xmldom
+ж   ж   L---xmldom
+ж   ж       ж   CHANGELOG.md
+ж   ж       ж   index.d.ts
+ж   ж       ж   LICENSE
+ж   ж       ж   package.json
+ж   ж       ж   readme.md
+ж   ж       ж   SECURITY.md
+ж   ж       ж   
+ж   ж       L---lib
+ж   ж               .eslintrc.yml
+ж   ж               conventions.js
+ж   ж               dom-parser.js
+ж   ж               dom.js
+ж   ж               entities.js
+ж   ж               errors.js
+ж   ж               grammar.js
+ж   ж               index.js
+ж   ж               sax.js
+ж   ж               
+ж   +---ansi-regex
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---ansi-styles
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---astral-regex
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---at-least-node
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---balanced-match
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE.md
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---.github
+ж   ж           FUNDING.yml
+ж   ж           
+ж   +---base64-js
+ж   ж       base64js.min.js
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---big-integer
+ж   ж       BigInteger.d.ts
+ж   ж       BigInteger.js
+ж   ж       BigInteger.min.js
+ж   ж       bower.json
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       tsconfig.json
+ж   ж       
+ж   +---bplist-parser
+ж   ж       .editorconfig
+ж   ж       .eslintignore
+ж   ж       .eslintrc.js
+ж   ж       bplistParser.d.ts
+ж   ж       bplistParser.js
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---brace-expansion
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---.github
+ж   ж           FUNDING.yml
+ж   ж           
+ж   +---buffer-crc32
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---chownr
+ж   ж       chownr.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---color-convert
+ж   ж       CHANGELOG.md
+ж   ж       conversions.js
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       route.js
+ж   ж       
+ж   +---color-name
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---commander
+ж   ж   ж   esm.mjs
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package-support.json
+ж   ж   ж   package.json
+ж   ж   ж   Readme.md
+ж   ж   ж   
+ж   ж   +---lib
+ж   ж   ж       argument.js
+ж   ж   ж       command.js
+ж   ж   ж       error.js
+ж   ж   ж       help.js
+ж   ж   ж       option.js
+ж   ж   ж       suggestSimilar.js
+ж   ж   ж       
+ж   ж   L---typings
+ж   ж           index.d.ts
+ж   ж           
+ж   +---cross-spawn
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---lib
+ж   ж       ж   enoent.js
+ж   ж       ж   parse.js
+ж   ж       ж   
+ж   ж       L---util
+ж   ж               escape.js
+ж   ж               readShebang.js
+ж   ж               resolveCommand.js
+ж   ж               
+ж   +---debug
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---src
+ж   ж           browser.js
+ж   ж           common.js
+ж   ж           index.js
+ж   ж           node.js
+ж   ж           
+ж   +---define-lazy-prop
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---elementtree
+ж   ж   ж   .npmignore
+ж   ж   ж   .travis.yml
+ж   ж   ж   CHANGES.md
+ж   ж   ж   LICENSE.txt
+ж   ж   ж   Makefile
+ж   ж   ж   NOTICE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---lib
+ж   ж   ж   ж   constants.js
+ж   ж   ж   ж   elementpath.js
+ж   ж   ж   ж   elementtree.js
+ж   ж   ж   ж   errors.js
+ж   ж   ж   ж   parser.js
+ж   ж   ж   ж   sprintf.js
+ж   ж   ж   ж   treebuilder.js
+ж   ж   ж   ж   utils.js
+ж   ж   ж   ж   
+ж   ж   ж   L---parsers
+ж   ж   ж           index.js
+ж   ж   ж           sax.js
+ж   ж   ж           
+ж   ж   L---tests
+ж   ж       ж   test-simple.js
+ж   ж       ж   
+ж   ж       L---data
+ж   ж               bom-xml.xml
+ж   ж               xml1.xml
+ж   ж               xml2.xml
+ж   ж               
+ж   +---emoji-regex
+ж   ж   ж   index.d.ts
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE-MIT.txt
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   text.js
+ж   ж   ж   
+ж   ж   L---es2015
+ж   ж           index.js
+ж   ж           text.js
+ж   ж           
+ж   +---env-paths
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---esprima
+ж   ж   ж   ChangeLog
+ж   ж   ж   LICENSE.BSD
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---bin
+ж   ж   ж       esparse.js
+ж   ж   ж       esvalidate.js
+ж   ж   ж       
+ж   ж   L---dist
+ж   ж           esprima.js
+ж   ж           
+ж   +---fd-slicer
+ж   ж   ж   .npmignore
+ж   ж   ж   .travis.yml
+ж   ж   ж   CHANGELOG.md
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---test
+ж   ж           test.js
+ж   ж           
+ж   +---fs-extra
+ж   ж   ж   CHANGELOG.md
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---lib
+ж   ж       ж   index.js
+ж   ж       ж   
+ж   ж       +---copy
+ж   ж       ж       copy.js
+ж   ж       ж       index.js
+ж   ж       ж       
+ж   ж       +---copy-sync
+ж   ж       ж       copy-sync.js
+ж   ж       ж       index.js
+ж   ж       ж       
+ж   ж       +---empty
+ж   ж       ж       index.js
+ж   ж       ж       
+ж   ж       +---ensure
+ж   ж       ж       file.js
+ж   ж       ж       index.js
+ж   ж       ж       link.js
+ж   ж       ж       symlink-paths.js
+ж   ж       ж       symlink-type.js
+ж   ж       ж       symlink.js
+ж   ж       ж       
+ж   ж       +---fs
+ж   ж       ж       index.js
+ж   ж       ж       
+ж   ж       +---json
+ж   ж       ж       index.js
+ж   ж       ж       jsonfile.js
+ж   ж       ж       output-json-sync.js
+ж   ж       ж       output-json.js
+ж   ж       ж       
+ж   ж       +---mkdirs
+ж   ж       ж       index.js
+ж   ж       ж       make-dir.js
+ж   ж       ж       
+ж   ж       +---move
+ж   ж       ж       index.js
+ж   ж       ж       move.js
+ж   ж       ж       
+ж   ж       +---move-sync
+ж   ж       ж       index.js
+ж   ж       ж       move-sync.js
+ж   ж       ж       
+ж   ж       +---output
+ж   ж       ж       index.js
+ж   ж       ж       
+ж   ж       +---path-exists
+ж   ж       ж       index.js
+ж   ж       ж       
+ж   ж       +---remove
+ж   ж       ж       index.js
+ж   ж       ж       rimraf.js
+ж   ж       ж       
+ж   ж       L---util
+ж   ж               stat.js
+ж   ж               utimes.js
+ж   ж               
+ж   +---fs-minipass
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---node_modules
+ж   ж       L---minipass
+ж   ж               index.d.ts
+ж   ж               index.js
+ж   ж               LICENSE
+ж   ж               package.json
+ж   ж               README.md
+ж   ж               
+ж   +---fs.realpath
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       old.js
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---glob
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---dist
+ж   ж       +---cjs
+ж   ж       ж       glob.d.ts
+ж   ж       ж       glob.d.ts.map
+ж   ж       ж       glob.js
+ж   ж       ж       glob.js.map
+ж   ж       ж       has-magic.d.ts
+ж   ж       ж       has-magic.d.ts.map
+ж   ж       ж       has-magic.js
+ж   ж       ж       has-magic.js.map
+ж   ж       ж       ignore.d.ts
+ж   ж       ж       ignore.d.ts.map
+ж   ж       ж       ignore.js
+ж   ж       ж       ignore.js.map
+ж   ж       ж       index-cjs.d.ts
+ж   ж       ж       index-cjs.d.ts.map
+ж   ж       ж       index-cjs.js
+ж   ж       ж       index-cjs.js.map
+ж   ж       ж       index.d.ts
+ж   ж       ж       index.d.ts.map
+ж   ж       ж       index.js
+ж   ж       ж       index.js.map
+ж   ж       ж       package.json
+ж   ж       ж       pattern.d.ts
+ж   ж       ж       pattern.d.ts.map
+ж   ж       ж       pattern.js
+ж   ж       ж       pattern.js.map
+ж   ж       ж       processor.d.ts
+ж   ж       ж       processor.d.ts.map
+ж   ж       ж       processor.js
+ж   ж       ж       processor.js.map
+ж   ж       ж       walker.d.ts
+ж   ж       ж       walker.d.ts.map
+ж   ж       ж       walker.js
+ж   ж       ж       walker.js.map
+ж   ж       ж       
+ж   ж       L---mjs
+ж   ж               glob.d.ts
+ж   ж               glob.d.ts.map
+ж   ж               glob.js
+ж   ж               glob.js.map
+ж   ж               has-magic.d.ts
+ж   ж               has-magic.d.ts.map
+ж   ж               has-magic.js
+ж   ж               has-magic.js.map
+ж   ж               ignore.d.ts
+ж   ж               ignore.d.ts.map
+ж   ж               ignore.js
+ж   ж               ignore.js.map
+ж   ж               index.d.ts
+ж   ж               index.d.ts.map
+ж   ж               index.js
+ж   ж               index.js.map
+ж   ж               package.json
+ж   ж               pattern.d.ts
+ж   ж               pattern.d.ts.map
+ж   ж               pattern.js
+ж   ж               pattern.js.map
+ж   ж               processor.d.ts
+ж   ж               processor.d.ts.map
+ж   ж               processor.js
+ж   ж               processor.js.map
+ж   ж               walker.d.ts
+ж   ж               walker.d.ts.map
+ж   ж               walker.js
+ж   ж               walker.js.map
+ж   ж               
+ж   +---graceful-fs
+ж   ж       clone.js
+ж   ж       graceful-fs.js
+ж   ж       legacy-streams.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       polyfills.js
+ж   ж       README.md
+ж   ж       
+ж   +---inherits
+ж   ж       inherits.js
+ж   ж       inherits_browser.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---ini
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---lib
+ж   ж           ini.js
+ж   ж           
+ж   +---is-docker
+ж   ж       cli.js
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---is-fullwidth-code-point
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---is-wsl
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---isexe
+ж   ж   ж   .npmignore
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   mode.js
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   windows.js
+ж   ж   ж   
+ж   ж   L---test
+ж   ж           basic.js
+ж   ж           
+ж   +---jsonfile
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       utils.js
+ж   ж       
+ж   +---kleur
+ж   ж       colors.d.ts
+ж   ж       colors.js
+ж   ж       colors.mjs
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       index.mjs
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---lru-cache
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---dist
+ж   ж       +---commonjs
+ж   ж       ж       index.d.ts
+ж   ж       ж       index.d.ts.map
+ж   ж       ж       index.js
+ж   ж       ж       index.js.map
+ж   ж       ж       index.min.js
+ж   ж       ж       index.min.js.map
+ж   ж       ж       package.json
+ж   ж       ж       
+ж   ж       L---esm
+ж   ж               index.d.ts
+ж   ж               index.d.ts.map
+ж   ж               index.js
+ж   ж               index.js.map
+ж   ж               index.min.js
+ж   ж               index.min.js.map
+ж   ж               package.json
+ж   ж               
+ж   +---minimatch
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---dist
+ж   ж       +---cjs
+ж   ж       ж       assert-valid-pattern.d.ts
+ж   ж       ж       assert-valid-pattern.d.ts.map
+ж   ж       ж       assert-valid-pattern.js
+ж   ж       ж       assert-valid-pattern.js.map
+ж   ж       ж       ast.d.ts
+ж   ж       ж       ast.d.ts.map
+ж   ж       ж       ast.js
+ж   ж       ж       ast.js.map
+ж   ж       ж       brace-expressions.d.ts
+ж   ж       ж       brace-expressions.d.ts.map
+ж   ж       ж       brace-expressions.js
+ж   ж       ж       brace-expressions.js.map
+ж   ж       ж       escape.d.ts
+ж   ж       ж       escape.d.ts.map
+ж   ж       ж       escape.js
+ж   ж       ж       escape.js.map
+ж   ж       ж       index-cjs.d.ts
+ж   ж       ж       index-cjs.d.ts.map
+ж   ж       ж       index-cjs.js
+ж   ж       ж       index-cjs.js.map
+ж   ж       ж       index.d.ts
+ж   ж       ж       index.d.ts.map
+ж   ж       ж       index.js
+ж   ж       ж       index.js.map
+ж   ж       ж       package.json
+ж   ж       ж       unescape.d.ts
+ж   ж       ж       unescape.d.ts.map
+ж   ж       ж       unescape.js
+ж   ж       ж       unescape.js.map
+ж   ж       ж       
+ж   ж       L---mjs
+ж   ж               assert-valid-pattern.d.ts
+ж   ж               assert-valid-pattern.d.ts.map
+ж   ж               assert-valid-pattern.js
+ж   ж               assert-valid-pattern.js.map
+ж   ж               ast.d.ts
+ж   ж               ast.d.ts.map
+ж   ж               ast.js
+ж   ж               ast.js.map
+ж   ж               brace-expressions.d.ts
+ж   ж               brace-expressions.d.ts.map
+ж   ж               brace-expressions.js
+ж   ж               brace-expressions.js.map
+ж   ж               escape.d.ts
+ж   ж               escape.d.ts.map
+ж   ж               escape.js
+ж   ж               escape.js.map
+ж   ж               index.d.ts
+ж   ж               index.d.ts.map
+ж   ж               index.js
+ж   ж               index.js.map
+ж   ж               package.json
+ж   ж               unescape.d.ts
+ж   ж               unescape.d.ts.map
+ж   ж               unescape.js
+ж   ж               unescape.js.map
+ж   ж               
+ж   +---minipass
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       index.mjs
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---minizlib
+ж   ж   ж   constants.js
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---node_modules
+ж   ж       L---minipass
+ж   ж               index.d.ts
+ж   ж               index.js
+ж   ж               LICENSE
+ж   ж               package.json
+ж   ж               README.md
+ж   ж               
+ж   +---mkdirp
+ж   ж   ж   CHANGELOG.md
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   readme.markdown
+ж   ж   ж   
+ж   ж   +---bin
+ж   ж   ж       cmd.js
+ж   ж   ж       
+ж   ж   L---lib
+ж   ж           find-made.js
+ж   ж           mkdirp-manual.js
+ж   ж           mkdirp-native.js
+ж   ж           opts-arg.js
+ж   ж           path-arg.js
+ж   ж           use-native.js
+ж   ж           
+ж   +---ms
+ж   ж       index.js
+ж   ж       license.md
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---native-run
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---assets
+ж   ж   ж   L---android
+ж   ж   ж       L---skins
+ж   ж   ж           ж   LICENSE
+ж   ж   ж           ж   README.md
+ж   ж   ж           ж   
+ж   ж   ж           +---nexus_5x
+ж   ж   ж           ж       land_back.webp
+ж   ж   ж           ж       land_fore.webp
+ж   ж   ж           ж       land_shadow.webp
+ж   ж   ж           ж       layout
+ж   ж   ж           ж       port_back.webp
+ж   ж   ж           ж       port_fore.webp
+ж   ж   ж           ж       port_shadow.webp
+ж   ж   ж           ж       
+ж   ж   ж           +---pixel
+ж   ж   ж           ж       land_back.webp
+ж   ж   ж           ж       land_fore.webp
+ж   ж   ж           ж       land_shadow.webp
+ж   ж   ж           ж       layout
+ж   ж   ж           ж       port_back.webp
+ж   ж   ж           ж       port_fore.webp
+ж   ж   ж           ж       port_shadow.webp
+ж   ж   ж           ж       
+ж   ж   ж           +---pixel_2
+ж   ж   ж           ж       land_back.webp
+ж   ж   ж           ж       land_fore.webp
+ж   ж   ж           ж       land_shadow.webp
+ж   ж   ж           ж       layout
+ж   ж   ж           ж       port_back.webp
+ж   ж   ж           ж       port_fore.webp
+ж   ж   ж           ж       port_shadow.webp
+ж   ж   ж           ж       
+ж   ж   ж           L---pixel_3
+ж   ж   ж                   layout
+ж   ж   ж                   port_back.webp
+ж   ж   ж                   round_corners.webp
+ж   ж   ж                   
+ж   ж   +---bin
+ж   ж   ж       native-run
+ж   ж   ж       
+ж   ж   L---dist
+ж   ж       ж   constants.js
+ж   ж       ж   errors.js
+ж   ж       ж   help.js
+ж   ж       ж   index.js
+ж   ж       ж   list.js
+ж   ж       ж   
+ж   ж       +---android
+ж   ж       ж   ж   help.js
+ж   ж       ж   ж   index.js
+ж   ж       ж   ж   list.js
+ж   ж       ж   ж   run.js
+ж   ж       ж   ж   sdk-info.js
+ж   ж       ж   ж   
+ж   ж       ж   L---utils
+ж   ж       ж       ж   adb.js
+ж   ж       ж       ж   apk.js
+ж   ж       ж       ж   avd.js
+ж   ж       ж       ж   binary-xml-parser.js
+ж   ж       ж       ж   emulator.js
+ж   ж       ж       ж   list.js
+ж   ж       ж       ж   run.js
+ж   ж       ж       ж   
+ж   ж       ж       L---sdk
+ж   ж       ж               api.js
+ж   ж       ж               index.js
+ж   ж       ж               xml.js
+ж   ж       ж               
+ж   ж       +---ios
+ж   ж       ж   ж   help.js
+ж   ж       ж   ж   index.js
+ж   ж       ж   ж   list.js
+ж   ж       ж   ж   run.js
+ж   ж       ж   ж   
+ж   ж       ж   +---lib
+ж   ж       ж   ж   ж   index.js
+ж   ж       ж   ж   ж   lib-errors.js
+ж   ж       ж   ж   ж   manager.js
+ж   ж       ж   ж   ж   
+ж   ж       ж   ж   +---client
+ж   ж       ж   ж   ж       afc.js
+ж   ж       ж   ж   ж       client.js
+ж   ж       ж   ж   ж       debugserver.js
+ж   ж       ж   ж   ж       index.js
+ж   ж       ж   ж   ж       installation_proxy.js
+ж   ж       ж   ж   ж       lockdownd.js
+ж   ж       ж   ж   ж       mobile_image_mounter.js
+ж   ж       ж   ж   ж       usbmuxd.js
+ж   ж       ж   ж   ж       
+ж   ж       ж   ж   L---protocol
+ж   ж       ж   ж           afc.js
+ж   ж       ж   ж           gdb.js
+ж   ж       ж   ж           index.js
+ж   ж       ж   ж           lockdown.js
+ж   ж       ж   ж           protocol.js
+ж   ж       ж   ж           usbmux.js
+ж   ж       ж   ж           
+ж   ж       ж   L---utils
+ж   ж       ж           app.js
+ж   ж       ж           device.js
+ж   ж       ж           simulator.js
+ж   ж       ж           xcode.js
+ж   ж       ж           
+ж   ж       L---utils
+ж   ж               cli.js
+ж   ж               fn.js
+ж   ж               fs.js
+ж   ж               ini.js
+ж   ж               json.js
+ж   ж               list.js
+ж   ж               log.js
+ж   ж               object.js
+ж   ж               process.js
+ж   ж               unzip.js
+ж   ж               
+ж   +---open
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       xdg-open
+ж   ж       
+ж   +---path-key
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---path-scurry
+ж   ж   ж   LICENSE.md
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---dist
+ж   ж   ж   +---commonjs
+ж   ж   ж   ж       index.d.ts
+ж   ж   ж   ж       index.d.ts.map
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       index.js.map
+ж   ж   ж   ж       package.json
+ж   ж   ж   ж       
+ж   ж   ж   L---esm
+ж   ж   ж           index.d.ts
+ж   ж   ж           index.d.ts.map
+ж   ж   ж           index.js
+ж   ж   ж           index.js.map
+ж   ж   ж           package.json
+ж   ж   ж           
+ж   ж   L---node_modules
+ж   ж       L---minipass
+ж   ж           ж   LICENSE.md
+ж   ж           ж   package.json
+ж   ж           ж   README.md
+ж   ж           ж   
+ж   ж           L---dist
+ж   ж               +---commonjs
+ж   ж               ж       index.d.ts
+ж   ж               ж       index.d.ts.map
+ж   ж               ж       index.js
+ж   ж               ж       index.js.map
+ж   ж               ж       package.json
+ж   ж               ж       
+ж   ж               L---esm
+ж   ж                       index.d.ts
+ж   ж                       index.d.ts.map
+ж   ж                       index.js
+ж   ж                       index.js.map
+ж   ж                       package.json
+ж   ж                       
+ж   +---pend
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       test.js
+ж   ж       
+ж   +---plist
+ж   ж   ж   .jshintrc
+ж   ж   ж   History.md
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   Makefile
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---.github
+ж   ж   ж   L---workflows
+ж   ж   ж           ci.yml
+ж   ж   ж           
+ж   ж   +---dist
+ж   ж   ж       plist-build.js
+ж   ж   ж       plist-parse.js
+ж   ж   ж       plist.js
+ж   ж   ж       
+ж   ж   +---examples
+ж   ж   ж   L---browser
+ж   ж   ж           index.html
+ж   ж   ж           
+ж   ж   L---lib
+ж   ж           build.js
+ж   ж           parse.js
+ж   ж           
+ж   +---prompts
+ж   ж   ж   index.js
+ж   ж   ж   license
+ж   ж   ж   package.json
+ж   ж   ж   readme.md
+ж   ж   ж   
+ж   ж   +---dist
+ж   ж   ж   ж   index.js
+ж   ж   ж   ж   prompts.js
+ж   ж   ж   ж   
+ж   ж   ж   +---dateparts
+ж   ж   ж   ж       datepart.js
+ж   ж   ж   ж       day.js
+ж   ж   ж   ж       hours.js
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       meridiem.js
+ж   ж   ж   ж       milliseconds.js
+ж   ж   ж   ж       minutes.js
+ж   ж   ж   ж       month.js
+ж   ж   ж   ж       seconds.js
+ж   ж   ж   ж       year.js
+ж   ж   ж   ж       
+ж   ж   ж   +---elements
+ж   ж   ж   ж       autocomplete.js
+ж   ж   ж   ж       autocompleteMultiselect.js
+ж   ж   ж   ж       confirm.js
+ж   ж   ж   ж       date.js
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       multiselect.js
+ж   ж   ж   ж       number.js
+ж   ж   ж   ж       prompt.js
+ж   ж   ж   ж       select.js
+ж   ж   ж   ж       text.js
+ж   ж   ж   ж       toggle.js
+ж   ж   ж   ж       
+ж   ж   ж   L---util
+ж   ж   ж           action.js
+ж   ж   ж           clear.js
+ж   ж   ж           entriesToDisplay.js
+ж   ж   ж           figures.js
+ж   ж   ж           index.js
+ж   ж   ж           lines.js
+ж   ж   ж           strip.js
+ж   ж   ж           style.js
+ж   ж   ж           wrap.js
+ж   ж   ж           
+ж   ж   +---lib
+ж   ж   ж   ж   index.js
+ж   ж   ж   ж   prompts.js
+ж   ж   ж   ж   
+ж   ж   ж   +---dateparts
+ж   ж   ж   ж       datepart.js
+ж   ж   ж   ж       day.js
+ж   ж   ж   ж       hours.js
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       meridiem.js
+ж   ж   ж   ж       milliseconds.js
+ж   ж   ж   ж       minutes.js
+ж   ж   ж   ж       month.js
+ж   ж   ж   ж       seconds.js
+ж   ж   ж   ж       year.js
+ж   ж   ж   ж       
+ж   ж   ж   +---elements
+ж   ж   ж   ж       autocomplete.js
+ж   ж   ж   ж       autocompleteMultiselect.js
+ж   ж   ж   ж       confirm.js
+ж   ж   ж   ж       date.js
+ж   ж   ж   ж       index.js
+ж   ж   ж   ж       multiselect.js
+ж   ж   ж   ж       number.js
+ж   ж   ж   ж       prompt.js
+ж   ж   ж   ж       select.js
+ж   ж   ж   ж       text.js
+ж   ж   ж   ж       toggle.js
+ж   ж   ж   ж       
+ж   ж   ж   L---util
+ж   ж   ж           action.js
+ж   ж   ж           clear.js
+ж   ж   ж           entriesToDisplay.js
+ж   ж   ж           figures.js
+ж   ж   ж           index.js
+ж   ж   ж           lines.js
+ж   ж   ж           strip.js
+ж   ж   ж           style.js
+ж   ж   ж           wrap.js
+ж   ж   ж           
+ж   ж   L---node_modules
+ж   ж       L---kleur
+ж   ж               index.js
+ж   ж               kleur.d.ts
+ж   ж               license
+ж   ж               package.json
+ж   ж               readme.md
+ж   ж               
+ж   +---readable-stream
+ж   ж   ж   CONTRIBUTING.md
+ж   ж   ж   errors-browser.js
+ж   ж   ж   errors.js
+ж   ж   ж   experimentalWarning.js
+ж   ж   ж   GOVERNANCE.md
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   readable-browser.js
+ж   ж   ж   readable.js
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---lib
+ж   ж       ж   _stream_duplex.js
+ж   ж       ж   _stream_passthrough.js
+ж   ж       ж   _stream_readable.js
+ж   ж       ж   _stream_transform.js
+ж   ж       ж   _stream_writable.js
+ж   ж       ж   
+ж   ж       L---internal
+ж   ж           L---streams
+ж   ж                   async_iterator.js
+ж   ж                   buffer_list.js
+ж   ж                   destroy.js
+ж   ж                   end-of-stream.js
+ж   ж                   from-browser.js
+ж   ж                   from.js
+ж   ж                   pipeline.js
+ж   ж                   state.js
+ж   ж                   stream-browser.js
+ж   ж                   stream.js
+ж   ж                   
+ж   +---rimraf
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---dist
+ж   ж       +---cjs
+ж   ж       ж   ж   package.json
+ж   ж       ж   ж   
+ж   ж       ж   L---src
+ж   ж       ж           bin.d.ts
+ж   ж       ж           bin.d.ts.map
+ж   ж       ж           bin.js
+ж   ж       ж           bin.js.map
+ж   ж       ж           default-tmp.d.ts
+ж   ж       ж           default-tmp.d.ts.map
+ж   ж       ж           default-tmp.js
+ж   ж       ж           default-tmp.js.map
+ж   ж       ж           fix-eperm.d.ts
+ж   ж       ж           fix-eperm.d.ts.map
+ж   ж       ж           fix-eperm.js
+ж   ж       ж           fix-eperm.js.map
+ж   ж       ж           fs.d.ts
+ж   ж       ж           fs.d.ts.map
+ж   ж       ж           fs.js
+ж   ж       ж           fs.js.map
+ж   ж       ж           ignore-enoent.d.ts
+ж   ж       ж           ignore-enoent.d.ts.map
+ж   ж       ж           ignore-enoent.js
+ж   ж       ж           ignore-enoent.js.map
+ж   ж       ж           index-cjs.d.ts
+ж   ж       ж           index-cjs.d.ts.map
+ж   ж       ж           index-cjs.js
+ж   ж       ж           index-cjs.js.map
+ж   ж       ж           index.d.ts
+ж   ж       ж           index.d.ts.map
+ж   ж       ж           index.js
+ж   ж       ж           index.js.map
+ж   ж       ж           opt-arg.d.ts
+ж   ж       ж           opt-arg.d.ts.map
+ж   ж       ж           opt-arg.js
+ж   ж       ж           opt-arg.js.map
+ж   ж       ж           path-arg.d.ts
+ж   ж       ж           path-arg.d.ts.map
+ж   ж       ж           path-arg.js
+ж   ж       ж           path-arg.js.map
+ж   ж       ж           platform.d.ts
+ж   ж       ж           platform.d.ts.map
+ж   ж       ж           platform.js
+ж   ж       ж           platform.js.map
+ж   ж       ж           readdir-or-error.d.ts
+ж   ж       ж           readdir-or-error.d.ts.map
+ж   ж       ж           readdir-or-error.js
+ж   ж       ж           readdir-or-error.js.map
+ж   ж       ж           retry-busy.d.ts
+ж   ж       ж           retry-busy.d.ts.map
+ж   ж       ж           retry-busy.js
+ж   ж       ж           retry-busy.js.map
+ж   ж       ж           rimraf-manual.d.ts
+ж   ж       ж           rimraf-manual.d.ts.map
+ж   ж       ж           rimraf-manual.js
+ж   ж       ж           rimraf-manual.js.map
+ж   ж       ж           rimraf-move-remove.d.ts
+ж   ж       ж           rimraf-move-remove.d.ts.map
+ж   ж       ж           rimraf-move-remove.js
+ж   ж       ж           rimraf-move-remove.js.map
+ж   ж       ж           rimraf-native.d.ts
+ж   ж       ж           rimraf-native.d.ts.map
+ж   ж       ж           rimraf-native.js
+ж   ж       ж           rimraf-native.js.map
+ж   ж       ж           rimraf-posix.d.ts
+ж   ж       ж           rimraf-posix.d.ts.map
+ж   ж       ж           rimraf-posix.js
+ж   ж       ж           rimraf-posix.js.map
+ж   ж       ж           rimraf-windows.d.ts
+ж   ж       ж           rimraf-windows.d.ts.map
+ж   ж       ж           rimraf-windows.js
+ж   ж       ж           rimraf-windows.js.map
+ж   ж       ж           use-native.d.ts
+ж   ж       ж           use-native.d.ts.map
+ж   ж       ж           use-native.js
+ж   ж       ж           use-native.js.map
+ж   ж       ж           
+ж   ж       L---mjs
+ж   ж               default-tmp.d.ts
+ж   ж               default-tmp.d.ts.map
+ж   ж               default-tmp.js
+ж   ж               default-tmp.js.map
+ж   ж               fix-eperm.d.ts
+ж   ж               fix-eperm.d.ts.map
+ж   ж               fix-eperm.js
+ж   ж               fix-eperm.js.map
+ж   ж               fs.d.ts
+ж   ж               fs.d.ts.map
+ж   ж               fs.js
+ж   ж               fs.js.map
+ж   ж               ignore-enoent.d.ts
+ж   ж               ignore-enoent.d.ts.map
+ж   ж               ignore-enoent.js
+ж   ж               ignore-enoent.js.map
+ж   ж               index.d.ts
+ж   ж               index.d.ts.map
+ж   ж               index.js
+ж   ж               index.js.map
+ж   ж               opt-arg.d.ts
+ж   ж               opt-arg.d.ts.map
+ж   ж               opt-arg.js
+ж   ж               opt-arg.js.map
+ж   ж               package.json
+ж   ж               path-arg.d.ts
+ж   ж               path-arg.d.ts.map
+ж   ж               path-arg.js
+ж   ж               path-arg.js.map
+ж   ж               platform.d.ts
+ж   ж               platform.d.ts.map
+ж   ж               platform.js
+ж   ж               platform.js.map
+ж   ж               readdir-or-error.d.ts
+ж   ж               readdir-or-error.d.ts.map
+ж   ж               readdir-or-error.js
+ж   ж               readdir-or-error.js.map
+ж   ж               retry-busy.d.ts
+ж   ж               retry-busy.d.ts.map
+ж   ж               retry-busy.js
+ж   ж               retry-busy.js.map
+ж   ж               rimraf-manual.d.ts
+ж   ж               rimraf-manual.d.ts.map
+ж   ж               rimraf-manual.js
+ж   ж               rimraf-manual.js.map
+ж   ж               rimraf-move-remove.d.ts
+ж   ж               rimraf-move-remove.d.ts.map
+ж   ж               rimraf-move-remove.js
+ж   ж               rimraf-move-remove.js.map
+ж   ж               rimraf-native.d.ts
+ж   ж               rimraf-native.d.ts.map
+ж   ж               rimraf-native.js
+ж   ж               rimraf-native.js.map
+ж   ж               rimraf-posix.d.ts
+ж   ж               rimraf-posix.d.ts.map
+ж   ж               rimraf-posix.js
+ж   ж               rimraf-posix.js.map
+ж   ж               rimraf-windows.d.ts
+ж   ж               rimraf-windows.d.ts.map
+ж   ж               rimraf-windows.js
+ж   ж               rimraf-windows.js.map
+ж   ж               use-native.d.ts
+ж   ж               use-native.d.ts.map
+ж   ж               use-native.js
+ж   ж               use-native.js.map
+ж   ж               
+ж   +---safe-buffer
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---sax
+ж   ж   ж   LICENSE
+ж   ж   ж   LICENSE-W3C.html
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---lib
+ж   ж           sax.js
+ж   ж           
+ж   +---semver
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   preload.js
+ж   ж   ж   range.bnf
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---bin
+ж   ж   ж       semver.js
+ж   ж   ж       
+ж   ж   +---classes
+ж   ж   ж       comparator.js
+ж   ж   ж       index.js
+ж   ж   ж       range.js
+ж   ж   ж       semver.js
+ж   ж   ж       
+ж   ж   +---functions
+ж   ж   ж       clean.js
+ж   ж   ж       cmp.js
+ж   ж   ж       coerce.js
+ж   ж   ж       compare-build.js
+ж   ж   ж       compare-loose.js
+ж   ж   ж       compare.js
+ж   ж   ж       diff.js
+ж   ж   ж       eq.js
+ж   ж   ж       gt.js
+ж   ж   ж       gte.js
+ж   ж   ж       inc.js
+ж   ж   ж       lt.js
+ж   ж   ж       lte.js
+ж   ж   ж       major.js
+ж   ж   ж       minor.js
+ж   ж   ж       neq.js
+ж   ж   ж       parse.js
+ж   ж   ж       patch.js
+ж   ж   ж       prerelease.js
+ж   ж   ж       rcompare.js
+ж   ж   ж       rsort.js
+ж   ж   ж       satisfies.js
+ж   ж   ж       sort.js
+ж   ж   ж       truncate.js
+ж   ж   ж       valid.js
+ж   ж   ж       
+ж   ж   +---internal
+ж   ж   ж       constants.js
+ж   ж   ж       debug.js
+ж   ж   ж       identifiers.js
+ж   ж   ж       lrucache.js
+ж   ж   ж       parse-options.js
+ж   ж   ж       re.js
+ж   ж   ж       
+ж   ж   L---ranges
+ж   ж           gtr.js
+ж   ж           intersects.js
+ж   ж           ltr.js
+ж   ж           max-satisfying.js
+ж   ж           min-satisfying.js
+ж   ж           min-version.js
+ж   ж           outside.js
+ж   ж           simplify.js
+ж   ж           subset.js
+ж   ж           to-comparators.js
+ж   ж           valid.js
+ж   ж           
+ж   +---shebang-command
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---shebang-regex
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---signal-exit
+ж   ж       index.js
+ж   ж       LICENSE.txt
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       signals.js
+ж   ж       
+ж   +---sisteransi
+ж   ж   ж   license
+ж   ж   ж   package.json
+ж   ж   ж   readme.md
+ж   ж   ж   
+ж   ж   L---src
+ж   ж           index.js
+ж   ж           sisteransi.d.ts
+ж   ж           
+ж   +---slice-ansi
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---split2
+ж   ж       bench.js
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       test.js
+ж   ж       
+ж   +---string-width
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---string_decoder
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   L---lib
+ж   ж           string_decoder.js
+ж   ж           
+ж   +---strip-ansi
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---tar
+ж   ж   ж   index.js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---lib
+ж   ж   ж       create.js
+ж   ж   ж       extract.js
+ж   ж   ж       get-write-flag.js
+ж   ж   ж       header.js
+ж   ж   ж       high-level-opt.js
+ж   ж   ж       large-numbers.js
+ж   ж   ж       list.js
+ж   ж   ж       mkdir.js
+ж   ж   ж       mode-fix.js
+ж   ж   ж       normalize-unicode.js
+ж   ж   ж       normalize-windows-path.js
+ж   ж   ж       pack.js
+ж   ж   ж       parse.js
+ж   ж   ж       path-reservations.js
+ж   ж   ж       pax.js
+ж   ж   ж       read-entry.js
+ж   ж   ж       replace.js
+ж   ж   ж       strip-absolute-path.js
+ж   ж   ж       strip-trailing-slashes.js
+ж   ж   ж       types.js
+ж   ж   ж       unpack.js
+ж   ж   ж       update.js
+ж   ж   ж       warn-mixin.js
+ж   ж   ж       winchars.js
+ж   ж   ж       write-entry.js
+ж   ж   ж       
+ж   ж   L---node_modules
+ж   ж       L---minipass
+ж   ж               index.d.ts
+ж   ж               index.js
+ж   ж               index.mjs
+ж   ж               LICENSE
+ж   ж               package.json
+ж   ж               README.md
+ж   ж               
+ж   +---through2
+ж   ж       LICENSE.md
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       through2.js
+ж   ж       
+ж   +---tree-kill
+ж   ж       cli.js
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---tslib
+ж   ж   ж   CopyrightNotice.txt
+ж   ж   ж   LICENSE.txt
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   SECURITY.md
+ж   ж   ж   tslib.d.ts
+ж   ж   ж   tslib.es6.html
+ж   ж   ж   tslib.es6.js
+ж   ж   ж   tslib.es6.mjs
+ж   ж   ж   tslib.html
+ж   ж   ж   tslib.js
+ж   ж   ж   
+ж   ж   L---modules
+ж   ж           index.d.ts
+ж   ж           index.js
+ж   ж           package.json
+ж   ж           
+ж   +---undici-types
+ж   ж       agent.d.ts
+ж   ж       api.d.ts
+ж   ж       balanced-pool.d.ts
+ж   ж       cache-interceptor.d.ts
+ж   ж       cache.d.ts
+ж   ж       client-stats.d.ts
+ж   ж       client.d.ts
+ж   ж       connector.d.ts
+ж   ж       content-type.d.ts
+ж   ж       cookies.d.ts
+ж   ж       diagnostics-channel.d.ts
+ж   ж       dispatcher.d.ts
+ж   ж       dispatcher1-wrapper.d.ts
+ж   ж       env-http-proxy-agent.d.ts
+ж   ж       errors.d.ts
+ж   ж       eventsource.d.ts
+ж   ж       fetch.d.ts
+ж   ж       formdata.d.ts
+ж   ж       global-dispatcher.d.ts
+ж   ж       global-origin.d.ts
+ж   ж       h2c-client.d.ts
+ж   ж       handlers.d.ts
+ж   ж       header.d.ts
+ж   ж       index.d.ts
+ж   ж       interceptors.d.ts
+ж   ж       LICENSE
+ж   ж       mock-agent.d.ts
+ж   ж       mock-call-history.d.ts
+ж   ж       mock-client.d.ts
+ж   ж       mock-errors.d.ts
+ж   ж       mock-interceptor.d.ts
+ж   ж       mock-pool.d.ts
+ж   ж       package.json
+ж   ж       patch.d.ts
+ж   ж       pool-stats.d.ts
+ж   ж       pool.d.ts
+ж   ж       proxy-agent.d.ts
+ж   ж       readable.d.ts
+ж   ж       README.md
+ж   ж       retry-agent.d.ts
+ж   ж       retry-handler.d.ts
+ж   ж       round-robin-pool.d.ts
+ж   ж       snapshot-agent.d.ts
+ж   ж       socks5-proxy-agent.d.ts
+ж   ж       util.d.ts
+ж   ж       utility.d.ts
+ж   ж       webidl.d.ts
+ж   ж       websocket.d.ts
+ж   ж       
+ж   +---universalify
+ж   ж       index.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---untildify
+ж   ж       index.d.ts
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---util-deprecate
+ж   ж       browser.js
+ж   ж       History.md
+ж   ж       LICENSE
+ж   ж       node.js
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       
+ж   +---which
+ж   ж   ж   CHANGELOG.md
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   which.js
+ж   ж   ж   
+ж   ж   L---bin
+ж   ж           node-which
+ж   ж           
+ж   +---wrap-ansi
+ж   ж       index.js
+ж   ж       license
+ж   ж       package.json
+ж   ж       readme.md
+ж   ж       
+ж   +---xml2js
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---lib
+ж   ж   ж       bom.js
+ж   ж   ж       builder.js
+ж   ж   ж       defaults.js
+ж   ж   ж       parser.js
+ж   ж   ж       processors.js
+ж   ж   ж       xml2js.js
+ж   ж   ж       
+ж   ж   L---node_modules
+ж   ж       L---xmlbuilder
+ж   ж           ж   appveyor.yml
+ж   ж           ж   CHANGELOG.md
+ж   ж           ж   LICENSE
+ж   ж           ж   package.json
+ж   ж           ж   README.md
+ж   ж           ж   
+ж   ж           +---lib
+ж   ж           ж       Derivation.js
+ж   ж           ж       DocumentPosition.js
+ж   ж           ж       index.js
+ж   ж           ж       NodeType.js
+ж   ж           ж       OperationType.js
+ж   ж           ж       Utility.js
+ж   ж           ж       WriterState.js
+ж   ж           ж       XMLAttribute.js
+ж   ж           ж       XMLCData.js
+ж   ж           ж       XMLCharacterData.js
+ж   ж           ж       XMLComment.js
+ж   ж           ж       XMLDeclaration.js
+ж   ж           ж       XMLDocType.js
+ж   ж           ж       XMLDocument.js
+ж   ж           ж       XMLDocumentCB.js
+ж   ж           ж       XMLDocumentFragment.js
+ж   ж           ж       XMLDOMConfiguration.js
+ж   ж           ж       XMLDOMErrorHandler.js
+ж   ж           ж       XMLDOMImplementation.js
+ж   ж           ж       XMLDOMStringList.js
+ж   ж           ж       XMLDTDAttList.js
+ж   ж           ж       XMLDTDElement.js
+ж   ж           ж       XMLDTDEntity.js
+ж   ж           ж       XMLDTDNotation.js
+ж   ж           ж       XMLDummy.js
+ж   ж           ж       XMLElement.js
+ж   ж           ж       XMLNamedNodeMap.js
+ж   ж           ж       XMLNode.js
+ж   ж           ж       XMLNodeFilter.js
+ж   ж           ж       XMLNodeList.js
+ж   ж           ж       XMLProcessingInstruction.js
+ж   ж           ж       XMLRaw.js
+ж   ж           ж       XMLStreamWriter.js
+ж   ж           ж       XMLStringifier.js
+ж   ж           ж       XMLStringWriter.js
+ж   ж           ж       XMLText.js
+ж   ж           ж       XMLTypeInfo.js
+ж   ж           ж       XMLUserDataHandler.js
+ж   ж           ж       XMLWriterBase.js
+ж   ж           ж       
+ж   ж           L---typings
+ж   ж                   index.d.ts
+ж   ж                   
+ж   +---xmlbuilder
+ж   ж   ж   .nycrc
+ж   ж   ж   CHANGELOG.md
+ж   ж   ж   LICENSE
+ж   ж   ж   package.json
+ж   ж   ж   README.md
+ж   ж   ж   
+ж   ж   +---.vscode
+ж   ж   ж       launch.json
+ж   ж   ж       
+ж   ж   +---lib
+ж   ж   ж       Derivation.js
+ж   ж   ж       DocumentPosition.js
+ж   ж   ж       index.js
+ж   ж   ж       NodeType.js
+ж   ж   ж       OperationType.js
+ж   ж   ж       Utility.js
+ж   ж   ж       WriterState.js
+ж   ж   ж       XMLAttribute.js
+ж   ж   ж       XMLCData.js
+ж   ж   ж       XMLCharacterData.js
+ж   ж   ж       XMLComment.js
+ж   ж   ж       XMLDeclaration.js
+ж   ж   ж       XMLDocType.js
+ж   ж   ж       XMLDocument.js
+ж   ж   ж       XMLDocumentCB.js
+ж   ж   ж       XMLDocumentFragment.js
+ж   ж   ж       XMLDOMConfiguration.js
+ж   ж   ж       XMLDOMErrorHandler.js
+ж   ж   ж       XMLDOMImplementation.js
+ж   ж   ж       XMLDOMStringList.js
+ж   ж   ж       XMLDTDAttList.js
+ж   ж   ж       XMLDTDElement.js
+ж   ж   ж       XMLDTDEntity.js
+ж   ж   ж       XMLDTDNotation.js
+ж   ж   ж       XMLDummy.js
+ж   ж   ж       XMLElement.js
+ж   ж   ж       XMLNamedNodeMap.js
+ж   ж   ж       XMLNode.js
+ж   ж   ж       XMLNodeFilter.js
+ж   ж   ж       XMLNodeList.js
+ж   ж   ж       XMLProcessingInstruction.js
+ж   ж   ж       XMLRaw.js
+ж   ж   ж       XMLStreamWriter.js
+ж   ж   ж       XMLStringifier.js
+ж   ж   ж       XMLStringWriter.js
+ж   ж   ж       XMLText.js
+ж   ж   ж       XMLTypeInfo.js
+ж   ж   ж       XMLUserDataHandler.js
+ж   ж   ж       XMLWriterBase.js
+ж   ж   ж       
+ж   ж   +---perf
+ж   ж   ж   ж   index.coffee
+ж   ж   ж   ж   perf.list
+ж   ж   ж   ж   
+ж   ж   ж   L---basic
+ж   ж   ж           escaping.coffee
+ж   ж   ж           object.coffee
+ж   ж   ж           
+ж   ж   L---typings
+ж   ж           index.d.ts
+ж   ж           
+ж   +---yallist
+ж   ж       iterator.js
+ж   ж       LICENSE
+ж   ж       package.json
+ж   ж       README.md
+ж   ж       yallist.js
+ж   ж       
+ж   L---yauzl
+ж           index.js
+ж           LICENSE
+ж           package.json
+ж           README.md
+ж           
++---scripts
+ж       add_drinks.py
+ж       add_sake.py
+ж       build.py
+ж       migrate_add_salty.py
+ж       migrate_structure_aroma.py
+ж       migrate_subcat.py
+ж       migrate_taxonomy.py
+ж       normalize_names.py
+ж       test_final.py
+ж       _build_restored.png
+ж       _debug_tree.png
+ж       _pairing_classic.png
+ж       _pairing_math.png
+ж       _user_pairing_classic.png
+ж       _user_pairing_math.png
+ж       
+L---www
+        admin.html
+        index.html
+        

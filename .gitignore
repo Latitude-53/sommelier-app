@@ -1,0 +1,45 @@
+# Android build artifacts
+android/
+android-release/
+local.properties
+
+# JDK (auto-downloaded by setup-jdk.ps1, ~122 MB)
+.jdk/
+jdk*/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build cache
+*.apk
+*.aab
+.gradle/
+build/
+
+# Archives
+*.zip
+*.tar
+*.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Backup
+*.bak
+*.backup
+*~
+
+# Logs
+*.log

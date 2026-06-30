@@ -34,28 +34,36 @@
 
 <table>
   <tr>
-    <td><img src="docs/screenshots/01-tree.png" width="200"></td>
-    <td><img src="docs/screenshots/02-drink-card.png" width="200"></td>
-    <td><img src="docs/screenshots/03-blind.png" width="200"></td>
+    <td><img src="docs/screenshots/01-blind-setup.png" width="200"></td>
+    <td><img src="docs/screenshots/02-build-profile-setup.png" width="200"></td>
+    <td><img src="docs/screenshots/03-tree.png" width="200"></td>
   </tr>
   <tr>
+    <td align="center">🍷 Дегустация</td>
+    <td align="center">🎯 Построй (setup)</td>
     <td align="center">🌳 Дерево</td>
-    <td align="center">🍷 Карточка</td>
-    <td align="center">🍷 Слепая</td>
   </tr>
   <tr>
-    <td><img src="docs/screenshots/04-build.png" width="200"></td>
-    <td><img src="docs/screenshots/05-pairing.png" width="200"></td>
-    <td><img src="docs/screenshots/06-compare.png" width="200"></td>
+    <td><img src="docs/screenshots/04-browse.png" width="200"></td>
+    <td><img src="docs/screenshots/05-compare.png" width="200"></td>
+    <td><img src="docs/screenshots/06-build-profile-reveal.png" width="200"></td>
   </tr>
   <tr>
-    <td align="center">✏️ Опиши</td>
-    <td align="center">🍽️ К еде</td>
+    <td align="center">📚 База</td>
     <td align="center">📊 Сравнить</td>
+    <td align="center">🎯 Построй (reveal)</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/07-drink-card.png" width="200"></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="center">🍷 Карточка напитка</td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
-
-> *Скриншоты с v1.0.x — UI обновился в v1.1.x (chess.com-стиль).*
 
 ## 🌐 Перевод
 

@@ -409,6 +409,19 @@
   .pill .pill-head { display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 13px; color: var(--text); font-weight: 600; }
   .pill .pill-head .pill-ic { font-size: 15px; flex-shrink: 0; }
   .pill .pill-desc { display: none; }  /* hidden — icon + name is enough */
+  /* Multiplier badge inside pill (×2 / ×1.5) — shows scoring bonus */
+  .pill .pill-mult {
+    background: var(--green-bright);
+    color: #0d1a08;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 8px;
+    margin-left: 4px;
+    line-height: 1.2;
+    flex-shrink: 0;
+  }
+  .pill.active .pill-mult { background: var(--gold); color: #1a1410; }
 
   /* Game result screen — like chess.com post-match */
   .result-card {
@@ -575,6 +588,47 @@
   .radar-label.pos-mid { align-items: center; }
   .radar-label.pos-right { align-items: flex-start; }
   .radar-label.pos-left { align-items: flex-end; }
+
+  /* ============== BUILD PROFILE (Reverse Blind game) ============== */
+  /* Compact layout: sticky drink info on top + action bar at bottom */
+  .bp-drink-info {
+    background: var(--card); border: 1px solid var(--gold-dim);
+    border-radius: 12px; padding: 10px 12px;
+    position: sticky; top: 76px; z-index: 40;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  }
+  .bp-drink-info .bp-toggle { transition: transform 0.2s ease; }
+  .bp-drink-info .bp-drink-body { transition: max-height 0.25s ease, opacity 0.2s ease; }
+  .bp-action-bar {
+    position: sticky; bottom: 12px;
+    display: flex; gap: 8px; padding: 10px 12px;
+    background: linear-gradient(180deg, rgba(42,32,24,0.92), rgba(34,26,20,0.96));
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border); border-radius: 18px;
+    margin-top: 12px; z-index: 40;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.32);
+  }
+  /* Compact build sliders — less padding than regular Build tab */
+  .bp-sliders .build-row { padding: 6px 8px; }
+  .bp-sliders .build-row .lbl { font-size: 12px; }
+  .bp-sliders .build-row .lbl span { font-size: 8px; }
+  .bp-sliders h4 { font-size: 12px; margin: 8px 0 4px; }
+  /* Smaller radar container in BP game */
+  .bp-sliders + .card, .bp-drink-info + .card { margin-top: 8px; }
+  /* Legend for dual radar (user vs real) */
+  .bp-legend {
+    display: flex; gap: 16px; justify-content: center;
+    margin: 10px 0 4px;
+  }
+  .bp-legend-item {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; color: var(--text-dim);
+  }
+  .bp-legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    display: inline-block;
+  }
   .search-bar { display: flex; gap: 8px; margin-bottom: 14px; position: sticky; top: 76px; z-index: 50; }
   .search-bar input { flex: 1; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; color: var(--text); font-size: 14px; font-family: inherit; }
   .search-bar input:focus { outline: none; border-color: var(--gold-dim); }
@@ -778,6 +832,7 @@ html{top:0!important}
   </div>
   <nav class="tabs" id="tabs">
     <button data-view="blind" class="active">Дегустация</button>
+    <button data-view="build-profile">Построй</button>
     <button data-view="tree">Дерево</button>
     <button data-view="quiz">Я в тупике</button>
     <button data-view="build">Опиши</button>
@@ -838,6 +893,7 @@ html{top:0!important}
     <div id="tree-container"></div>
   </section>
   <section class="view" id="view-quiz"><div id="quiz-container"></div></section>
+  <section class="view" id="view-build-profile"><div id="build-profile-container"></div></section>
   <section class="view" id="view-build">
     <div class="intro">
       <h3>Опиши вкус цифрами</h3>

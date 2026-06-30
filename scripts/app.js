@@ -599,7 +599,7 @@ function saveNote(id) {
 }
 
 function findSimilar(d, n) {
-  const sKeys = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
+  const sKeys = ['acid','sweet','bitter','tannin','body','carbonation','savory'];
   const aKeys = ['fruit','floral','spice','wood_smoke','mineral_earth','sweet_pastry','yeast_ferment'];
   return DRINKS
     .filter(x => x.id !== d.id && x.type === d.type)
@@ -615,7 +615,7 @@ function findSimilar(d, n) {
         aDiff += Math.abs((d.a||{})[k] - (x.a||{})[k]);
       }
       // Combined match: structure 60% + aroma 40%
-      const sMatch = 1 - sDiff/40;
+      const sMatch = 1 - sDiff/35;
       const aMatch = 1 - aDiff/35;
       const match = Math.round((sMatch * 0.6 + aMatch * 0.4) * 100);
       return { ...x, match };
@@ -660,6 +660,9 @@ function getTranslatedAromaLabels() {
     const el = document.getElementById('gtl-aroma-' + k);
     return (el && el.textContent) || AROMA_LABELS[keys.indexOf(k)];
   });
+}
+function getTranslatedStructLabelsForMode(useStruct) {
+  return useStruct ? getTranslatedStructLabels() : getTranslatedAromaLabels();
 }
 function getTranslatedTypeLabel(d) {
   const el = document.getElementById('gtl-type-' + d.type);
@@ -1083,14 +1086,14 @@ function showTagDrinks(tag) {
 
   // === VARIANT B: Smart clusters by similarity ===
   // Compute pairwise match, group into clusters
-  const sKeys = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
+  const sKeys = ['acid','sweet','bitter','tannin','body','carbonation','savory'];
   const aKeys = ['fruit','floral','spice','wood_smoke','mineral_earth','sweet_pastry','yeast_ferment'];
 
   function matchScore(d1, d2) {
     let sDiff = 0, aDiff = 0;
     for (const k of sKeys) sDiff += Math.abs((d1.s||{})[k] - (d2.s||{})[k]);
     for (const k of aKeys) aDiff += Math.abs((d1.a||{})[k] - (d2.a||{})[k]);
-    return Math.round((1 - sDiff/40) * 0.6 * 100 + (1 - aDiff/35) * 0.4 * 100) / 100;
+    return Math.round((1 - sDiff/35) * 0.6 * 100 + (1 - aDiff/35) * 0.4 * 100) / 100;
   }
 
   // Clustering: group by TYPE first, then sub-cluster within each type by similarity
@@ -1527,7 +1530,6 @@ const BUILD_STRUCT = [
   {key:'bitter', label:'\u0413\u043E\u0440\u0435\u0447\u044C', hint:'\u0445\u043C\u0435\u043B\u044C'},
   {key:'tannin', label:'\u0422\u0430\u043D\u0438\u043D\u044B', hint:'\u0432\u044F\u0436\u0443\u0447\u0435\u0441\u0442\u044C'},
   {key:'body', label:'\u0422\u0435\u043B\u043E', hint:'\u043F\u043B\u043E\u0442\u043D\u043E\u0441\u0442\u044C'},
-  {key:'alcohol', label:'\u0410\u043B\u043A\u043E\u0433\u043E\u043B\u044C', hint:'\u0442\u0435\u043F\u043B\u043E'},
   {key:'carbonation', label:'\u0413\u0430\u0437\u0430\u0446\u0438\u044F', hint:'\u043F\u0443\u0437\u044B\u0440\u044C\u043A\u0438'},
   {key:'savory', label:'\u0421\u043E\u043B\u0451\u043D\u043E\u0435/\u0423\u043C\u0430\u043C\u0438', hint:'\u0433\u043B\u0443\u0442\u043E\u0440\u0438\u0430\u0442'},
 ];
@@ -1540,7 +1542,7 @@ const BUILD_AROMA = [
   {key:'sweet_pastry', label:'\u0421\u043B\u0430\u0434\u043A\u043E\u0435', hint:'\u043A\u0430\u0440\u0430\u043C\u0435\u043B\u044C, \u0432\u0430\u043D\u0438\u043B\u044C'},
   {key:'yeast_ferment', label:'\u0414\u0440\u043E\u0436\u0436\u0438', hint:'\u0445\u043B\u0435\u0431, \u0441\u044B\u0440'},
 ];
-const BUILD_DEFAULT_S = {acid:3,sweet:2,bitter:2,tannin:2,body:3,alcohol:3,carbonation:2,savory:1};
+const BUILD_DEFAULT_S = {acid:3,sweet:2,bitter:2,tannin:2,body:3,carbonation:2,savory:1};
 const BUILD_DEFAULT_A = {fruit:3,floral:2,spice:2,wood_smoke:2,mineral_earth:2,sweet_pastry:2,yeast_ferment:2};
 
 function getBuildProfile() {
@@ -1596,8 +1598,335 @@ function buildRowHTML(group, item, val) {
   `;
 }
 
+// ============== BUILD PROFILE (Reverse Blind game) ==============
+// User sees full drink info (name, desc, tags) and must reconstruct the flavor profile.
+// Game compares user's profile to actual drink profile → % match + score.
+
+const BP_DEFAULT_S = {acid:3,sweet:2,bitter:2,tannin:2,body:3,carbonation:2,savory:2};
+const BP_DEFAULT_A = {fruit:3,floral:2,spice:2,wood_smoke:2,mineral_earth:2,sweet_pastry:2,yeast_ferment:2};
+
+function getBpProfile() {
+  if (!state.bp_profile) state.bp_profile = { s: {...BP_DEFAULT_S}, a: {...BP_DEFAULT_A} };
+  return state.bp_profile;
+}
+
+function renderBuildProfile() {
+  const c = document.getElementById('build-profile-container');
+
+  // ===== SETUP PHASE — choose mode =====
+  if (!state.bp_game || state.bp_game.phase === 'setup') {
+    if (!state.bp_setup) state.bp_setup = { mode: 'both' };
+    const setup = state.bp_setup;
+    const modeLabels = {
+      both: { ic:'🎯', name:'Оба', desc:'14 осей: структура + ароматика' },
+      struct: { ic:'🫁', name:'Структура', desc:'7 осей — только язык' },
+      aroma: { ic:'👃', name:'Ароматика', desc:'7 осей — только нос' },
+    };
+    c.innerHTML = `
+      <div class="hero-cta">
+        <div class="hero-eyebrow">🎯 Построй профиль</div>
+        <div class="hero-title">Восстанови радар<br>по описанию</div>
+        <div class="hero-sub">Покажем случайный напиток — попробуй угадать его вкусовой профиль. Чем точнее попадёшь, тем больше очков.</div>
+        <div class="hero-meta">
+          <span class="chip active">${modeLabels[setup.mode].ic} ${modeLabels[setup.mode].name}</span>
+        </div>
+        <button class="btn-primary large" onclick="startBpGame()">
+          ▶ Начать
+        </button>
+      </div>
+
+      <div style="margin-top:16px;">
+        <div class="section-title">Режим</div>
+        <div class="pill-row cols-3">
+          <button class="pill ${setup.mode==='both'?'active':''}" onclick="setBpSetup('both')" title="${modeLabels.both.desc}">
+            <div class="pill-head"><span class="pill-ic">🎯</span>Оба<span class="pill-mult">×2</span></div>
+          </button>
+          <button class="pill ${setup.mode==='struct'?'active':''}" onclick="setBpSetup('struct')" title="${modeLabels.struct.desc}">
+            <div class="pill-head"><span class="pill-ic">🫁</span>Структура</div>
+          </button>
+          <button class="pill ${setup.mode==='aroma'?'active':''}" onclick="setBpSetup('aroma')" title="${modeLabels.aroma.desc}">
+            <div class="pill-head"><span class="pill-ic">👃</span>Ароматика</div>
+          </button>
+        </div>
+        <p style="font-size:11px;color:var(--text-mute);margin-top:8px;text-align:center;">${modeLabels[setup.mode].desc}</p>
+      </div>
+    `;
+    return;
+  }
+
+  const g = state.bp_game;
+  const p = getBpProfile();
+  const d = g.target;
+
+  // ===== REVEAL PHASE — show result with dual radar =====
+  if (g.phase === 'reveal') {
+    const mode = g.mode || 'both';
+    const useStruct = mode === 'both' || mode === 'struct';
+    const useAroma = mode === 'both' || mode === 'aroma';
+    const axesResults = [];
+    let totalDiff = 0, exactCount = 0, totalAxes = 0;
+    if (useStruct) BUILD_STRUCT.forEach(item => {
+      const user = p.s[item.key] || 0;
+      const real = (d.s||{})[item.key] || 0;
+      const diff = Math.abs(user - real);
+      totalDiff += diff; if (diff === 0) exactCount++; totalAxes++;
+      axesResults.push({ ...item, user, real, diff });
+    });
+    if (useAroma) BUILD_AROMA.forEach(item => {
+      const user = p.a[item.key] || 0;
+      const real = (d.a||{})[item.key] || 0;
+      const diff = Math.abs(user - real);
+      totalDiff += diff; if (diff === 0) exactCount++; totalAxes++;
+      axesResults.push({ ...item, user, real, diff });
+    });
+    const maxDiff = totalAxes * 4;
+    const pct = Math.round((1 - totalDiff/maxDiff) * 100);
+    const stars = pct >= 90 ? 5 : pct >= 75 ? 4 : pct >= 60 ? 3 : pct >= 40 ? 2 : 1;
+    const allCorrect = exactCount === totalAxes;
+    // Score: pct × 10 + exact_bonus (50 per exact).
+    // Mode "both" (14 axes) gets ×2 multiplier — it's much harder to score 75%+ with 14 axes.
+    // Full profile (allCorrect) also gets ×2, stacks with mode multiplier.
+    let score = pct * 10 + exactCount * 50;
+    let multiplier = 1;
+    let multLabel = '';
+    if (mode === 'both') { multiplier *= 2; multLabel = '×2 (14 осей)'; }
+    if (allCorrect) { multiplier *= 2; multLabel = (multLabel ? multLabel + ' + ' : '') + '×2 (полный профиль)'; }
+    score = Math.round(score * multiplier);
+    g.lastScore = score;
+    g.lastPct = pct;
+
+    // Build labels & profiles for dual radar
+    let radarLabels, radarKeys, userProfile, realProfile;
+    if (mode === 'struct') {
+      radarLabels = BUILD_STRUCT.map(i => i.label);
+      radarKeys = BUILD_STRUCT.map(i => i.key);
+      userProfile = BUILD_STRUCT.map(i => p.s[i.key] || 0);
+      realProfile = BUILD_STRUCT.map(i => (d.s||{})[i.key] || 0);
+    } else if (mode === 'aroma') {
+      radarLabels = BUILD_AROMA.map(i => i.label);
+      radarKeys = BUILD_AROMA.map(i => i.key);
+      userProfile = BUILD_AROMA.map(i => p.a[i.key] || 0);
+      realProfile = BUILD_AROMA.map(i => (d.a||{})[i.key] || 0);
+    } else {
+      // both — show structure radar only (7 axes, cleaner)
+      radarLabels = BUILD_STRUCT.map(i => i.label);
+      radarKeys = BUILD_STRUCT.map(i => i.key);
+      userProfile = BUILD_STRUCT.map(i => p.s[i.key] || 0);
+      realProfile = BUILD_STRUCT.map(i => (d.s||{})[i.key] || 0);
+    }
+    // Convert arrays to profile objects for drawMultiRadarGeneric
+    const userProfileObj = {};
+    radarKeys.forEach((k, i) => userProfileObj[k] = userProfile[i]);
+    const realProfileObj = {};
+    radarKeys.forEach((k, i) => realProfileObj[k] = realProfile[i]);
+
+    c.innerHTML = `
+      <div class="result-card ${allCorrect ? 'win' : (pct >= 60 ? '' : 'loss')}">
+        <div class="result-badge ${allCorrect ? 'win' : (pct >= 75 ? 'partial' : (pct >= 40 ? 'partial' : 'loss'))}">
+          ${allCorrect ? '🏆' : (pct >= 75 ? '🎯' : (pct >= 40 ? '~' : '😵'))}
+        </div>
+        <div class="result-label ${allCorrect ? 'win' : (pct >= 75 ? 'partial' : (pct >= 40 ? 'partial' : 'loss'))}">
+          ${allCorrect ? 'Идеально!' : (pct >= 75 ? 'Отлично!' : (pct >= 60 ? 'Хорошо' : (pct >= 40 ? 'Неплохо' : 'Мимо')))}
+        </div>
+        <div class="result-score">
+          <span style="font-size:11px;color:var(--text-mute);text-transform:uppercase;letter-spacing:0.1em;">Попадание</span>
+          <span class="score-pts">${pct}%</span>
+          <span style="color:var(--text-mute);">•</span>
+          <span style="font-size:11px;color:var(--text-mute);">⭐</span>
+          <span class="score-pts">${'★'.repeat(stars)}${'☆'.repeat(5-stars)}</span>
+        </div>
+        <div class="result-drink">${d.name}</div>
+        <div class="result-meta">${typeLabel(d)} • ${d.subcat || d.cat} • ${d.origin}</div>
+        <div class="bp-legend">
+          <span class="bp-legend-item"><span class="bp-legend-dot" style="background:rgba(201,165,92,0.7);border:2px solid #c9a55c;"></span>Твоё</span>
+          <span class="bp-legend-item"><span class="bp-legend-dot" style="background:rgba(106,138,200,0.7);border:2px solid #6a8ac8;"></span>Реальное</span>
+        </div>
+        <div class="radar-dual">
+          <div class="radar-cell">
+            <h5>${useStruct && useAroma ? '🫁 Структура' : (useStruct ? '🫁 Структура' : '👃 Ароматика')}</h5>
+            <canvas id="bp-radar-result" width="220" height="220"></canvas>
+          </div>
+          ${useStruct && useAroma ? `
+            <div class="radar-cell">
+              <h5>👃 Ароматика</h5>
+              <canvas id="bp-radar-result-a" width="220" height="220"></canvas>
+            </div>
+          ` : ''}
+        </div>
+        <div style="margin:14px 0; display:grid; gap:4px;">
+          ${axesResults.map(r => `
+            <div style="display:grid;grid-template-columns:1fr auto auto auto;gap:8px;align-items:center;padding:6px 10px;background:${r.diff === 0 ? 'rgba(127,166,80,0.10)' : 'var(--bg-2)'};border-radius:8px;border:1px solid ${r.diff === 0 ? 'var(--green-dim)' : 'transparent'};">
+              <span style="font-size:12px;color:var(--text-dim);">${r.label}</span>
+              <span style="font-size:11px;color:var(--text-mute);">твоё <b style="color:var(--text);">${r.user}</b></span>
+              <span style="font-size:11px;color:var(--text-mute);">реал <b style="color:var(--gold);">${r.real}</b></span>
+              <span style="font-size:13px;color:${r.diff === 0 ? 'var(--green-bright)' : 'var(--wine)'};">${r.diff === 0 ? '✓' : 'Δ'+r.diff}</span>
+            </div>
+          `).join('')}
+        </div>
+        <div style="background:var(--bg-2);padding:8px 14px;border-radius:16px;display:inline-block;margin-bottom:8px;">
+          <span style="font-size:12px;color:var(--text-dim);">Точных: <b style="color:var(--gold);">${exactCount}/${totalAxes}</b></span>
+          <span style="font-size:12px;color:var(--gold);margin-left:10px;">Очки: <b>${score}</b>${multiplier > 1 ? `<span style="color:var(--green-bright);font-size:11px;margin-left:4px;">${multLabel}</span>` : ''}</span>
+        </div>
+        <div class="result-actions">
+          <button class="btn-primary" onclick="exitBpToSetup()">▶ Ещё раз</button>
+          <button class="btn-secondary" onclick="openDrink(${d.id});">📖 К напитку</button>
+        </div>
+      </div>
+    `;
+    // Draw dual radars: user (gold) vs real (blue — contrast, not green which blends with gold)
+    setTimeout(() => {
+      const canvasS = document.getElementById('bp-radar-result');
+      if (canvasS) {
+        const sLabels = useStruct ? BUILD_STRUCT.map(i => i.label) : BUILD_AROMA.map(i => i.label);
+        const sKeys = useStruct ? BUILD_STRUCT.map(i => i.key) : BUILD_AROMA.map(i => i.key);
+        const userS = useStruct ? p.s : p.a;
+        const realS = useStruct ? (d.s||{}) : (d.a||{});
+        drawMultiRadarGeneric(
+          canvasS,
+          [userS, realS],
+          ['rgba(201,165,92,0.45)', 'rgba(106,138,200,0.40)'],
+          ['#c9a55c', '#6a8ac8'],
+          getTranslatedStructLabelsForMode(useStruct),
+          sKeys,
+          sKeys.length
+        );
+      }
+      if (useStruct && useAroma) {
+        const canvasA = document.getElementById('bp-radar-result-a');
+        if (canvasA) {
+          drawMultiRadarGeneric(
+            canvasA,
+            [p.a, d.a||{}],
+            ['rgba(201,165,92,0.45)', 'rgba(106,138,200,0.40)'],
+            ['#c9a55c', '#6a8ac8'],
+            getTranslatedAromaLabels(),
+            BUILD_AROMA.map(i => i.key),
+            BUILD_AROMA.length
+          );
+        }
+      }
+    }, 50);
+    return;
+  }
+
+  // ===== PLAY PHASE — sliders only, no radar =====
+  const mode = g.mode || 'both';
+  const useStruct = mode === 'both' || mode === 'struct';
+  const useAroma = mode === 'both' || mode === 'aroma';
+  c.innerHTML = `
+    <div class="bp-drink-info" id="bp-drink-info">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <span style="font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.15em;">🎯 Построй</span>
+        <span style="font-size:11px;color:var(--text-mute);">• ${useStruct && useAroma ? '14 осей' : '7 осей'}</span>
+        <button class="bp-toggle" onclick="toggleBpInfo()" id="bp-toggle" style="margin-left:auto;background:none;border:none;color:var(--text-mute);font-size:14px;cursor:pointer;padding:4px 8px;">▼</button>
+      </div>
+      <div class="bp-drink-body" id="bp-drink-body">
+        <div style="font-family:Georgia,serif;font-size:18px;color:var(--text);margin-bottom:2px;line-height:1.2;">${d.name}</div>
+        <div style="font-size:11px;color:var(--text-mute);margin-bottom:8px;">${typeLabel(d)} • ${d.subcat || d.cat} • ${d.origin} • ${d.abv}</div>
+        ${d.desc ? `<div style="font-size:12px;color:var(--text-dim);line-height:1.45;margin-bottom:6px;">${highlightTerms(d.desc)}</div>` : ''}
+        ${d.tags && d.tags.length ? `
+          <div style="display:flex;gap:4px;flex-wrap:wrap;">
+            ${d.tags.slice(0, 6).map(t => `<span class="profile-pill" style="font-size:9px;">${t}</span>`).join('')}
+          </div>
+        ` : ''}
+      </div>
+    </div>
+
+    ${useStruct ? `
+      <div class="build-group bp-sliders">
+        <h4>🫁 Структура</h4>
+        ${BUILD_STRUCT.map(item => buildRowHTML('s', item, p.s[item.key])).join('')}
+      </div>
+    ` : ''}
+    ${useAroma ? `
+      <div class="build-group bp-sliders">
+        <h4>👃 Ароматика</h4>
+        ${BUILD_AROMA.map(item => buildRowHTML('a', item, p.a[item.key])).join('')}
+      </div>
+    ` : ''}
+
+    <div class="bp-action-bar">
+      <button class="btn-secondary" onclick="resetBpProfile()" style="flex:0 0 auto;">× Сброс</button>
+      <button class="btn-primary" onclick="checkBpProfile()" style="flex:1;">✓ Проверить</button>
+    </div>
+  `;
+  // Wire up sliders (no radar to redraw — just update state)
+  c.querySelectorAll('input.build-slider').forEach(sl => {
+    sl.addEventListener('input', e => {
+      const group = e.target.dataset.group;
+      const key = e.target.dataset.key;
+      const v = parseInt(e.target.value);
+      p[group][key] = v;
+      e.target.parentElement.querySelector('.val').textContent = v;
+      e.target.style.setProperty('--p', ((v - 1) / 4 * 100) + '%');
+    });
+    const v = parseInt(sl.value);
+    sl.style.setProperty('--p', ((v - 1) / 4 * 100) + '%');
+  });
+}
+
+function setBpSetup(mode) {
+  if (!state.bp_setup) state.bp_setup = { mode: 'both' };
+  state.bp_setup.mode = mode;
+  haptic('light');
+  renderBuildProfile();
+}
+
+function toggleBpInfo() {
+  const body = document.getElementById('bp-drink-body');
+  const btn = document.getElementById('bp-toggle');
+  if (!body || !btn) return;
+  const isHidden = body.style.display === 'none';
+  body.style.display = isHidden ? '' : 'none';
+  btn.textContent = isHidden ? '▼' : '▲';
+}
+
+function startBpGame() {
+  const target = DRINKS[Math.floor(Math.random() * DRINKS.length)];
+  const mode = state.bp_setup?.mode || 'both';
+  state.bp_game = { target, phase: 'play', mode };
+  state.bp_profile = { s: {...BP_DEFAULT_S}, a: {...BP_DEFAULT_A} };
+  renderBuildProfile();
+}
+
+function exitBpToSetup() {
+  // Return to setup screen so user can choose mode again (struct / aroma / both)
+  state.bp_game = null;
+  haptic('light');
+  renderBuildProfile();
+}
+
+function resetBpProfile() {
+  state.bp_profile = { s: {...BP_DEFAULT_S}, a: {...BP_DEFAULT_A} };
+  haptic('light');
+  renderBuildProfile();
+}
+
+function checkBpProfile() {
+  if (!state.bp_game) return;
+  state.bp_game.phase = 'reveal';
+  haptic('success');
+  // Bonus: confetti if 90%+
+  const p = getBpProfile();
+  const d = state.bp_game.target;
+  let totalDiff = 0;
+  [...BUILD_STRUCT, ...BUILD_AROMA].forEach(item => {
+    const group = BUILD_STRUCT.includes(item) ? 's' : 'a';
+    const user = p[group][item.key] || 0;
+    const real = (group === 's' ? (d.s||{}) : (d.a||{}))[item.key] || 0;
+    totalDiff += Math.abs(user - real);
+  });
+  const pct = Math.round((1 - totalDiff/56) * 100);
+  if (pct >= 75) { fireConfetti(); playSound('celebrate'); }
+  else if (pct >= 50) playSound('tap');
+  else playSound('error');
+  renderBuildProfile();
+}
+
 function drawBuildRadar() {
-  const p = getBuildProfile();
+  // Determine which profile to use: build-profile game (if active) or regular build
+  const isBpActive = state.view === 'build-profile' && state.bp_game && state.bp_game.phase === 'play';
+  const p = isBpActive ? getBpProfile() : getBuildProfile();
   const canvas = document.getElementById('build-radar-s');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
@@ -1754,7 +2083,9 @@ function hitTestBuildVertex(x, y) {
   const r = Math.min(canvas.width, canvas.height) / 2 - 38;
   const allItems = [...BUILD_STRUCT, ...BUILD_AROMA];
   const n = allItems.length;
-  const p = getBuildProfile();
+  // Use bp_profile if build-profile game is active
+  const isBpActive = state.view === 'build-profile' && state.bp_game && state.bp_game.phase === 'play';
+  const p = isBpActive ? getBpProfile() : getBuildProfile();
   for (let i = 0; i < n; i++) {
     const item = allItems[i];
     const group = i < BUILD_STRUCT.length ? 's' : 'a';
@@ -1788,10 +2119,14 @@ function updateBuildValue(idx, v) {
   const allItems = [...BUILD_STRUCT, ...BUILD_AROMA];
   const item = allItems[idx];
   const group = idx < BUILD_STRUCT.length ? 's' : 'a';
-  const p = getBuildProfile();
+  // Use bp_profile if build-profile game is active
+  const isBpActive = state.view === 'build-profile' && state.bp_game && state.bp_game.phase === 'play';
+  const p = isBpActive ? getBpProfile() : getBuildProfile();
   if (p[group][item.key] === v) return;
   p[group][item.key] = v;
-  const sl = document.querySelector(`#build-container input.build-slider[data-group="${group}"][data-key="${item.key}"]`);
+  // Find slider in either container (build or build-profile)
+  const containerId = isBpActive ? '#build-profile-container' : '#build-container';
+  const sl = document.querySelector(`${containerId} input.build-slider[data-group="${group}"][data-key="${item.key}"]`);
   if (sl) {
     sl.value = v;
     sl.style.setProperty('--p', ((v - 1) / 4 * 100) + '%');
@@ -2114,7 +2449,7 @@ function renderCompare() {
   // Compute pairwise matches (structure 60% + aroma 40%)
   let matchHTML = '';
   if (drinks.length >= 2) {
-    const sKeys = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
+    const sKeys = ['acid','sweet','bitter','tannin','body','carbonation','savory'];
     const aKeys = ['fruit','floral','spice','wood_smoke','mineral_earth','sweet_pastry','yeast_ferment'];
     const pairs = [];
     for (let i = 0; i < drinks.length; i++) {
@@ -2557,11 +2892,15 @@ function renderBlind() {
       <div style="margin-top:16px;">
         <div class="section-title">Сложность</div>
         <div class="pill-row cols-4">
-          ${BLIND_MODES.map(m => `
-            <button class="pill ${setup.difficulty===m.id?'active':''}" onclick="setBlindSetup('difficulty', '${m.id}')" title="${m.description}">
-              <div class="pill-head"><span class="pill-ic">${m.icon}</span>${m.title}</div>
-            </button>
-          `).join('')}
+          ${BLIND_MODES.map(m => {
+            const mult = m.id === 'expert' ? 2 : (m.id === 'notes' || m.id === 'profile') ? 1.5 : 1;
+            const multBadge = mult > 1 ? `<span class="pill-mult">×${mult}</span>` : '';
+            return `
+              <button class="pill ${setup.difficulty===m.id?'active':''}" onclick="setBlindSetup('difficulty', '${m.id}')" title="${m.description}">
+                <div class="pill-head"><span class="pill-ic">${m.icon}</span>${m.title}${multBadge}</div>
+              </button>
+            `;
+          }).join('')}
         </div>
       </div>
 
@@ -3095,7 +3434,7 @@ function resetQuiz() {
 function renderQuizResult() {
   state.quiz.done = true;
   const target = state.quiz.scores;
-  const sKeys = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
+  const sKeys = ['acid','sweet','bitter','tannin','body','carbonation','savory'];
   const scored = DRINKS.map(d => {
     let diff = 0;
     for (const k of sKeys) {
@@ -3353,8 +3692,8 @@ function openSettings() {
     </div>
     <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">Готово</button>
     <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--border);text-align:center;">
-      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.1</div>
-      <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 11 вкладок • 29 блюд</div>
+      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.0</div>
+      <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 10 вкладок • 29 блюд</div>
     </div>
   `);
   // Wire up
@@ -3469,7 +3808,7 @@ function playSound(type) {
 }
 
 // ============== SWIPE NAVIGATION ==============
-const SWIPE_VIEWS = ['blind', 'tree', 'quiz', 'build', 'browse', 'notes-search', 'pairing', 'compare', 'glossary', 'notes'];
+const SWIPE_VIEWS = ['blind', 'build-profile', 'tree', 'quiz', 'build', 'browse', 'notes-search', 'pairing', 'compare', 'glossary', 'notes'];
 let touchStartX = 0, touchStartY = 0, touchEndX = 0, touchEndY = 0;
 
 document.addEventListener('touchstart', e => {
@@ -3630,7 +3969,7 @@ function moveGTToHidden(){
 }
 document.addEventListener('change',e=>{if(e.target&&e.target.classList&&e.target.classList.contains('goog-te-combo')){try{localStorage.setItem('gt_lang',e.target.value);}catch(err){}}},true);
 setInterval(()=>{document.querySelectorAll('iframe.goog-te-banner-frame,.goog-te-banner-frame.skiptranslate').forEach(e=>e.remove());if(document.body.style.top)document.body.style.top='';document.querySelectorAll('.goog-tooltip').forEach(t=>t.remove());},200);
-const gtObserver=new MutationObserver(()=>{const w=window._gtActive||false,n=isTranslated();if(w!==n){window._gtActive=n;setTimeout(()=>{if(state.view==='tree')renderTree();if(state.view==='build')renderBuild();if(state.view==='blind')renderBlind();if(state.view==='compare')renderCompare();},300);}});
+const gtObserver=new MutationObserver(()=>{const w=window._gtActive||false,n=isTranslated();if(w!==n){window._gtActive=n;setTimeout(()=>{if(state.view==='tree')renderTree();if(state.view==='build')renderBuild();if(state.view==='build-profile')renderBuildProfile();if(state.view==='blind')renderBlind();if(state.view==='compare')renderCompare();},300);}});
 gtObserver.observe(document.documentElement,{attributes:true,attributeFilter:['class']});
 
 // ============== INIT ==============

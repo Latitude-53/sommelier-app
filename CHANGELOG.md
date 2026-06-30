@@ -1,5 +1,32 @@
 # Changelog
 
+## v1.1.3 — Hotfix: восстановление игры «Построй профиль» (2025-06-30)
+
+### Что случилось
+В процессе сборки v1.1.2 код игры «Построй профиль» (renderBuildProfile, startBpGame, checkBpProfile, и т.д.) был случайно потерян из `app.js` — остался только v1.1.0 chess.com-стиль без новой игры. Восстановили из сохранённой версии пользователя.
+
+### Восстановлено
+- **Игра «Построй профиль»** (reverse blind) — 7 функций, ~200 строк кода
+- **3 режима:** Оба (14 осей, ×2) / Структура / Ароматика
+- **Setup-экран** с выбором режима
+- **Compact layout** со sticky drink-info + sticky action-bar
+- **Dual radar в reveal:** user (золото) vs real (синий)
+- **×2 множители:** за режим «Оба» + за полный профиль (stack ×4)
+- **Multiplier badges** на pills (×2 виден ещё до старта игры)
+- **«Ещё раз»** возвращает на setup-экран (можно сменить режим)
+
+### Новые скриншоты
+- 6 свежих PNG через Playwright (iPhone 14, 2x DPI):
+  - 01-blind-setup, 02-build-profile-setup, 03-tree
+  - 04-browse, 05-compare, 06-build-profile-reveal
+- README обновлён с таблицей 3×2
+
+### Stats
+- 255 напитков, 11 вкладок, 180 терминов, 29 блюд
+- Файл: ~545 KB (single HTML, 0 зависимостей)
+
+---
+
 ## v1.1.1 — Build Profile game + multiplier badges (2025-06-29)
 
 ### Новая игра: «Построй профиль» (Reverse Blind)

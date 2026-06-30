@@ -53,16 +53,6 @@
     <td align="center">📊 Сравнить</td>
     <td align="center">🎯 Построй (reveal)</td>
   </tr>
-  <tr>
-    <td><img src="docs/screenshots/07-drink-card.png" width="200"></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td align="center">🍷 Карточка напитка</td>
-    <td></td>
-    <td></td>
-  </tr>
 </table>
 
 ## 🌐 Перевод

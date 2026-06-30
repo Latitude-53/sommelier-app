@@ -3353,8 +3353,8 @@ function openSettings() {
     </div>
     <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">Готово</button>
     <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--border);text-align:center;">
-      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.0</div>
-      <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 10 вкладок • 29 блюд</div>
+      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.1</div>
+      <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 11 вкладок • 29 блюд</div>
     </div>
   `);
   // Wire up

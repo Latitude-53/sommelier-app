@@ -43,3 +43,6 @@ __pycache__/
 
 # Logs
 *.log
+
+# Debug screenshots (from agent-ctx debugging)
+scripts/_*.png

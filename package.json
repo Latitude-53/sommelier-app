@@ -1,6 +1,6 @@
 {
   "name": "sommelier-app",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Помощник сомелье — вкусовые рецепторы, вино, пиво, крепкое, кофе, чай",
   "scripts": {
     "build": "python3 scripts/build.py",

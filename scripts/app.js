@@ -61,6 +61,7 @@ function switchView(v) {
   if (v === 'notes') renderNotes();
   if (v === 'quiz' && !state.quiz.done) renderQuiz();
   if (v === 'build') renderBuild();
+  if (v === 'build-profile') renderBuildProfile();
   if (v === 'blind') renderBlind();
   if (v === 'notes-search') renderNotesSearch();
   if (v === 'pairing') renderPairing();
@@ -423,11 +424,14 @@ function showLeafDrinks(receptorId, subId, leafId) {
   `);
 }
 
+// NOTE: toggleSubcat and showLeafDrinks kept for backward compatibility (taxonomy.json structure)
+// but not actively used in current v1.1.x tree renderer.
+
 // ============== DRINK CARD ==============
 function drinkCardHTML(d) {
   // Top 3 structure params
-  const sLabels = {acid:'кислота',sweet:'сладость',bitter:'горечь',tannin:'танины',body:'тело',alcohol:'алкоголь',carbonation:'газация',savory:'солёное'};
-  const pills = Object.entries(d.s||{}).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k,v]) =>
+  const sLabels = {acid:'кислота',sweet:'сладость',bitter:'горечь',tannin:'танины',body:'тело',carbonation:'газация',savory:'солёное'};
+  const pills = Object.entries(d.s||{}).filter(([k])=>k!=='alcohol').sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k,v]) =>
     `<span class="profile-pill ${v>=4?'strong':''}">${sLabels[k]||k} ${v}</span>`
   ).join('');
   const typeIcons = {wine:'🍷',beer:'🍺',spirit:'🥃',sake:'🍶',cider:'🍎',mead:'🍯',coffee:'☕',tea:'🍵'};
@@ -466,8 +470,8 @@ function openDrink(id) {
   const notes = loadNotes();
   const note = notes[id] || '';
   // Structure labels (7 осей)
-  const sLabels = {acid:'Кислота',sweet:'Сладость',bitter:'Горечь',tannin:'Танины',body:'Тело',alcohol:'Алкоголь',carbonation:'Газация',savory:'Солёное/Умами'};
-  const sColors = {acid:'var(--acid)',sweet:'var(--sweet)',bitter:'var(--bitter)',tannin:'var(--tannin)',body:'var(--gold)',alcohol:'#c95a4a',carbonation:'#6ab8c8',savory:'var(--umami)'};
+  const sLabels = {acid:'Кислота',sweet:'Сладость',bitter:'Горечь',tannin:'Танины',body:'Тело',carbonation:'Газация',savory:'Солёное/Умами'};
+  const sColors = {acid:'var(--acid)',sweet:'var(--sweet)',bitter:'var(--bitter)',tannin:'var(--tannin)',body:'var(--gold)',carbonation:'#6ab8c8',savory:'var(--umami)'};
   // Aroma labels (7 кластеров)
   const aLabels = {fruit:'Фрукты',floral:'Цветы/Травы',spice:'Специи',wood_smoke:'Дерево/Дым',mineral_earth:'Минералы/Земля',sweet_pastry:'Сладкое/Кондитер',yeast_ferment:'Дрожжи/Фермент'};
   const aColors = {fruit:'#d47b6a',floral:'#b8d4a8',spice:'#c9b04a',wood_smoke:'#7a5a3a',mineral_earth:'#6a8a8a',sweet_pastry:'#d4b85a',yeast_ferment:'#8a7a9a'};
@@ -1124,7 +1128,7 @@ function showTagDrinks(tag) {
     const sAvg = {};
     sKeys.forEach(k => { sAvg[k] = cluster.reduce((s,d) => s + ((d.s||{})[k]||1), 0) / cluster.length; });
     const sSorted = Object.entries(sAvg).sort((a,b) => b[1] - a[1]);
-    const sLabel = {acid:'кислотные',sweet:'сладкие',bitter:'горькие',tannin:'танинные',body:'плотные',alcohol:'алкогольные',carbonation:'газированные',savory:'солёно-умами'};
+    const sLabel = {acid:'кислотные',sweet:'сладкие',bitter:'горькие',tannin:'танинные',body:'плотные',carbonation:'газированные',savory:'солёно-умами'};
     const aAvg = {};
     aKeys.forEach(k => { aAvg[k] = cluster.reduce((s,d) => s + ((d.a||{})[k]||1), 0) / cluster.length; });
     const aSorted = Object.entries(aAvg).sort((a,b) => b[1] - a[1]);
@@ -1262,10 +1266,6 @@ function setTagViewMode(mode) {
       else { btn.classList.remove('active'); cont.style.display = 'none'; }
     }
   });
-}
-
-function typeLabelForWeb(t) {
-  return {wine:'Вино',beer:'Пиво',spirit:'Крепкое',sake:'Саке',cider:'Сидр',mead:'Медовуха',coffee:'Кофе',tea:'Чай'}[t] || t;
 }
 
 // ============== PAIRING ==============
@@ -1434,7 +1434,7 @@ const DISH_RULES = {
 function computePairingScore(drink, target) {
   const s = drink.s || {};
   let diff = 0;
-  const keys = ['acid','sweet','bitter','tannin','body','alcohol','carbonation','savory'];
+  const keys = ['acid','sweet','bitter','tannin','body','carbonation','savory'];
   for (const k of keys) {
     diff += Math.abs((s[k]||1) - (target[k]||3));
   }
@@ -2423,8 +2423,8 @@ function renderCompare() {
   const drinks = state.compare_list.map(id => DRINKS.find(d => d.id === id)).filter(Boolean);
   if (!drinks.length) return;
 
-  const sLabels = {acid:'Кислота',sweet:'Сладость',bitter:'Горечь',tannin:'Танины',body:'Тело',alcohol:'Алкоголь',carbonation:'Газация',savory:'Солёное/Умами'};
-  const sColors = {acid:'var(--acid)',sweet:'var(--sweet)',bitter:'var(--bitter)',tannin:'var(--tannin)',body:'var(--gold)',alcohol:'#c95a4a',carbonation:'#6ab8c8',savory:'var(--umami)'};
+  const sLabels = {acid:'Кислота',sweet:'Сладость',bitter:'Горечь',tannin:'Танины',body:'Тело',carbonation:'Газация',savory:'Солёное/Умами'};
+  const sColors = {acid:'var(--acid)',sweet:'var(--sweet)',bitter:'var(--bitter)',tannin:'var(--tannin)',body:'var(--gold)',carbonation:'#6ab8c8',savory:'var(--umami)'};
   const aLabels = {fruit:'Фрукты',floral:'Цветы/Травы',spice:'Специи',wood_smoke:'Дерево/Дым',mineral_earth:'Минералы/Земля',sweet_pastry:'Сладкое/Кондитер',yeast_ferment:'Дрожжи/Фермент'};
   const aColors = {fruit:'#d47b6a',floral:'#b8d4a8',spice:'#c9b04a',wood_smoke:'#7a5a3a',mineral_earth:'#6a8a8a',sweet_pastry:'#d4b85a',yeast_ferment:'#8a7a9a'};
   function sBarsOf(p) {
@@ -3449,7 +3449,7 @@ function renderQuizResult() {
 
   const top = scored[0];
   const top10 = scored.slice(0, 10);
-  const labels = {acid:'кислота',sweet:'сладость',bitter:'горечь',tannin:'танины',body:'тело',alcohol:'алкоголь',carbonation:'газация',savory:'солёное'};
+  const labels = {acid:'кислота',sweet:'сладость',bitter:'горечь',tannin:'танины',body:'тело',carbonation:'газация',savory:'солёное'};
 
   // Build a "profile archetype" — top 2-3 dominant traits as a readable description
   const archetype = buildArchetype(top.s);
@@ -3528,7 +3528,7 @@ function renderQuizResult() {
 }
 
 function buildArchetype(p) {
-  const labels = {acid:'кислотное',sweet:'сладкое',bitter:'горькое',tannin:'танинное',body:'плотное',alcohol:'алкогольное',carbonation:'газированное',savory:'солёное/умами'};
+  const labels = {acid:'кислотное',sweet:'сладкое',bitter:'горькое',tannin:'танинное',body:'плотное',carbonation:'газированное',savory:'солёное/умами'};
   const sorted = Object.entries(p||{}).sort((a,b)=>b[1]-a[1]);
   // Take top 2 descriptors (if >=4), or 1 if only one is strong
   const top2 = sorted.slice(0, 2).filter(([_,v])=>v>=4).map(([k,_])=>labels[k]).filter(Boolean);
@@ -3617,11 +3617,6 @@ function haptic(pattern) {
   }
 }
 
-// Wrap common tap actions with haptic
-function tapFeedback(pattern) {
-  haptic(pattern || 'light');
-}
-
 // ============== SETTINGS ==============
 // Глобальные настройки: тема, звук, вибрация, язык
 const SETTINGS_KEY = 'sommelier_settings_v1';
@@ -3692,7 +3687,7 @@ function openSettings() {
     </div>
     <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">Готово</button>
     <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--border);text-align:center;">
-      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.3</div>
+      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.4</div>
       <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 11 вкладок • 29 блюд</div>
     </div>
   `);

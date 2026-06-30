@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.1.4 — Code cleanup + bugfixes (2025-06-30)
+
+### Code cleanup
+- **Убран `alcohol` из всех label/color/key объектов** — оставался как мёртвый код после миграции 8→7 осей
+  - `sLabels` (drinkCardHTML, openDrink, showTagDrinks, buildArchetype) — 4 места
+  - `sColors` (openDrink) — 2 места
+  - `sLabel` (clusterName) — 1 место
+  - `keys` (computePairingScore) — 1 место
+- **Удалены неиспользуемые функции:**
+  - `typeLabelForWeb()` — дублировал typeLabel, не вызывался
+  - `tapFeedback()` — тривиальная обёртка над haptic(), не вызывалась
+- **Добавлен filter `alcohol` в pills** — drinkCardHTML теперь фильтрует alcohol из топ-3 параметров
+- **Прогнан E2E тест** всех 11 вкладок через Playwright — 0 ошибок, все рендерятся
+
+### Bugfixes
+- **Build Profile пустой экран** (v1.1.3 регрессия) — `switchView('build-profile')` не вызывал `renderBuildProfile()`. Фикс: добавлен `if (v === 'build-profile') renderBuildProfile();`
+- **Alcohol в dual-radar** — в некоторых местах всё ещё мог появиться через sLabels объекты. Убран полностью.
+
+### Stats
+- 255 напитков, 11 вкладок, 180 терминов, 29 блюд
+- Файл: ~545 KB (single HTML, 0 зависимостей)
+- E2E тест: 11/11 вкладок рендерятся, 0 JS ошибок
+
+---
+
 ## v1.1.3 — Hotfix: восстановление игры «Построй профиль» (2025-06-30)
 
 ### Что случилось

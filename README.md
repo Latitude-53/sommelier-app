@@ -136,21 +136,6 @@ npm run android:build        # → android/app/build/outputs/apk/debug/app-debug
 </details>
 
 <details>
-<summary><b>🏪 Публикация в Google Play</b></summary>
-
-1. Создай аккаунт разработчика ($25 один раз): https://play.google.com/console
-2. Сгенерируй подписанный AAB:
-   ```bash
-   cd android
-   ./gradlew bundleRelease
-   ```
-   → `android/app/build/outputs/bundle/release/app-release.aab`
-3. Загрузи AAB через Play Console
-4. Модерация 1-3 дня
-
-</details>
-
-<details>
 <summary><b>🔧 Технологии</b></summary>
 
 - **HTML5 + CSS3 + vanilla JavaScript** (0 зависимостей, single file)

@@ -204,7 +204,7 @@ MIT License — Copyright © 2025 Latitude-53
 | 🌵 Агава | 10 | Ручная курификация + Wikipedia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | 🍵 Чай | 12 | Ручная курификация + Wikipedia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | ☕ Кофе | 12 | Ручная курификация + Wikipedia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| 🌾 Рис | 8 | Ручная курификация (sake rice) | факты (не охраняются) |
+| 🌾 Рис | 8 | Ручная курификация (sake rice) | ручной поиск |
 
 Каждый ингредиент имеет координаты (lat/lng) для будущей карты.
 

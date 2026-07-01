@@ -1,5 +1,107 @@
 # Changelog
 
+## v1.1.6 — Datasets expansion + drinks.json +67 + filters fix (2025-07-01)
+
+Большой релиз данных: расширили все категории ингредиентов, добавили 67 новых напитков, починили фильтры Browse.
+
+### Датасеты ингредиентов (768 ингредиентов)
+
+Все категории расширены с открытыми данными (MIT / CC BY-SA / CC BY 4.0):
+
+| Тип | Было | Стало | Источник | Лицензия |
+|---|---|---|---|---|
+| 🍇 Виноград | 20 | **332** | Wikipedia List of grape varieties | CC BY-SA 4.0 |
+| 🍏 Яблоки | 1 | **357** | Wikipedia List of apple cultivars | CC BY-SA 4.0 |
+| 🌿 Хмель | 3 | **37** | HopDatabase (kasperg3) | MIT |
+| 🌵 Агава | 2 | **10** | Ручная курификация + open data | факты |
+| 🍵 Чай | 2 | **12** | Ручная курификация + Wikipedia | CC BY-SA 4.0 |
+| ☕ Кофе | 2 | **12** | Ручная курификация + Wikipedia | CC BY-SA 4.0 |
+| 🌾 Рис | 1 | **8** | Ручная курификация (sake rice) | факты |
+
+Каждый ингредиент имеет координаты (lat/lng) для будущей карты.
+
+### Датасеты регионов (2031 регион)
+
+| Датасет | Кол-во | Источник | Лицензия |
+|---|---|---|---|
+| wine_regions.json | **1831** регион | Winery Map (Oliver Dressler) | MIT |
+| beer_regions.json | 172 региона | Open Brewery DB | MIT |
+| coffee_regions.json | 25 регионов | Coffee Quality Database (James LeDoux) | MIT |
+
+### Датасет профилей пива (108 стилей)
+
+- **beer_styles_profiles.json** — 108 стилей с профилями 7+7
+- **Источник:** Beer Profile and Ratings Data Set © ruthgn
+- **Лицензия:** CC BY 4.0
+- 3 197 пив с tasting profiles → усреднены по стилям
+- Маппинг на 7+7: Sour→acid, Sweet→sweet, Bitter→bitter, Astringency→tannin, Body→body, Salty→savory, Fruits→fruit, Spices→spice, Malty→sweet_pastry
+
+### drinks.json — 322 напитка (+67 с v1.1.4)
+
+| Категория | v1.1.4 | v1.1.6 | + |
+|---|---|---|---|
+| 🍷 Вино | 94 | **109** | +15 (Château Margaux, Romanée-Conti, Barolo, etc.) |
+| 🍺 Пиво | 56 | **69** | +13 (Russian Imperial Stout, Trappist Quad, Gueuze, etc.) |
+| 🥃 Крепкое | 52 | **64** | +12 (Mezcal, Rhum Agricole, Japanese whisky, Armagnac, etc.) |
+| 🍵 Чай | 20 | **25** | +5 (Sencha, Earl Grey, Matcha, Pu-erh, Tieguanyin) |
+| ☕ Кофе | 16 | **21** | +5 (Espresso, Pour-over, Latte, Cold Brew, Turkish) |
+| 🍶 Саке | 10 | **14** | +4 (Junmai Nigori, Ginjo, Daiginjo, Koshu) |
+| 🍏 Сидр | 4 | **12** | +8 (Kingston Black, Basque sagardoa, Ice cider, etc.) |
+| 🍯 Медовуха | 3 | **8** | +5 (Melomel, Metheglin, Braggot, Cyser, Traditional) |
+
+### Bugfixes
+- **Browse фильтры** — убраны дубликаты sake/Саке, cider/Сидр, mead/Медовуха. Теперь 9 чистых type-фильтров с эмодзи + подкатегории только для wine/beer/spirit (50+ напитков).
+- **Coffee filters** — убраны подкатегории Эспрессо/Фильтр/Латте (это способы приготовления, не категории).
+- **Tea filters** — убраны (20 чаёв не нуждаются в подкатегориях).
+- **Английские subcat** — 24 поля переведено (Junmai→Дзюммай, Melomel→Меломель, и т.д.).
+- **Alcohol cleanup** — убран из всех label/color/key объектов (8 мест).
+
+### README
+- Добавлена секция «Данные и атрибуция» с лицензиями всех датасетов
+- Указаны авторы и источники по требованиям MIT/CC BY
+
+### Stats
+- **322 напитка** (было 255)
+- **768 ингредиентов** (было 31)
+- **2031 регион** с координатами
+- **108 стилей пива** с профилями
+- 11 вкладок, 180 терминов, 29 блюд
+- Файл: ~602 KB (single HTML, 0 зависимостей)
+
+---
+
+## v1.1.5 — Datasets + Russian translation fix (2025-07-01)
+
+### Новые датасеты (для будущей карты v1.3)
+- **wine_regions.json** — 200 винодельческих регионов с координатами
+  - Источник: Winery Map (MIT, © 2024 Oliver Dressler)
+  - 39 Франция, 31 Италия, 25 США, 15 Испания, 13 Австрия
+- **beer_regions.json** — 100 пивоваренных регионов
+  - Источник: Open Brewery DB (MIT, © 2025)
+  - 11 745 пивоварен в 23 странах, топ: Калифорния (915), Бавария (594), Вашингтон (460)
+- **coffee_regions.json** — 25 кофе-регионов
+  - Источник: Coffee Quality Database (MIT, © 2018 James LeDoux)
+  - 1 311 кофе с рейтингами CQI, топ: Мексика (184), Колумбия (176), Гватемала (174)
+
+### Bugfixes
+- **Английские subcat в drinks.json** — 24 поля переведено на русский:
+  - Саке: Junmai → Дзюммай, Ginjo → Гиндзё, Daiginjo → Дайгиндзё, Nigori → Нигори, Honjozo → Хондзёдзо, Namazake → Намадзакэ, Taruzake → Тарудзакэ, Koshu → Косю, Yamahai → Ямахай, Tokubetsu Junmai → Токубэцу Дзюммай
+  - Медовуха: Melomel → Меломель, Cyser → Сайзер
+  - Имена напитков тоже переведены
+- **Browse фильтры** (v1.1.4) — убраны дубликаты sake/Саке, cider/Сидр, mead/Медовуха. Теперь 9 чистых type-фильтров с эмодзи + подкатегории по клику.
+
+### README
+- Добавлена секция «Данные и атрибуция» с лицензиями всех датасетов
+- Указаны источники и авторы
+
+### Stats
+- 255 напитков (полностью русские subcat)
+- 11 вкладок
+- 4 датасета регионов (wine + beer + coffee + ingredients)
+- Файл: ~547 KB (single HTML, 0 зависимостей)
+
+---
+
 ## v1.1.4 — Code cleanup + bugfixes (2025-06-30)
 
 ### Code cleanup

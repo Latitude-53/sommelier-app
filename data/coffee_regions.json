@@ -1,0 +1,202 @@
+[
+  {
+    "region": "Мексика",
+    "country": "Мексика",
+    "country_en": "Mexico",
+    "lat": 23.6,
+    "lng": -102.5,
+    "coffees_count": 184
+  },
+  {
+    "region": "Колумбия",
+    "country": "Колумбия",
+    "country_en": "Colombia",
+    "lat": 4.6,
+    "lng": -74.3,
+    "coffees_count": 176
+  },
+  {
+    "region": "Гватемала",
+    "country": "Гватемала",
+    "country_en": "Guatemala",
+    "lat": 15.7,
+    "lng": -90.2,
+    "coffees_count": 174
+  },
+  {
+    "region": "Бразилия",
+    "country": "Бразилия",
+    "country_en": "Brazil",
+    "lat": -14.2,
+    "lng": -51.9,
+    "coffees_count": 123
+  },
+  {
+    "region": "США (Гавайи)",
+    "country": "США (Гавайи)",
+    "country_en": "United States (Hawaii)",
+    "lat": 19.9,
+    "lng": -155.6,
+    "coffees_count": 73
+  },
+  {
+    "region": "Тайвань",
+    "country": "Тайвань",
+    "country_en": "Taiwan",
+    "lat": 23.7,
+    "lng": 121.0,
+    "coffees_count": 57
+  },
+  {
+    "region": "Гондурас",
+    "country": "Гондурас",
+    "country_en": "Honduras",
+    "lat": 15.2,
+    "lng": -86.2,
+    "coffees_count": 48
+  },
+  {
+    "region": "Коста-Рика",
+    "country": "Коста-Рика",
+    "country_en": "Costa Rica",
+    "lat": 9.7,
+    "lng": -84.0,
+    "coffees_count": 45
+  },
+  {
+    "region": "Эфиопия",
+    "country": "Эфиопия",
+    "country_en": "Ethiopia",
+    "lat": 9.1,
+    "lng": 40.5,
+    "coffees_count": 35
+  },
+  {
+    "region": "Таиланд",
+    "country": "Таиланд",
+    "country_en": "Thailand",
+    "lat": 15.9,
+    "lng": 100.9,
+    "coffees_count": 29
+  },
+  {
+    "region": "Никарагуа",
+    "country": "Никарагуа",
+    "country_en": "Nicaragua",
+    "lat": 12.9,
+    "lng": -85.2,
+    "coffees_count": 25
+  },
+  {
+    "region": "Танзания",
+    "country": "Танзания",
+    "country_en": "Tanzania, United Republic Of",
+    "lat": -6.4,
+    "lng": 34.9,
+    "coffees_count": 25
+  },
+  {
+    "region": "Кения",
+    "country": "Кения",
+    "country_en": "Kenya",
+    "lat": -0.5,
+    "lng": 37.9,
+    "coffees_count": 21
+  },
+  {
+    "region": "Уганда",
+    "country": "Уганда",
+    "country_en": "Uganda",
+    "lat": 1.4,
+    "lng": 32.3,
+    "coffees_count": 21
+  },
+  {
+    "region": "Сальвадор",
+    "country": "Сальвадор",
+    "country_en": "El Salvador",
+    "lat": 13.7,
+    "lng": -88.9,
+    "coffees_count": 19
+  },
+  {
+    "region": "yunnan",
+    "country": "Китай",
+    "country_en": "China",
+    "lat": 35.0,
+    "lng": 104.2,
+    "coffees_count": 13
+  },
+  {
+    "region": "Малави",
+    "country": "Малави",
+    "country_en": "Malawi",
+    "lat": -13.2,
+    "lng": 34.3,
+    "coffees_count": 10
+  },
+  {
+    "region": "Индонезия",
+    "country": "Индонезия",
+    "country_en": "Indonesia",
+    "lat": -2.5,
+    "lng": 118.0,
+    "coffees_count": 8
+  },
+  {
+    "region": "antioquia",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 39.8,
+    "lng": -98.6,
+    "coffees_count": 6
+  },
+  {
+    "region": "Перу",
+    "country": "Перу",
+    "country_en": "Peru",
+    "lat": -9.2,
+    "lng": -75.0,
+    "coffees_count": 5
+  },
+  {
+    "region": "boquete",
+    "country": "Панама",
+    "country_en": "Panama",
+    "lat": 8.5,
+    "lng": -80.8,
+    "coffees_count": 4
+  },
+  {
+    "region": "Вьетнам",
+    "country": "Вьетнам",
+    "country_en": "Vietnam",
+    "lat": 14.0,
+    "lng": 108.3,
+    "coffees_count": 4
+  },
+  {
+    "region": "ywar ngan",
+    "country": "Мьянма",
+    "country_en": "Myanmar",
+    "lat": 21.9,
+    "lng": 95.9,
+    "coffees_count": 3
+  },
+  {
+    "region": "paksong,laos",
+    "country": "Лаос",
+    "country_en": "Laos",
+    "lat": 19.9,
+    "lng": 102.5,
+    "coffees_count": 2
+  },
+  {
+    "region": "dondon, haiti",
+    "country": "Гаити",
+    "country_en": "Haiti",
+    "lat": 18.9,
+    "lng": -72.3,
+    "coffees_count": 2
+  }
+]

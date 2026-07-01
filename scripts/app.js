@@ -1009,20 +1009,73 @@ function drawMultiAromaRadar(canvas, profiles, fillColors, strokeColors) {
 // ============== BROWSE ==============
 function renderBrowse() {
   const filters = document.getElementById('filters');
-  const cats = ['all','wine','beer','spirit','sake','cider','mead','coffee','tea',
-    'Игристое','Белое сухое','Белое полусухое','Красное сухое','Десертное белое','Десертное красное','Креплёное','Оранжевое (натуральное)','Розовое сухое','Красное полусладкое',
-    'Лагер','Эль','Пшеничное','Аббатский эль','Стаут','Стаут/Портер','Кислое','Специальное','Гибрид',
-    'Виски','Бренди','Ром','Джин','Текила/Мескаль','Прочее крепкое','Вермут/Амаро','Саке','Сидр','Медовуха'];
-  filters.innerHTML = cats.map(c => `<button class="filter-chip ${state.filter===c?'active':''}" data-cat="${c}">${c==='all'?'Все':c==='wine'?'Вино':c==='beer'?'Пиво':c==='spirit'?'Крепкое':c==='coffee'?'Кофе':c==='tea'?'Чай':c}</button>`).join('');
+  // Type filter chips (Russian labels, but state.filter stores English type id)
+  // Then category chips (Russian, from cat field)
+  // No more duplicates: 'Саке' (cat) vs 'sake' (type) — now only type shown as 'Саке'
+  const TYPE_FILTERS = [
+    {id: 'all', label: 'Все'},
+    {id: 'wine', label: '🍷 Вино'},
+    {id: 'beer', label: '🍺 Пиво'},
+    {id: 'spirit', label: '🥃 Крепкое'},
+    {id: 'sake', label: '🍶 Саке'},
+    {id: 'cider', label: '🍏 Сидр'},
+    {id: 'mead', label: '🍯 Медовуха'},
+    {id: 'coffee', label: '☕ Кофе'},
+    {id: 'tea', label: '🍵 Чай'},
+  ];
+  // Categories grouped by type — only show sub-filters for types with many drinks.
+  // wine (94), beer (56), spirit (52) — need sub-filters.
+  // tea (20), coffee (16), sake (10), cider (4), mead (3) — too few, no sub-filters.
+  const CAT_FILTERS = {
+    wine: ['Игристое','Сладкое игристое','Белое сухое','Белое полусухое','Белое ароматное','Красное сухое','Красное полусладкое','Розовое сухое','Десертное белое','Десертное красное','Креплёное','Оранжевое (натуральное)'],
+    beer: ['Лагер','Эль','Пшеничное','Аббатский эль','Стаут','Стаут/Портер','Кислое','Специальное','Гибрид'],
+    spirit: ['Виски','Бренди','Ром','Джин','Текила/Мескаль','Прочее крепкое','Вермут/Амаро'],
+    sake: [],
+    cider: [],
+    mead: [],
+    coffee: [],
+    tea: [],
+  };
+  // Determine current filter mode
+  // state.filter can be: 'all', type id ('wine', etc.), or cat name ('Игристое', etc.)
+  const currentFilter = state.filter || 'all';
+  const isTypeFilter = ['all','wine','beer','spirit','sake','cider','mead','coffee','tea'].includes(currentFilter);
+  const activeType = isTypeFilter ? currentFilter : null;
+  // Find which type the current cat belongs to (for showing relevant cat chips)
+  let catTypeContext = null;
+  if (!isTypeFilter && currentFilter !== 'all') {
+    // currentFilter is a cat name — find which type it belongs to
+    for (const [t, cats] of Object.entries(CAT_FILTERS)) {
+      if (cats.includes(currentFilter)) { catTypeContext = t; break; }
+    }
+  }
+  // Build chips: type filters first, then (if a type is selected) its cat filters
+  let chipsHTML = TYPE_FILTERS.map(tf => 
+    `<button class="filter-chip ${currentFilter===tf.id?'active':''}" data-cat="${tf.id}">${tf.label}</button>`
+  ).join('');
+  // Show cat sub-filters if a type is active OR a cat within a type is selected
+  const showCatsForType = activeType || catTypeContext;
+  if (showCatsForType && CAT_FILTERS[showCatsForType] && CAT_FILTERS[showCatsForType].length) {
+    chipsHTML += '<span style="width:4px;"></span>';
+    chipsHTML += CAT_FILTERS[showCatsForType].map(cat =>
+      `<button class="filter-chip ${currentFilter===cat?'active':''}" data-cat="${cat}" style="font-size:11px;">${cat}</button>`
+    ).join('');
+  }
+  filters.innerHTML = chipsHTML;
   filters.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
     state.filter = b.dataset.cat; renderBrowse();
   }));
   const search = state.search.toLowerCase();
   let list = DRINKS.filter(d => {
-    if (state.filter !== 'all' && !['wine','beer','spirit','sake','cider','mead','coffee','tea'].includes(state.filter)) {
-      if (d.cat !== state.filter) return false;
+    if (currentFilter !== 'all') {
+      if (isTypeFilter) {
+        // Type filter: match d.type
+        if (d.type !== currentFilter) return false;
+      } else {
+        // Cat filter: match d.cat, and also ensure drink is of the right type
+        if (d.cat !== currentFilter) return false;
+      }
     }
-    if (['wine','beer','spirit','sake','cider','mead','coffee','tea'].includes(state.filter) && d.type !== state.filter) return false;
     if (search) {
       const hay = (d.name + ' ' + d.cat + ' ' + d.origin + ' ' + d.tags.join(' ')).toLowerCase();
       if (!hay.includes(search)) return false;
@@ -3687,8 +3740,8 @@ function openSettings() {
     </div>
     <button class="restart-btn" onclick="closeSettings()" style="margin-top:18px;">Готово</button>
     <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--border);text-align:center;">
-      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.4</div>
-      <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">255 напитков • 11 вкладок • 29 блюд</div>
+      <div style="font-size:11px;color:var(--text-mute);">Помощник сомелье v1.1.6</div>
+      <div style="font-size:10px;color:var(--text-mute);margin-top:2px;">322 напитка • 11 вкладок • 29 блюд</div>
     </div>
   `);
   // Wire up

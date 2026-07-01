@@ -1,0 +1,1378 @@
+[
+  {
+    "region": "California",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 35.735,
+    "lng": -119.6806,
+    "breweries_count": 915
+  },
+  {
+    "region": "Bayern",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 49.0969,
+    "lng": 11.3111,
+    "breweries_count": 594
+  },
+  {
+    "region": "Washington",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 47.449,
+    "lng": -121.584,
+    "breweries_count": 460
+  },
+  {
+    "region": "Vlaanderen",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 51.0119,
+    "lng": 4.1185,
+    "breweries_count": 297
+  },
+  {
+    "region": "Oregon",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 44.8461,
+    "lng": -122.5217,
+    "breweries_count": 287
+  },
+  {
+    "region": "Colorado",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 39.512,
+    "lng": -105.4929,
+    "breweries_count": 273
+  },
+  {
+    "region": "Michigan",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 43.1386,
+    "lng": -84.9085,
+    "breweries_count": 270
+  },
+  {
+    "region": "New York",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 42.2112,
+    "lng": -75.3396,
+    "breweries_count": 233
+  },
+  {
+    "region": "Ohio",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 40.4009,
+    "lng": -82.8186,
+    "breweries_count": 217
+  },
+  {
+    "region": "Pennsylvania",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 40.5243,
+    "lng": -77.3305,
+    "breweries_count": 193
+  },
+  {
+    "region": "Baden-Württemberg",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 48.5781,
+    "lng": 9.025,
+    "breweries_count": 192
+  },
+  {
+    "region": "North Carolina",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 35.5353,
+    "lng": -80.1536,
+    "breweries_count": 190
+  },
+  {
+    "region": "Wisconsin",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 43.7905,
+    "lng": -89.1945,
+    "breweries_count": 178
+  },
+  {
+    "region": "Texas",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 31.1295,
+    "lng": -97.2324,
+    "breweries_count": 169
+  },
+  {
+    "region": "Florida",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 28.1315,
+    "lng": -81.9537,
+    "breweries_count": 166
+  },
+  {
+    "region": "Illinois",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 41.3244,
+    "lng": -88.394,
+    "breweries_count": 161
+  },
+  {
+    "region": "VIC",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -37.7502,
+    "lng": 145.0165,
+    "breweries_count": 160
+  },
+  {
+    "region": "Maryland",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 39.1808,
+    "lng": -76.7285,
+    "breweries_count": 155
+  },
+  {
+    "region": "NSW",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -33.0439,
+    "lng": 151.1921,
+    "breweries_count": 144
+  },
+  {
+    "region": "Nordrhein-Westfalen",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 51.3634,
+    "lng": 7.4294,
+    "breweries_count": 143
+  },
+  {
+    "region": "Virginia",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 37.8595,
+    "lng": -77.9693,
+    "breweries_count": 135
+  },
+  {
+    "region": "Missouri",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 38.5281,
+    "lng": -92.3189,
+    "breweries_count": 130
+  },
+  {
+    "region": "Région wallonne",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 50.4257,
+    "lng": 4.5939,
+    "breweries_count": 129
+  },
+  {
+    "region": "Minnesota",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 45.2875,
+    "lng": -93.463,
+    "breweries_count": 125
+  },
+  {
+    "region": "British Columbia",
+    "country": "Канада",
+    "country_en": "Canada",
+    "lat": 49.5734,
+    "lng": -122.1392,
+    "breweries_count": 119
+  },
+  {
+    "region": "Massachusetts",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 42.2871,
+    "lng": -71.5283,
+    "breweries_count": 105
+  },
+  {
+    "region": "Iowa",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 42.0065,
+    "lng": -92.712,
+    "breweries_count": 90
+  },
+  {
+    "region": "Indiana",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 40.1744,
+    "lng": -86.3589,
+    "breweries_count": 87
+  },
+  {
+    "region": "QLD",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -26.1452,
+    "lng": 152.159,
+    "breweries_count": 81
+  },
+  {
+    "region": "Niedersachsen",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 52.6324,
+    "lng": 9.3632,
+    "breweries_count": 78
+  },
+  {
+    "region": "Arizona",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 33.4623,
+    "lng": -111.8855,
+    "breweries_count": 77
+  },
+  {
+    "region": "Hessen",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 50.364,
+    "lng": 8.9132,
+    "breweries_count": 76
+  },
+  {
+    "region": "Tennessee",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 35.8305,
+    "lng": -86.0934,
+    "breweries_count": 74
+  },
+  {
+    "region": "Sachsen",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 50.9905,
+    "lng": 13.3136,
+    "breweries_count": 67
+  },
+  {
+    "region": "Maine",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 44.1163,
+    "lng": -69.6619,
+    "breweries_count": 66
+  },
+  {
+    "region": "Connecticut",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 39.7962,
+    "lng": -71.0423,
+    "breweries_count": 66
+  },
+  {
+    "region": "Idaho",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 44.9872,
+    "lng": -115.7318,
+    "breweries_count": 64
+  },
+  {
+    "region": "Alaska",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 60.6131,
+    "lng": -146.1723,
+    "breweries_count": 60
+  },
+  {
+    "region": "New Jersey",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 40.1525,
+    "lng": -74.6011,
+    "breweries_count": 58
+  },
+  {
+    "region": "Nebraska",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 41.1128,
+    "lng": -97.64,
+    "breweries_count": 57
+  },
+  {
+    "region": "Rheinland-Pfalz",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 49.7486,
+    "lng": 7.7163,
+    "breweries_count": 57
+  },
+  {
+    "region": "Montana",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 46.7059,
+    "lng": -111.2406,
+    "breweries_count": 56
+  },
+  {
+    "region": "Ontario",
+    "country": "Канада",
+    "country_en": "Canada",
+    "lat": 43.6462,
+    "lng": -79.4634,
+    "breweries_count": 53
+  },
+  {
+    "region": "New Hampshire",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 43.2157,
+    "lng": -71.5286,
+    "breweries_count": 53
+  },
+  {
+    "region": "Georgia",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 33.6008,
+    "lng": -84.0231,
+    "breweries_count": 52
+  },
+  {
+    "region": "New Mexico",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 34.9417,
+    "lng": -106.1897,
+    "breweries_count": 52
+  },
+  {
+    "region": "Western Cape",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -33.7926,
+    "lng": 19.2644,
+    "breweries_count": 51
+  },
+  {
+    "region": "Alabama",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 30.9115,
+    "lng": -84.4852,
+    "breweries_count": 50
+  },
+  {
+    "region": "Wyoming",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 42.949,
+    "lng": -107.4475,
+    "breweries_count": 50
+  },
+  {
+    "region": "Kentucky",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 38.121,
+    "lng": -85.1957,
+    "breweries_count": 48
+  },
+  {
+    "region": "SA",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -35.0209,
+    "lng": 138.6603,
+    "breweries_count": 47
+  },
+  {
+    "region": "WA",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -31.7869,
+    "lng": 115.798,
+    "breweries_count": 46
+  },
+  {
+    "region": "Auckland",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -36.8362,
+    "lng": 174.7621,
+    "breweries_count": 44
+  },
+  {
+    "region": "South Dakota",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 43.9227,
+    "lng": -99.8816,
+    "breweries_count": 44
+  },
+  {
+    "region": "Berlin",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 43.6275,
+    "lng": 22.2976,
+    "breweries_count": 44
+  },
+  {
+    "region": "Brussels Capital Region",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 50.8473,
+    "lng": 4.3464,
+    "breweries_count": 43
+  },
+  {
+    "region": "Wellington Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -41.2585,
+    "lng": 174.8326,
+    "breweries_count": 43
+  },
+  {
+    "region": "South Carolina",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 33.6833,
+    "lng": -80.773,
+    "breweries_count": 42
+  },
+  {
+    "region": "Oklahoma",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 35.6083,
+    "lng": -96.6782,
+    "breweries_count": 41
+  },
+  {
+    "region": "Utah",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 40.5004,
+    "lng": -111.7667,
+    "breweries_count": 39
+  },
+  {
+    "region": "Canterbury Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -43.5031,
+    "lng": 172.6239,
+    "breweries_count": 39
+  },
+  {
+    "region": "West Virginia",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 38.9547,
+    "lng": -80.0771,
+    "breweries_count": 38
+  },
+  {
+    "region": "Thüringen",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 50.8292,
+    "lng": 11.0906,
+    "breweries_count": 37
+  },
+  {
+    "region": "Brandenburg",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 52.4744,
+    "lng": 13.394,
+    "breweries_count": 36
+  },
+  {
+    "region": "Otago Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -45.3268,
+    "lng": 169.7277,
+    "breweries_count": 35
+  },
+  {
+    "region": "Hawaii",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 20.9019,
+    "lng": -157.1728,
+    "breweries_count": 34
+  },
+  {
+    "region": "dolnośląskie",
+    "country": "Польша",
+    "country_en": "Poland",
+    "lat": 51.003,
+    "lng": 16.6468,
+    "breweries_count": 34
+  },
+  {
+    "region": "Singapore",
+    "country": "Singapore",
+    "country_en": "Singapore",
+    "lat": 1.3072,
+    "lng": 103.9,
+    "breweries_count": 33
+  },
+  {
+    "region": "Arkansas",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 35.5997,
+    "lng": -93.2738,
+    "breweries_count": 32
+  },
+  {
+    "region": "Kansas",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 38.5253,
+    "lng": -96.6,
+    "breweries_count": 31
+  },
+  {
+    "region": "East Sussex",
+    "country": "England",
+    "country_en": "England",
+    "lat": 50.8933,
+    "lng": 0.1032,
+    "breweries_count": 31
+  },
+  {
+    "region": "West Sussex",
+    "country": "England",
+    "country_en": "England",
+    "lat": 50.952,
+    "lng": -0.3666,
+    "breweries_count": 31
+  },
+  {
+    "region": "Louisiana",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 30.679,
+    "lng": -91.181,
+    "breweries_count": 31
+  },
+  {
+    "region": "Rhode Island",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 41.7773,
+    "lng": -71.3628,
+    "breweries_count": 31
+  },
+  {
+    "region": "Nevada",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 38.5927,
+    "lng": -118.3671,
+    "breweries_count": 28
+  },
+  {
+    "region": "Schleswig-Holstein",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 54.2515,
+    "lng": 9.8116,
+    "breweries_count": 28
+  },
+  {
+    "region": "Mecklenburg-Vorpommern",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 53.9287,
+    "lng": 12.5747,
+    "breweries_count": 27
+  },
+  {
+    "region": "TAS",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -42.0811,
+    "lng": 147.1327,
+    "breweries_count": 26
+  },
+  {
+    "region": "North Dakota",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 47.1825,
+    "lng": -99.2876,
+    "breweries_count": 25
+  },
+  {
+    "region": "Sachsen-Anhalt",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 51.928,
+    "lng": 11.6936,
+    "breweries_count": 25
+  },
+  {
+    "region": "Vermont",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 44.113,
+    "lng": -72.9039,
+    "breweries_count": 23
+  },
+  {
+    "region": "District of Columbia",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 38.9051,
+    "lng": -77.0031,
+    "breweries_count": 21
+  },
+  {
+    "region": "Waikato Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -37.6473,
+    "lng": 175.2764,
+    "breweries_count": 20
+  },
+  {
+    "region": "Noord-Brabant",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 51.5548,
+    "lng": 5.2048,
+    "breweries_count": 20
+  },
+  {
+    "region": "Uusimaa",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 60.2489,
+    "lng": 24.987,
+    "breweries_count": 19
+  },
+  {
+    "region": "Noord-Holland",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 52.4215,
+    "lng": 4.8481,
+    "breweries_count": 18
+  },
+  {
+    "region": "KwaZulu-Natal",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -29.6322,
+    "lng": 30.6541,
+    "breweries_count": 17
+  },
+  {
+    "region": "Gauteng",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -26.4856,
+    "lng": 27.5448,
+    "breweries_count": 17
+  },
+  {
+    "region": "Dublin",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 53.3416,
+    "lng": -6.2971,
+    "breweries_count": 16
+  },
+  {
+    "region": "Delaware",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 39.1301,
+    "lng": -75.4055,
+    "breweries_count": 15
+  },
+  {
+    "region": "Saarland",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 49.3624,
+    "lng": 6.9983,
+    "breweries_count": 14
+  },
+  {
+    "region": "Seoul",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 37.5337,
+    "lng": 126.986,
+    "breweries_count": 14
+  },
+  {
+    "region": "Mississippi",
+    "country": "США",
+    "country_en": "United States",
+    "lat": 31.979,
+    "lng": -89.5195,
+    "breweries_count": 13
+  },
+  {
+    "region": "Hamburg",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 53.5304,
+    "lng": 9.964,
+    "breweries_count": 13
+  },
+  {
+    "region": "Hawke's Bay Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -39.5886,
+    "lng": 176.7954,
+    "breweries_count": 12
+  },
+  {
+    "region": "Cork",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 51.8897,
+    "lng": -8.5445,
+    "breweries_count": 11
+  },
+  {
+    "region": "Bay of Plenty Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -37.7342,
+    "lng": 176.2002,
+    "breweries_count": 11
+  },
+  {
+    "region": "Osaka",
+    "country": "Japan",
+    "country_en": "Japan",
+    "lat": 34.7332,
+    "lng": 135.5121,
+    "breweries_count": 10
+  },
+  {
+    "region": "Eastern Cape",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -33.2701,
+    "lng": 26.0043,
+    "breweries_count": 9
+  },
+  {
+    "region": "Zuid-Holland",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 52.0383,
+    "lng": 4.4458,
+    "breweries_count": 9
+  },
+  {
+    "region": "Tasman Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -41.1789,
+    "lng": 173.0178,
+    "breweries_count": 9
+  },
+  {
+    "region": "Busan",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 35.1986,
+    "lng": 129.1124,
+    "breweries_count": 9
+  },
+  {
+    "region": "Gyeonggido",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 37.5788,
+    "lng": 127.1227,
+    "breweries_count": 9
+  },
+  {
+    "region": "Varsinais-Suomi",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 60.4872,
+    "lng": 22.2258,
+    "breweries_count": 8
+  },
+  {
+    "region": "ACT",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -35.2887,
+    "lng": 149.1522,
+    "breweries_count": 7
+  },
+  {
+    "region": "Nelson Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -41.3108,
+    "lng": 173.2278,
+    "breweries_count": 7
+  },
+  {
+    "region": "Limburg",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 51.0935,
+    "lng": 5.9138,
+    "breweries_count": 7
+  },
+  {
+    "region": "Steiermark",
+    "country": "Австрия",
+    "country_en": "Austria",
+    "lat": 47.1431,
+    "lng": 14.9896,
+    "breweries_count": 7
+  },
+  {
+    "region": "Gangwondo",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 37.7402,
+    "lng": 128.3821,
+    "breweries_count": 7
+  },
+  {
+    "region": "Pirkanmaa",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 61.4133,
+    "lng": 23.7982,
+    "breweries_count": 6
+  },
+  {
+    "region": "Taranaki Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -39.0641,
+    "lng": 174.1151,
+    "breweries_count": 6
+  },
+  {
+    "region": "Gelderland",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 51.9577,
+    "lng": 5.9194,
+    "breweries_count": 6
+  },
+  {
+    "region": "Blekinge",
+    "country": "Швеция",
+    "country_en": "Sweden",
+    "lat": 56.1767,
+    "lng": 15.4752,
+    "breweries_count": 6
+  },
+  {
+    "region": "Päijät-Häme",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 61.0656,
+    "lng": 25.6882,
+    "breweries_count": 5
+  },
+  {
+    "region": "Lisboa",
+    "country": "Португалия",
+    "country_en": "Portugal",
+    "lat": 38.7793,
+    "lng": -9.288,
+    "breweries_count": 5
+  },
+  {
+    "region": "Utrecht",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 52.0902,
+    "lng": 5.1564,
+    "breweries_count": 5
+  },
+  {
+    "region": "Overijssel",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 52.4227,
+    "lng": 6.4171,
+    "breweries_count": 4
+  },
+  {
+    "region": "Bolzano",
+    "country": "Италия",
+    "country_en": "Italy",
+    "lat": 11.3138,
+    "lng": 46.5158,
+    "breweries_count": 4
+  },
+  {
+    "region": "Bremen",
+    "country": "Германия",
+    "country_en": "Germany",
+    "lat": 53.09,
+    "lng": 8.8187,
+    "breweries_count": 4
+  },
+  {
+    "region": "Donegal",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 54.8451,
+    "lng": -7.713,
+    "breweries_count": 4
+  },
+  {
+    "region": "Manawatū-Whanganui Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -40.0217,
+    "lng": 175.471,
+    "breweries_count": 4
+  },
+  {
+    "region": "Argyll",
+    "country": "Scotland",
+    "country_en": "Scotland",
+    "lat": 56.1364,
+    "lng": -5.7244,
+    "breweries_count": 4
+  },
+  {
+    "region": "West Dunbartonshire",
+    "country": "Scotland",
+    "country_en": "Scotland",
+    "lat": 55.9787,
+    "lng": -4.5468,
+    "breweries_count": 4
+  },
+  {
+    "region": "Northland Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -35.4343,
+    "lng": 174.1186,
+    "breweries_count": 4
+  },
+  {
+    "region": "South Ostrobothnia",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 62.6185,
+    "lng": 22.777,
+    "breweries_count": 4
+  },
+  {
+    "region": "Kanta-Häme",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 61.022,
+    "lng": 24.345,
+    "breweries_count": 4
+  },
+  {
+    "region": "Jeollabukdo",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 35.7721,
+    "lng": 127.3014,
+    "breweries_count": 3
+  },
+  {
+    "region": "Wallonia",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 50.2655,
+    "lng": 4.9513,
+    "breweries_count": 3
+  },
+  {
+    "region": "North West",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -26.0906,
+    "lng": 27.5585,
+    "breweries_count": 3
+  },
+  {
+    "region": "NT",
+    "country": "Австралия",
+    "country_en": "Australia",
+    "lat": -16.2993,
+    "lng": 132.0631,
+    "breweries_count": 3
+  },
+  {
+    "region": "Mpumalanga",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -25.2406,
+    "lng": 30.482,
+    "breweries_count": 3
+  },
+  {
+    "region": "Bouche du Rhône",
+    "country": "Франция",
+    "country_en": "France",
+    "lat": 43.3399,
+    "lng": 5.3386,
+    "breweries_count": 3
+  },
+  {
+    "region": "Galway",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 53.3502,
+    "lng": -9.2929,
+    "breweries_count": 3
+  },
+  {
+    "region": "Free State",
+    "country": "ЮАР",
+    "country_en": "South Africa",
+    "lat": -28.8433,
+    "lng": 27.6725,
+    "breweries_count": 3
+  },
+  {
+    "region": "Kilkenny",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.6538,
+    "lng": -7.2462,
+    "breweries_count": 3
+  },
+  {
+    "region": "Northern Ostrobothnia",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 65.0124,
+    "lng": 25.2175,
+    "breweries_count": 3
+  },
+  {
+    "region": "South Savo",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 61.7144,
+    "lng": 27.6363,
+    "breweries_count": 3
+  },
+  {
+    "region": "Kildare",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 53.2809,
+    "lng": -6.5774,
+    "breweries_count": 3
+  },
+  {
+    "region": "Kerry",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.1214,
+    "lng": -9.8197,
+    "breweries_count": 3
+  },
+  {
+    "region": "Marlborough Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -41.4869,
+    "lng": 173.8604,
+    "breweries_count": 3
+  },
+  {
+    "region": "Wicklow",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 53.0241,
+    "lng": -6.1075,
+    "breweries_count": 3
+  },
+  {
+    "region": "Kärnten",
+    "country": "Австрия",
+    "country_en": "Austria",
+    "lat": 46.6994,
+    "lng": 14.1648,
+    "breweries_count": 3
+  },
+  {
+    "region": "Gyeongsangbukdo",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 36.594,
+    "lng": 128.4736,
+    "breweries_count": 3
+  },
+  {
+    "region": "Jejudo",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 33.3326,
+    "lng": 126.5772,
+    "breweries_count": 3
+  },
+  {
+    "region": "Gyeongsangnamdo",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 34.9309,
+    "lng": 128.346,
+    "breweries_count": 3
+  },
+  {
+    "region": "Chungcheongnamdo",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 36.6955,
+    "lng": 126.7442,
+    "breweries_count": 3
+  },
+  {
+    "region": "Laois",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.9337,
+    "lng": -7.0473,
+    "breweries_count": 2
+  },
+  {
+    "region": "Groningen",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 53.2258,
+    "lng": 6.5494,
+    "breweries_count": 2
+  },
+  {
+    "region": "Satakunta",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 61.3069,
+    "lng": 21.6486,
+    "breweries_count": 2
+  },
+  {
+    "region": "Région flamande",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 50.7988,
+    "lng": 4.2872,
+    "breweries_count": 2
+  },
+  {
+    "region": "Zeeland",
+    "country": "Нидерланды",
+    "country_en": "Netherlands",
+    "lat": 51.5336,
+    "lng": 3.6765,
+    "breweries_count": 2
+  },
+  {
+    "region": "Offaly",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 53.1422,
+    "lng": -7.8567,
+    "breweries_count": 2
+  },
+  {
+    "region": "Ostrobothnia",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 63.1898,
+    "lng": 21.3332,
+    "breweries_count": 2
+  },
+  {
+    "region": "Middle",
+    "country": "Isle of Man",
+    "country_en": "Isle of Man",
+    "lat": 54.1399,
+    "lng": -4.5322,
+    "breweries_count": 2
+  },
+  {
+    "region": "Tipperary",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.9204,
+    "lng": -7.973,
+    "breweries_count": 2
+  },
+  {
+    "region": "Limerick",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.6658,
+    "lng": -8.6262,
+    "breweries_count": 2
+  },
+  {
+    "region": "Wexford",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.3271,
+    "lng": -6.5081,
+    "breweries_count": 2
+  },
+  {
+    "region": "Waterford",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 52.1762,
+    "lng": -7.3817,
+    "breweries_count": 2
+  },
+  {
+    "region": "Central Finland",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 62.2594,
+    "lng": 25.772,
+    "breweries_count": 2
+  },
+  {
+    "region": "Flanders",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 50.9015,
+    "lng": 4.6811,
+    "breweries_count": 2
+  },
+  {
+    "region": "Southland Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -46.4087,
+    "lng": 168.3438,
+    "breweries_count": 2
+  },
+  {
+    "region": "North Savo",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 62.8796,
+    "lng": 27.6893,
+    "breweries_count": 2
+  },
+  {
+    "region": "Oberösterreich",
+    "country": "Австрия",
+    "country_en": "Austria",
+    "lat": 48.2677,
+    "lng": 13.6193,
+    "breweries_count": 2
+  },
+  {
+    "region": "Waals Gewest",
+    "country": "Бельгия",
+    "country_en": "Belgium",
+    "lat": 50.6554,
+    "lng": 5.6125,
+    "breweries_count": 2
+  },
+  {
+    "region": "Lapland",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 66.1697,
+    "lng": 24.9281,
+    "breweries_count": 2
+  },
+  {
+    "region": "Sligo",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 54.1781,
+    "lng": -8.4911,
+    "breweries_count": 2
+  },
+  {
+    "region": "Mayo",
+    "country": "Ирландия",
+    "country_en": "Ireland",
+    "lat": 53.924,
+    "lng": 0.2089,
+    "breweries_count": 2
+  },
+  {
+    "region": "West Coast Region",
+    "country": "Новая Зеландия",
+    "country_en": "New Zealand",
+    "lat": -42.1038,
+    "lng": 171.4029,
+    "breweries_count": 2
+  },
+  {
+    "region": "Porto",
+    "country": "Португалия",
+    "country_en": "Portugal",
+    "lat": 41.1594,
+    "lng": -8.6267,
+    "breweries_count": 2
+  },
+  {
+    "region": "Kymenlaakso",
+    "country": "Финляндия",
+    "country_en": "Finland",
+    "lat": 60.7168,
+    "lng": 27.0932,
+    "breweries_count": 2
+  },
+  {
+    "region": "Niederösterreich",
+    "country": "Австрия",
+    "country_en": "Austria",
+    "lat": 48.1411,
+    "lng": 15.8095,
+    "breweries_count": 2
+  },
+  {
+    "region": "Incheon",
+    "country": "South Korea",
+    "country_en": "South Korea",
+    "lat": 37.4446,
+    "lng": 126.6487,
+    "breweries_count": 2
+  }
+]

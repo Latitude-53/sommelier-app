@@ -61,11 +61,14 @@ UI на русском. В Settings (⚙) — **Google Translate** на 8 язы
 
 ## 📊 Цифры
 
-- **255 напитков** в 8 категориях (вино, пиво, крепкое, саке, сидр, медовуха, кофе, чай)
+- **322 напитка** в 8 категориях (вино, пиво, крепкое, саке, сидр, медовуха, кофе, чай)
+- **768 ингредиентов** (332 винограда, 357 яблок, 37 хмелей, 10 агав, 12 чаёв, 12 кофе, 8 риса)
+- **2031 регион** с координатами (1831 wine + 172 beer + 25 coffee)
+- **108 стилей пива** с профилями 7+7
 - **11 вкладок** — 2 игры + 9 инструментов
 - **180 терминов** в словаре
 - **29 блюд** в pairing
-- **~545 KB** — один HTML-файл, 0 зависимостей
+- **~602 KB** — один HTML-файл, 0 зависимостей
 
 ---
 
@@ -76,13 +79,18 @@ UI на русском. В Settings (⚙) — **Google Translate** на 8 язы
 
 ```
 sommelier-app/
-├── www/index.html              # финальный файл (single HTML, ~545 KB)
+├── www/index.html              # финальный файл (single HTML, ~602 KB)
 ├── scripts/
 │   ├── build.py                # генератор: JSON → HTML
 │   ├── template.html           # HTML структура + CSS
 │   └── app.js                  # JS логика
 ├── data/                       # редактируемые JSON
-│   ├── drinks.json             # 255 напитков
+│   ├── drinks.json             # 322 напитка
+│   ├── ingredients.json        # 768 ингредиентов (виноград, хмель, агава, и т.д.)
+│   ├── wine_regions.json       # 1831 винодельческий регион
+│   ├── beer_regions.json       # 172 пивоваренных региона
+│   ├── coffee_regions.json     # 25 кофе-регионов
+│   ├── beer_styles_profiles.json # 108 стилей пива с профилями 7+7
 │   ├── taxonomy.json           # дерево вкусов
 │   ├── glossary.json           # 180 терминов
 │   ├── dish_pairs.json         # 29 блюд
@@ -136,6 +144,21 @@ npm run android:build        # → android/app/build/outputs/apk/debug/app-debug
 </details>
 
 <details>
+<summary><b>🏪 Публикация в Google Play</b></summary>
+
+1. Создай аккаунт разработчика ($25 один раз): https://play.google.com/console
+2. Сгенерируй подписанный AAB:
+   ```bash
+   cd android
+   ./gradlew bundleRelease
+   ```
+   → `android/app/build/outputs/bundle/release/app-release.aab`
+3. Загрузи AAB через Play Console
+4. Модерация 1-3 дня
+
+</details>
+
+<details>
 <summary><b>🔧 Технологии</b></summary>
 
 - **HTML5 + CSS3 + vanilla JavaScript** (0 зависимостей, single file)
@@ -161,4 +184,76 @@ npm run android:build        # → android/app/build/outputs/apk/debug/app-debug
 
 ## 📜 Лицензия
 
-MIT
+MIT License — Copyright © 2025 Latitude-53
+
+## 📊 Данные и атрибуция
+
+Этот проект использует открытые датасеты. Все источники указаны в соответствии с их лицензиями (MIT / CC BY-SA 4.0 / CC BY 4.0).
+
+### 🗺️ Wine regions (1831 регион)
+
+Координаты винодельческих регионов извлечены из:
+
+- **Winery Map** © 2024 Oliver Dressler
+- License: [MIT](https://github.com/oOo0oOo/winerymap/blob/main/LICENSE)
+- Source: https://github.com/oOo0oOo/winerymap
+- 34 000 виноделен в 2 078 регионах мира → 1 831 регион с координатами
+- Топ-5 стран: Франция (443), Италия (405), США (206), Австралия (95), ЮАР (73)
+
+### 🍺 Beer regions (172 региона)
+
+Координаты пивоварен извлечены из:
+
+- **Open Brewery DB** © 2025 Open Brewery DB
+- License: [MIT](https://github.com/openbrewerydb/openbrewerydb/blob/master/LICENSE)
+- Source: https://github.com/openbrewerydb/openbrewerydb
+- 11 745 пивоварен в 23 странах → 172 региона с координатами
+- Топ-5: США (51), Германия (16), Ирландия (16), Новая Зеландия (15), Финляндия (14)
+
+### ☕ Coffee regions (25 регионов)
+
+Координаты кофе-регионов извлечены из:
+
+- **Coffee Quality Database** © 2018 James LeDoux
+- License: [MIT](https://github.com/jldbc/coffee-quality-database/blob/master/LICENSE)
+- Source: https://github.com/jldbc/coffee-quality-database
+- 1 311 кофе с рейтингами Coffee Quality Institute → 25 стран-производителей
+- Топ-5: Мексика (184), Колумбия (176), Гватемала (174), Бразилия (123), Гавайи (73)
+
+### 🍇 Ingredients (768 ингредиентов)
+
+| Тип | Кол-во | Источник | Лицензия |
+|---|---|---|---|
+| 🍇 Виноград | 332 | Wikipedia [List of grape varieties](https://en.wikipedia.org/wiki/List_of_grape_varieties) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| 🍏 Яблоки | 357 | Wikipedia [List of apple cultivars](https://en.wikipedia.org/wiki/List_of_apple_cultivars) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| 🌿 Хмель | 37 | [HopDatabase](https://github.com/kasperg3/HopDatabase) © 2024 Kasper Andreas Rømer Grøntved | [MIT](https://github.com/kasperg3/HopDatabase/blob/master/LICENSE) |
+| 🌵 Агава | 10 | Ручная курификация + Wikipedia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| 🍵 Чай | 12 | Ручная курификация + Wikipedia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| ☕ Кофе | 12 | Ручная курификация + Wikipedia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| 🌾 Рис | 8 | Ручная курификация (sake rice) | факты (не охраняются) |
+
+Каждый ингредиент имеет координаты (lat/lng) для будущей карты.
+
+### 🍺 Beer style profiles (108 стилей с профилями 7+7)
+
+Средние вкусовые профили 108 стилей пива, рассчитанные из:
+
+- **Beer Profile and Ratings Data Set** © ruthgn
+- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Source: https://www.kaggle.com/datasets/ruthgn/beer-profile-and-ratings-data-set
+- 3 197 пив с tasting profiles → 108 стилей с усреднёнными профилями
+- Маппинг на 7+7: Sour→acid, Sweet→sweet, Bitter→bitter, Astringency→tannin, Body→body, Salty→savory, Fruits→fruit, Spices→spice, Malty→sweet_pastry
+
+### 🍷 Drinks (322 напитка)
+
+Собрано и курировано вручную автором проекта. Описания написаны на русском языке.
+
+- 109 вин (Бордо, Бургундия, Тоскана, Кьянти, Пьемонт, Долина Роны, Напа, и т.д.)
+- 69 пив (Лагер, Эль, Стаут, IPA, Lambic, Trappist, Saison, и т.д.)
+- 64 крепких (Виски, Коньяк, Ром, Джин, Текила, Мескаль, Арманьяк, и т.д.)
+- 25 чаёв, 21 кофе, 14 саке, 12 сидров, 8 медовух
+
+### ❌ Не использованы (по лицензионным соображениям)
+
+- **X-Wines** (100k вин) — academic citation required, нет прозрачности по происхождению данных
+- **Wine Enthusiast / winemag 10k** — данные скраплены с сайта без разрешения (ToS violation)

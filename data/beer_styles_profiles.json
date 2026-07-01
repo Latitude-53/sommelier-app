@@ -1,0 +1,2594 @@
+[
+  {
+    "style": "Altbier",
+    "beer_count": 39,
+    "avg_abv": 5.7,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.0,
+      "bitter": 2.3,
+      "tannin": 2.0,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.6,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Barleywine - American",
+    "beer_count": 38,
+    "avg_abv": 11.2,
+    "avg_ibu": 80.0,
+    "s": {
+      "acid": 1.6,
+      "sweet": 2.6,
+      "bitter": 2.7,
+      "tannin": 1.6,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.4,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Barleywine - English",
+    "beer_count": 26,
+    "avg_abv": 11.3,
+    "avg_ibu": 50.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 2.9,
+      "bitter": 1.8,
+      "tannin": 1.4,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.5,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bitter - English",
+    "beer_count": 41,
+    "avg_abv": 4.3,
+    "avg_ibu": 27.5,
+    "s": {
+      "acid": 1.5,
+      "sweet": 1.8,
+      "bitter": 2.7,
+      "tannin": 1.9,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.3,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bitter - English Extra Special / Strong Bitter (ESB)",
+    "beer_count": 33,
+    "avg_abv": 5.8,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 2.0,
+      "bitter": 2.8,
+      "tannin": 1.8,
+      "body": 2.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bière de Champagne / Bière Brut",
+    "beer_count": 8,
+    "avg_abv": 10.1,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.7,
+      "sweet": 2.1,
+      "bitter": 1.4,
+      "tannin": 2.0,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.4,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Blonde Ale - American",
+    "beer_count": 31,
+    "avg_abv": 4.8,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 1.5,
+      "bitter": 2.0,
+      "tannin": 2.1,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.9,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Blonde Ale - Belgian",
+    "beer_count": 33,
+    "avg_abv": 6.4,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.7,
+      "sweet": 1.9,
+      "bitter": 1.7,
+      "tannin": 2.0,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.3,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bock - Doppelbock",
+    "beer_count": 40,
+    "avg_abv": 8.4,
+    "avg_ibu": 22.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.6,
+      "bitter": 1.9,
+      "tannin": 1.5,
+      "body": 2.5,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.1,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bock - Eisbock",
+    "beer_count": 14,
+    "avg_abv": 16.8,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.2,
+      "bitter": 1.3,
+      "tannin": 1.3,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.1,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bock - Maibock",
+    "beer_count": 35,
+    "avg_abv": 7.0,
+    "avg_ibu": 29.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 2.1,
+      "bitter": 2.1,
+      "tannin": 2.0,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bock - Traditional",
+    "beer_count": 34,
+    "avg_abv": 6.4,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.2,
+      "bitter": 1.9,
+      "tannin": 1.6,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.6,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Bock - Weizenbock",
+    "beer_count": 32,
+    "avg_abv": 8.0,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 2.1,
+      "bitter": 1.6,
+      "tannin": 1.7,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.3,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Braggot",
+    "beer_count": 14,
+    "avg_abv": 8.1,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 2.4,
+      "bitter": 1.3,
+      "tannin": 1.4,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Brown Ale - American",
+    "beer_count": 28,
+    "avg_abv": 6.7,
+    "avg_ibu": 35.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.0,
+      "bitter": 2.4,
+      "tannin": 1.6,
+      "body": 2.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Brown Ale - Belgian Dark",
+    "beer_count": 26,
+    "avg_abv": 6.2,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 2.1,
+      "bitter": 1.5,
+      "tannin": 1.7,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.0,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Brown Ale - English",
+    "beer_count": 40,
+    "avg_abv": 5.6,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.1,
+      "bitter": 2.1,
+      "tannin": 1.6,
+      "body": 2.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "California Common / Steam Beer",
+    "beer_count": 20,
+    "avg_abv": 5.4,
+    "avg_ibu": 40.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.5,
+      "bitter": 2.1,
+      "tannin": 1.8,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.6,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Chile Beer",
+    "beer_count": 25,
+    "avg_abv": 5.7,
+    "avg_ibu": 0.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.3,
+      "bitter": 1.4,
+      "tannin": 1.5,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 3.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Cream Ale",
+    "beer_count": 24,
+    "avg_abv": 5.2,
+    "avg_ibu": 16.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.7,
+      "bitter": 1.6,
+      "tannin": 1.9,
+      "body": 2.4,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.6,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Dubbel",
+    "beer_count": 41,
+    "avg_abv": 7.5,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.5,
+      "sweet": 2.6,
+      "bitter": 1.5,
+      "tannin": 1.6,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.5,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.3,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Farmhouse Ale - Bière de Garde",
+    "beer_count": 32,
+    "avg_abv": 7.1,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 2.1,
+      "sweet": 2.3,
+      "bitter": 1.6,
+      "tannin": 2.1,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.5,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Farmhouse Ale - Sahti",
+    "beer_count": 9,
+    "avg_abv": 7.3,
+    "avg_ibu": 0.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.6,
+      "bitter": 1.3,
+      "tannin": 1.4,
+      "body": 1.5,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.6,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Farmhouse Ale - Saison",
+    "beer_count": 31,
+    "avg_abv": 7.0,
+    "avg_ibu": 29.0,
+    "s": {
+      "acid": 2.4,
+      "sweet": 1.8,
+      "bitter": 1.7,
+      "tannin": 2.5,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 2.9,
+      "floral": 2,
+      "spice": 1.8,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Fruit and Field Beer",
+    "beer_count": 37,
+    "avg_abv": 6.0,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.7,
+      "sweet": 2.4,
+      "bitter": 1.3,
+      "tannin": 1.8,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 3.1,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Gruit / Ancient Herbed Ale",
+    "beer_count": 19,
+    "avg_abv": 5.6,
+    "avg_ibu": 0.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 1.7,
+      "bitter": 1.6,
+      "tannin": 1.6,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 1.5,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Happoshu",
+    "beer_count": 23,
+    "avg_abv": 5.4,
+    "avg_ibu": 0.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.1,
+      "bitter": 1.1,
+      "tannin": 1.2,
+      "body": 1.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.1,
+      "floral": 2,
+      "spice": 1.0,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.3,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Herb and Spice Beer",
+    "beer_count": 24,
+    "avg_abv": 6.5,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.6,
+      "sweet": 2.0,
+      "bitter": 1.6,
+      "tannin": 1.7,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.2,
+      "floral": 2,
+      "spice": 2.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "IPA - American",
+    "beer_count": 38,
+    "avg_abv": 6.9,
+    "avg_ibu": 60.0,
+    "s": {
+      "acid": 1.7,
+      "sweet": 1.6,
+      "bitter": 2.7,
+      "tannin": 1.9,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "IPA - Belgian",
+    "beer_count": 26,
+    "avg_abv": 8.0,
+    "avg_ibu": 65.0,
+    "s": {
+      "acid": 2.0,
+      "sweet": 1.8,
+      "bitter": 2.8,
+      "tannin": 2.1,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.9,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "IPA - Black / Cascadian Dark Ale",
+    "beer_count": 23,
+    "avg_abv": 6.9,
+    "avg_ibu": 60.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.7,
+      "bitter": 3.7,
+      "tannin": 1.8,
+      "body": 2.5,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "IPA - English",
+    "beer_count": 37,
+    "avg_abv": 6.2,
+    "avg_ibu": 47.5,
+    "s": {
+      "acid": 1.6,
+      "sweet": 1.7,
+      "bitter": 2.9,
+      "tannin": 1.9,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.2,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "IPA - Imperial",
+    "beer_count": 35,
+    "avg_abv": 9.5,
+    "avg_ibu": 82.5,
+    "s": {
+      "acid": 1.7,
+      "sweet": 1.8,
+      "bitter": 2.8,
+      "tannin": 1.8,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.6,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Kvass",
+    "beer_count": 21,
+    "avg_abv": 1.3,
+    "avg_ibu": 0.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.6,
+      "bitter": 1.2,
+      "tannin": 1.3,
+      "body": 1.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Kölsch",
+    "beer_count": 32,
+    "avg_abv": 4.9,
+    "avg_ibu": 21.5,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.5,
+      "bitter": 1.9,
+      "tannin": 2.6,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Adjunct",
+    "beer_count": 45,
+    "avg_abv": 4.8,
+    "avg_ibu": 13.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.3,
+      "bitter": 1.4,
+      "tannin": 1.8,
+      "body": 1.5,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - American",
+    "beer_count": 22,
+    "avg_abv": 4.8,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.3,
+      "sweet": 1.5,
+      "bitter": 1.8,
+      "tannin": 2.2,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - American Amber / Red",
+    "beer_count": 34,
+    "avg_abv": 4.8,
+    "avg_ibu": 24.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.8,
+      "bitter": 1.9,
+      "tannin": 1.7,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - European / Dortmunder Export",
+    "beer_count": 35,
+    "avg_abv": 5.3,
+    "avg_ibu": 26.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.5,
+      "bitter": 1.9,
+      "tannin": 2.1,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - European Dark",
+    "beer_count": 31,
+    "avg_abv": 5.2,
+    "avg_ibu": 27.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.9,
+      "bitter": 2.1,
+      "tannin": 1.8,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - European Pale",
+    "beer_count": 43,
+    "avg_abv": 5.0,
+    "avg_ibu": 21.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.4,
+      "bitter": 1.7,
+      "tannin": 2.1,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - European Strong",
+    "beer_count": 39,
+    "avg_abv": 8.5,
+    "avg_ibu": 27.5,
+    "s": {
+      "acid": 1.3,
+      "sweet": 1.8,
+      "bitter": 1.6,
+      "tannin": 1.5,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Helles",
+    "beer_count": 36,
+    "avg_abv": 5.0,
+    "avg_ibu": 21.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.5,
+      "bitter": 2.0,
+      "tannin": 2.5,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.3
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - India Pale Lager (IPL)",
+    "beer_count": 6,
+    "avg_abv": 6.5,
+    "avg_ibu": 50.0,
+    "s": {
+      "acid": 1.7,
+      "sweet": 1.5,
+      "bitter": 2.9,
+      "tannin": 2.2,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Japanese Rice",
+    "beer_count": 21,
+    "avg_abv": 5.0,
+    "avg_ibu": 12.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.2,
+      "bitter": 1.3,
+      "tannin": 1.7,
+      "body": 1.3,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.1,
+      "floral": 2,
+      "spice": 1.0,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Kellerbier / Zwickelbier",
+    "beer_count": 15,
+    "avg_abv": 5.2,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.6,
+      "sweet": 1.8,
+      "bitter": 2.2,
+      "tannin": 2.3,
+      "body": 2.1,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.9,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Light",
+    "beer_count": 40,
+    "avg_abv": 4.0,
+    "avg_ibu": 10.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.3,
+      "bitter": 1.4,
+      "tannin": 1.8,
+      "body": 1.5,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Malt Liquor",
+    "beer_count": 33,
+    "avg_abv": 7.7,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.7,
+      "bitter": 1.4,
+      "tannin": 1.6,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Munich Dunkel",
+    "beer_count": 36,
+    "avg_abv": 5.1,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.0,
+      "bitter": 2.0,
+      "tannin": 1.8,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Märzen / Oktoberfest",
+    "beer_count": 39,
+    "avg_abv": 5.9,
+    "avg_ibu": 21.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.8,
+      "bitter": 1.9,
+      "tannin": 1.9,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Rauchbier",
+    "beer_count": 25,
+    "avg_abv": 5.8,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.6,
+      "bitter": 1.5,
+      "tannin": 1.5,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 2.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Schwarzbier",
+    "beer_count": 30,
+    "avg_abv": 5.4,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.8,
+      "bitter": 2.5,
+      "tannin": 1.9,
+      "body": 2.6,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lager - Vienna",
+    "beer_count": 37,
+    "avg_abv": 5.0,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.7,
+      "bitter": 1.9,
+      "tannin": 1.9,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lambic - Faro",
+    "beer_count": 9,
+    "avg_abv": 4.5,
+    "avg_ibu": 5.0,
+    "s": {
+      "acid": 1.8,
+      "sweet": 2.2,
+      "bitter": 1.1,
+      "tannin": 1.5,
+      "body": 1.5,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lambic - Fruit",
+    "beer_count": 42,
+    "avg_abv": 5.5,
+    "avg_ibu": 18.0,
+    "s": {
+      "acid": 2.8,
+      "sweet": 2.3,
+      "bitter": 1.1,
+      "tannin": 2.7,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 3.4,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lambic - Gueuze",
+    "beer_count": 25,
+    "avg_abv": 5.8,
+    "avg_ibu": 5.0,
+    "s": {
+      "acid": 3.3,
+      "sweet": 2.0,
+      "bitter": 1.3,
+      "tannin": 2.8,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 3.0,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.3,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Lambic - Traditional",
+    "beer_count": 24,
+    "avg_abv": 5.7,
+    "avg_ibu": 5.0,
+    "s": {
+      "acid": 1.9,
+      "sweet": 1.3,
+      "bitter": 1.2,
+      "tannin": 1.8,
+      "body": 1.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Low Alcohol Beer",
+    "beer_count": 32,
+    "avg_abv": 0.5,
+    "avg_ibu": 15.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.4,
+      "bitter": 1.6,
+      "tannin": 1.6,
+      "body": 1.5,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Mild Ale - English Dark",
+    "beer_count": 28,
+    "avg_abv": 4.5,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.8,
+      "bitter": 1.8,
+      "tannin": 1.5,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Mild Ale - English Pale",
+    "beer_count": 19,
+    "avg_abv": 3.8,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.3,
+      "bitter": 1.5,
+      "tannin": 1.4,
+      "body": 1.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Old Ale",
+    "beer_count": 34,
+    "avg_abv": 9.2,
+    "avg_ibu": 47.5,
+    "s": {
+      "acid": 1.4,
+      "sweet": 2.4,
+      "bitter": 1.9,
+      "tannin": 1.6,
+      "body": 2.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.1,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pale Ale - American",
+    "beer_count": 25,
+    "avg_abv": 5.6,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.7,
+      "sweet": 1.5,
+      "bitter": 2.5,
+      "tannin": 2.1,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 2.4,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pale Ale - Belgian",
+    "beer_count": 33,
+    "avg_abv": 5.9,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.9,
+      "sweet": 1.9,
+      "bitter": 1.9,
+      "tannin": 2.2,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.6,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pale Ale - English",
+    "beer_count": 40,
+    "avg_abv": 5.1,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 1.7,
+      "bitter": 2.3,
+      "tannin": 1.8,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pilsner - Bohemian / Czech",
+    "beer_count": 29,
+    "avg_abv": 5.0,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.3,
+      "sweet": 1.4,
+      "bitter": 2.6,
+      "tannin": 2.5,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.3
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pilsner - German",
+    "beer_count": 38,
+    "avg_abv": 5.0,
+    "avg_ibu": 32.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.4,
+      "bitter": 2.3,
+      "tannin": 2.7,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.4
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pilsner - Imperial",
+    "beer_count": 19,
+    "avg_abv": 8.0,
+    "avg_ibu": 47.5,
+    "s": {
+      "acid": 1.5,
+      "sweet": 1.7,
+      "bitter": 2.5,
+      "tannin": 2.0,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.2
+    },
+    "a": {
+      "fruit": 1.9,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Porter - American",
+    "beer_count": 36,
+    "avg_abv": 5.9,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.8,
+      "bitter": 2.8,
+      "tannin": 1.5,
+      "body": 2.8,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Porter - Baltic",
+    "beer_count": 29,
+    "avg_abv": 7.9,
+    "avg_ibu": 35.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.3,
+      "bitter": 2.5,
+      "tannin": 1.6,
+      "body": 3.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Porter - English",
+    "beer_count": 37,
+    "avg_abv": 5.7,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.0,
+      "bitter": 2.5,
+      "tannin": 1.7,
+      "body": 2.9,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Porter - Imperial",
+    "beer_count": 20,
+    "avg_abv": 8.8,
+    "avg_ibu": 42.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.1,
+      "bitter": 2.7,
+      "tannin": 1.4,
+      "body": 3.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.5,
+      "floral": 2,
+      "spice": 1.5,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.3,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Porter - Robust",
+    "beer_count": 16,
+    "avg_abv": 6.1,
+    "avg_ibu": 32.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.0,
+      "bitter": 2.9,
+      "tannin": 1.7,
+      "body": 3.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Porter - Smoked",
+    "beer_count": 26,
+    "avg_abv": 6.3,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.7,
+      "bitter": 2.1,
+      "tannin": 1.4,
+      "body": 2.7,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 2.8,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Pumpkin Beer",
+    "beer_count": 30,
+    "avg_abv": 7.5,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.6,
+      "bitter": 1.4,
+      "tannin": 1.5,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 3.0,
+      "floral": 2,
+      "spice": 2.9,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Quadrupel (Quad)",
+    "beer_count": 34,
+    "avg_abv": 10.8,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.5,
+      "sweet": 2.8,
+      "bitter": 1.5,
+      "tannin": 1.5,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.8,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Red Ale - American Amber / Red",
+    "beer_count": 33,
+    "avg_abv": 6.1,
+    "avg_ibu": 35.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.9,
+      "bitter": 2.6,
+      "tannin": 1.7,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Red Ale - Imperial",
+    "beer_count": 19,
+    "avg_abv": 8.5,
+    "avg_ibu": 70.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 2.1,
+      "bitter": 3.0,
+      "tannin": 1.7,
+      "body": 2.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.1,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Red Ale - Irish",
+    "beer_count": 38,
+    "avg_abv": 5.4,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.0,
+      "bitter": 1.9,
+      "tannin": 1.8,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.5,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Rye Beer",
+    "beer_count": 21,
+    "avg_abv": 6.4,
+    "avg_ibu": 45.0,
+    "s": {
+      "acid": 1.5,
+      "sweet": 1.7,
+      "bitter": 2.4,
+      "tannin": 1.9,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.0,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Rye Beer - Roggenbier",
+    "beer_count": 16,
+    "avg_abv": 5.4,
+    "avg_ibu": 15.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 1.3,
+      "bitter": 1.2,
+      "tannin": 1.4,
+      "body": 1.4,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Scotch Ale / Wee Heavy",
+    "beer_count": 35,
+    "avg_abv": 8.1,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.4,
+      "bitter": 1.7,
+      "tannin": 1.4,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 1.5,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Scottish Ale",
+    "beer_count": 34,
+    "avg_abv": 5.4,
+    "avg_ibu": 17.0,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.0,
+      "bitter": 1.8,
+      "tannin": 1.6,
+      "body": 2.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.5,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Smoked Beer",
+    "beer_count": 28,
+    "avg_abv": 7.3,
+    "avg_ibu": 25.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.8,
+      "bitter": 1.8,
+      "tannin": 1.6,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 2.9,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Sour - Berliner Weisse",
+    "beer_count": 10,
+    "avg_abv": 4.9,
+    "avg_ibu": 4.5,
+    "s": {
+      "acid": 3.2,
+      "sweet": 1.8,
+      "bitter": 1.2,
+      "tannin": 2.9,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.3
+    },
+    "a": {
+      "fruit": 3.0,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Sour - Flanders Oud Bruin",
+    "beer_count": 20,
+    "avg_abv": 7.3,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 3.1,
+      "sweet": 2.2,
+      "bitter": 1.3,
+      "tannin": 2.8,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 3.0,
+      "floral": 2,
+      "spice": 1.2,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Sour - Flanders Red Ale",
+    "beer_count": 24,
+    "avg_abv": 6.4,
+    "avg_ibu": 17.5,
+    "s": {
+      "acid": 3.0,
+      "sweet": 2.2,
+      "bitter": 1.1,
+      "tannin": 2.8,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 3.2,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - American",
+    "beer_count": 29,
+    "avg_abv": 6.1,
+    "avg_ibu": 47.5,
+    "s": {
+      "acid": 1.1,
+      "sweet": 2.0,
+      "bitter": 3.2,
+      "tannin": 1.6,
+      "body": 3.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - American Imperial",
+    "beer_count": 34,
+    "avg_abv": 11.5,
+    "avg_ibu": 65.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 2.1,
+      "bitter": 2.7,
+      "tannin": 1.4,
+      "body": 3.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.4,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - English",
+    "beer_count": 28,
+    "avg_abv": 5.3,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.9,
+      "bitter": 2.6,
+      "tannin": 1.7,
+      "body": 2.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - Foreign / Export",
+    "beer_count": 36,
+    "avg_abv": 7.2,
+    "avg_ibu": 50.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.0,
+      "bitter": 2.7,
+      "tannin": 1.7,
+      "body": 2.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.5,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.8,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - Irish Dry",
+    "beer_count": 42,
+    "avg_abv": 4.9,
+    "avg_ibu": 35.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.7,
+      "bitter": 2.6,
+      "tannin": 2.1,
+      "body": 2.9,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.6,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - Oatmeal",
+    "beer_count": 33,
+    "avg_abv": 6.6,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.1,
+      "sweet": 1.9,
+      "bitter": 2.9,
+      "tannin": 1.5,
+      "body": 3.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - Russian Imperial",
+    "beer_count": 35,
+    "avg_abv": 10.5,
+    "avg_ibu": 70.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.2,
+      "bitter": 2.7,
+      "tannin": 1.4,
+      "body": 3.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.6,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 3.0,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Stout - Sweet / Milk",
+    "beer_count": 17,
+    "avg_abv": 6.4,
+    "avg_ibu": 20.0,
+    "s": {
+      "acid": 1.2,
+      "sweet": 2.1,
+      "bitter": 2.3,
+      "tannin": 1.4,
+      "body": 3.6,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.2,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Strong Ale - American",
+    "beer_count": 32,
+    "avg_abv": 11.2,
+    "avg_ibu": 70.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 2.6,
+      "bitter": 2.0,
+      "tannin": 1.5,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.1,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Strong Ale - Belgian Dark",
+    "beer_count": 41,
+    "avg_abv": 9.3,
+    "avg_ibu": 37.5,
+    "s": {
+      "acid": 1.6,
+      "sweet": 2.6,
+      "bitter": 1.5,
+      "tannin": 1.5,
+      "body": 2.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.6,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Strong Ale - Belgian Pale",
+    "beer_count": 40,
+    "avg_abv": 8.8,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.8,
+      "sweet": 2.1,
+      "bitter": 1.6,
+      "tannin": 1.9,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.6,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Strong Ale - English",
+    "beer_count": 35,
+    "avg_abv": 7.1,
+    "avg_ibu": 50.0,
+    "s": {
+      "acid": 1.4,
+      "sweet": 2.3,
+      "bitter": 2.1,
+      "tannin": 1.6,
+      "body": 2.3,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.0,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Tripel",
+    "beer_count": 37,
+    "avg_abv": 9.1,
+    "avg_ibu": 30.0,
+    "s": {
+      "acid": 1.8,
+      "sweet": 2.1,
+      "bitter": 1.5,
+      "tannin": 1.8,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.7,
+      "floral": 2,
+      "spice": 1.8,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - American Dark",
+    "beer_count": 18,
+    "avg_abv": 5.0,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.2,
+      "sweet": 1.4,
+      "bitter": 1.5,
+      "tannin": 1.4,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.3,
+      "floral": 2,
+      "spice": 1.1,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.1,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - American Pale",
+    "beer_count": 32,
+    "avg_abv": 5.0,
+    "avg_ibu": 22.5,
+    "s": {
+      "acid": 1.8,
+      "sweet": 1.6,
+      "bitter": 1.7,
+      "tannin": 2.0,
+      "body": 1.7,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.2,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - Dunkelweizen",
+    "beer_count": 37,
+    "avg_abv": 5.2,
+    "avg_ibu": 12.5,
+    "s": {
+      "acid": 1.4,
+      "sweet": 1.8,
+      "bitter": 1.4,
+      "tannin": 1.7,
+      "body": 2.1,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.1,
+      "floral": 2,
+      "spice": 1.6,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - Hefeweizen",
+    "beer_count": 42,
+    "avg_abv": 5.3,
+    "avg_ibu": 12.5,
+    "s": {
+      "acid": 1.6,
+      "sweet": 1.4,
+      "bitter": 1.3,
+      "tannin": 1.8,
+      "body": 1.9,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.9,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - Kristallweizen",
+    "beer_count": 26,
+    "avg_abv": 4.7,
+    "avg_ibu": 12.5,
+    "s": {
+      "acid": 1.3,
+      "sweet": 1.3,
+      "bitter": 1.3,
+      "tannin": 1.8,
+      "body": 1.6,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 1.8,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - Wheatwine",
+    "beer_count": 15,
+    "avg_abv": 10.7,
+    "avg_ibu": 65.0,
+    "s": {
+      "acid": 1.7,
+      "sweet": 2.4,
+      "bitter": 1.6,
+      "tannin": 1.5,
+      "body": 2.0,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 2.5,
+      "floral": 2,
+      "spice": 1.4,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.5,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wheat Beer - Witbier",
+    "beer_count": 36,
+    "avg_abv": 5.5,
+    "avg_ibu": 15.0,
+    "s": {
+      "acid": 1.9,
+      "sweet": 1.5,
+      "bitter": 1.5,
+      "tannin": 1.9,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 2.6,
+      "floral": 2,
+      "spice": 1.7,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.7,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Wild Ale",
+    "beer_count": 23,
+    "avg_abv": 8.5,
+    "avg_ibu": 17.5,
+    "s": {
+      "acid": 3.1,
+      "sweet": 2.2,
+      "bitter": 1.2,
+      "tannin": 2.6,
+      "body": 1.8,
+      "carbonation": 2,
+      "savory": 1.1
+    },
+    "a": {
+      "fruit": 3.2,
+      "floral": 2,
+      "spice": 1.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 1.4,
+      "yeast_ferment": 2
+    }
+  },
+  {
+    "style": "Winter Warmer",
+    "beer_count": 40,
+    "avg_abv": 7.3,
+    "avg_ibu": 42.5,
+    "s": {
+      "acid": 1.3,
+      "sweet": 2.0,
+      "bitter": 2.0,
+      "tannin": 1.5,
+      "body": 2.2,
+      "carbonation": 2,
+      "savory": 1.0
+    },
+    "a": {
+      "fruit": 1.7,
+      "floral": 2,
+      "spice": 2.3,
+      "wood_smoke": 1,
+      "mineral_earth": 2,
+      "sweet_pastry": 2.5,
+      "yeast_ferment": 2
+    }
+  }
+]
